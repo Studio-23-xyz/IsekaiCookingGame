@@ -1893,7 +1893,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: In publishing and graphic design, Lorem ipsum is a placeholder text commonly
-    used to demonstrate the visual form of
+    used to demonstrate the visual form ofIn publishing and graphic design, Lorem
+    ipsum is a placeholder text commonly used to demonstrate the visual form ofIn
+    publishing and graphic design, Lorem ipsum is a placeholder text commonly used
+    to demonstrate the visual form ofIn publishing and graphic design, Lorem ipsum
+    is a placeholder text commonly used to demonstrate the visual form of
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 053ed124128e31c439ba77278226d047, type: 2}
   m_sharedMaterial: {fileID: 964710183665014353, guid: 053ed124128e31c439ba77278226d047, type: 2}
