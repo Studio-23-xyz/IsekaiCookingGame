@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 
 
 public enum GameState
@@ -9,14 +11,45 @@ public enum GameState
 }
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    
+    public static GameManager Instance;
+    [Header("Managers Reference")]
+    
+    public UIManager uIManager;
+    
+    
+    public FoodItem[] FoodItems;
+    public Customer[] Customers;
+
+    
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+           
+        else
+        {
+             Destroy(gameObject);
+        }
+
+        if (uIManager == null) uIManager = GetComponentInChildren<UIManager>();
+    }
+
     void Start()
     {
+        FoodItems = Resources.LoadAll<FoodItem>("FoodItems");
+        Customers = Resources.LoadAll<Customer>("Customers");
+        
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void StartGame()
+    {
+       
+    }
+    public void ShowDialogue()
     {
         
     }

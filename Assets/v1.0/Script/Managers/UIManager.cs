@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField] private StartUIController startUIController;
+    [SerializeField] private GameplayUIController gameplayUIController;
+
+
+    public void StartGame()
     {
-        
+        startUIController.gameObject.SetActive(false);
+        gameplayUIController.gameObject.SetActive(true);
     }
+    
+    
 }
