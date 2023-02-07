@@ -1,7 +1,8 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 
 
@@ -21,12 +22,19 @@ public class GameManager : MonoBehaviour
     public FoodItem[] FoodItems;
     public Customer[] Customers;
 
+    [Header("CutScene")]
+    public CutsceneData currentCutscene;
+    public CutsceneData firstCutscene;
+    public Action CutsceneEndAction;
+    public SceneLoader sceneLoader;
+    
     
     private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
+            
         }
            
         else
@@ -41,6 +49,14 @@ public class GameManager : MonoBehaviour
     {
         FoodItems = Resources.LoadAll<FoodItem>("FoodItems");
         Customers = Resources.LoadAll<Customer>("Customers");
+        
+        sceneLoader.LoadCutScene();
+       CutsceneEndAction=()=>
+        {
+            sceneLoader.LoadScene("Start_Scene");
+          // AudioManager.Instance.FadeOutChannel(AudioManager.AudioChannel.Bgm);
+        };
+        
         
         
     }

@@ -8905,6 +8905,9 @@ MonoBehaviour:
   uIManager: {fileID: 0}
   FoodItems: []
   Customers: []
+  currentCutscene: {fileID: 0}
+  firstCutscene: {fileID: 0}
+  sceneLoader: {fileID: 0}
 --- !u!1 &1096492658
 GameObject:
   m_ObjectHideFlags: 0
@@ -16527,7 +16530,7 @@ GameObject:
   - component: {fileID: 2074285876}
   - component: {fileID: 2074285875}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Ingredient Pannel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21be184ddd83624459ef2142e7691f68, type: 3}
+  m_Name: Cutscene_StartNew
+  m_EditorClassIdentifier: 
+  cutscenePanels:
+  - comicImage: {fileID: 21300000, guid: b54911844a44858439bd3402c6b09452, type: 3}
+    columnSpan: 1
+    PageSFX: {fileID: 0}
+  - comicImage: {fileID: 21300000, guid: 2a745b94f28ea544596e15da6466dc55, type: 3}
+    columnSpan: 1
+    PageSFX: {fileID: 0}
+  - comicImage: {fileID: 21300000, guid: 729589f370e2b6c47b7a392759419066, type: 3}
+    columnSpan: 1
+    PageSFX: {fileID: 0}
+  - comicImage: {fileID: 21300000, guid: 147f32a0ad4ab304eb3354938a6209c8, type: 3}
+    columnSpan: 1
+    PageSFX: {fileID: 0}
+  - comicImage: {fileID: 21300000, guid: 01f1c67d280543b4a97f41d2df6ebe85, type: 3}
+    columnSpan: 1
+    PageSFX: {fileID: 0}
+  - comicImage: {fileID: 21300000, guid: 66abd21feed4ca84b82af35109b3182f, type: 3}
+    columnSpan: 1
+    PageSFX: {fileID: 0}
+  - comicImage: {fileID: 21300000, guid: a702b5f8a78882b4883072605ebdc444, type: 3}
+    columnSpan: 1
+    PageSFX: {fileID: 0}
+  - comicImage: {fileID: 21300000, guid: e7208dcd64527034a81afc8c4627b26b, type: 3}
+    columnSpan: 1
+    PageSFX: {fileID: 0}
+  - comicImage: {fileID: 21300000, guid: 7705ddfabef3c0443b13d919194e48b2, type: 3}
+    columnSpan: 1
+    PageSFX: {fileID: 0}
+  - comicImage: {fileID: 21300000, guid: df9be757d706cd04ca55fcc6aff1c956, type: 3}
+    columnSpan: 1
+    PageSFX: {fileID: 0}
+  - comicImage: {fileID: 21300000, guid: f6b3d67000573a54cbd5112c3350e880, type: 3}
+    columnSpan: 1
+    PageSFX: {fileID: 0}
+  - comicImage: {fileID: 21300000, guid: 3d741098bcd23ce418a15876dbefb5f7, type: 3}
+    columnSpan: 1
+    PageSFX: {fileID: 0}
+  BackgroundMusic: {fileID: 8300000, guid: 400fb0682808f8446bcc06673eae8f4f, type: 3}
+  NextGameSceneName: Start_Scene
