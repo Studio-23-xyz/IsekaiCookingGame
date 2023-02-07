@@ -4,16 +4,18 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Linq;
 
-public class FoodListUI : MonoBehaviour
+public class ShopUI : MonoBehaviour
 {
     [SerializeField] private InputField searchInputField;
     [SerializeField] private Dropdown categoryDropdown;
     [SerializeField] private Dropdown flavorDropdown;
     [SerializeField] private Transform contentParent;
-    [SerializeField] private FoodDisplay prefabFoodDisplay;
+    [SerializeField] private ShopItemUI prefabShopItemUI;
 
     private List<FoodItem> foodItems;
-    private List<FoodDisplay> foodDisplays = new List<FoodDisplay>();
+    private List<ShopItemUI> foodDisplays = new List<ShopItemUI>();
+
+    [SerializeField] private CartUIBehaviour _cartUIBehaviour;
 
     private void Start()
     {
@@ -60,7 +62,7 @@ public class FoodListUI : MonoBehaviour
 
          
         // Clear existing food displays
-        foreach (FoodDisplay foodDisplay in foodDisplays)
+        foreach (ShopItemUI foodDisplay in foodDisplays)
         {
             Destroy(foodDisplay.gameObject);
         }
@@ -69,9 +71,18 @@ public class FoodListUI : MonoBehaviour
         // Create new food displays
         foreach (FoodItem foodItem in filteredFoodItems)
         {
-            FoodDisplay foodDisplay = Instantiate(prefabFoodDisplay, contentParent);
-            foodDisplay.LoadFoodDisplay(foodItem);
-            foodDisplays.Add(foodDisplay);
+            ShopItemUI shopItemUI = Instantiate(prefabShopItemUI, contentParent);
+            shopItemUI.LoadFoodDisplay(foodItem);
+            
+            shopItemUI.OnFoodItemClick += OnFoodItemClick;
+            
+            foodDisplays.Add(shopItemUI);
         }
+    }
+
+    private void OnFoodItemClick(FoodItem fooditem)
+    {
+        _cartUIBehaviour.cart.AddItem(fooditem);
+      
     }
 }
