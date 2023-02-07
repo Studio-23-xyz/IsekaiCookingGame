@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Flame Leaf
   m_EditorClassIdentifier: 
   weight: 0.05
-  name: Flame Leaf
+  foodName: Flame Leaf
   price: 5
   category: 3
   flavorValue:

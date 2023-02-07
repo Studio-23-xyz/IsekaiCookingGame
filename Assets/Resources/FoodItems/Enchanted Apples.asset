@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Enchanted Apples
   m_EditorClassIdentifier: 
   weight: 0.2
-  name: Enchanted Apples
+  foodName: Enchanted Apples
   price: 10
   category: 6
   flavorValue:

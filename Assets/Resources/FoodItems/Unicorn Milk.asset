@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Unicorn Milk
   m_EditorClassIdentifier: 
   weight: 1
-  name: Unicorn Milk
+  foodName: Unicorn Milk
   price: 45
   category: 4
   flavorValue:

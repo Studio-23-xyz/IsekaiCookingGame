@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Shadowshrooms
   m_EditorClassIdentifier: 
   weight: 0.5
-  name: Shadowshrooms
+  foodName: Shadowshrooms
   price: 15
   category: 2
   flavorValue:

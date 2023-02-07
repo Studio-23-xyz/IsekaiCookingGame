@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dragon Meat
   m_EditorClassIdentifier: 
   weight: 2
-  name: Dragon Meat
+  foodName: Dragon Meat
   price: 50
   category: 0
   flavorValue:

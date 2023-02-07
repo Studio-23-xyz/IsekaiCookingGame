@@ -54,7 +54,7 @@ public class Dish : MonoBehaviour
     private string GetDishName()
     {
         Flavor primaryFlavor = flavors.OrderByDescending(flavor => flavor.Value).First();
-        string dishName = $"{primaryFlavor.Name} {foodItems[0].name} with {foodItems[1].name}";
+        string dishName = $"{primaryFlavor.Name} {foodItems[0].foodName} with {foodItems[1].foodName}";
         return dishName;
     }
 }

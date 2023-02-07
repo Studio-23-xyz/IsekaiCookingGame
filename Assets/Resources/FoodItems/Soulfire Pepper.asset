@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Soulfire Pepper
   m_EditorClassIdentifier: 
   weight: 0.05
-  name: Soulfire Pepper
+  foodName: Soulfire Pepper
   price: 5
   category: 3
   flavorValue:

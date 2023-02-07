@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Fairy Dust
   m_EditorClassIdentifier: 
   weight: 0.1
-  name: Fairy Dust
+  foodName: Fairy Dust
   price: 10
   category: 3
   flavorValue:

@@ -39,7 +39,7 @@ public class FoodItemEditor : EditorWindow
         FoodItem[] foodItems = FoodItem.FromCSV(csvInput);
         foreach (FoodItem foodItem in foodItems)
         {
-            string assetPath = path + "/" + foodItem.name + ".asset";
+            string assetPath = path + "/" + foodItem.foodName + ".asset";
             FoodItem existingFoodItem = AssetDatabase.LoadAssetAtPath<FoodItem>(assetPath);
             if (existingFoodItem == null)
             {
@@ -47,7 +47,7 @@ public class FoodItemEditor : EditorWindow
             }
             else
             {
-                EditorUtility.DisplayDialog("Asset Already Exists", "An asset with the name '" + foodItem.name + "' already exists at the path '" + assetPath + "'. Skipping.", "OK");
+                EditorUtility.DisplayDialog("Asset Already Exists", "An asset with the foodName '" + foodItem.foodName + "' already exists at the path '" + assetPath + "'. Skipping.", "OK");
             }
         }
 

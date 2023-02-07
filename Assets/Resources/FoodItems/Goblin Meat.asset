@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Goblin Meat
   m_EditorClassIdentifier: 
   weight: 1
-  name: Goblin Meat
+  foodName: Goblin Meat
   price: 35
   category: 0
   flavorValue:

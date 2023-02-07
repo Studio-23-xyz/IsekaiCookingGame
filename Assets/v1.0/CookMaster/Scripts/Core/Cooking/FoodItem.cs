@@ -4,7 +4,7 @@ using UnityEngine;
 public class FoodItem : ScriptableObject
 {
     public float weight;
-    public string name;
+    public string foodName;
     public float price;
     public FoodCategory category;
     public Flavor flavorValue;
@@ -21,7 +21,7 @@ public class FoodItem : ScriptableObject
             foodItems[i - 1] = new FoodItem
             {
                 weight = float.Parse(fields[1]),
-                name = fields[0],
+                foodName = fields[0],
                 price = float.Parse(fields[2]),
                 category = (FoodCategory)System.Enum.Parse(typeof(FoodCategory), fields[3]),
                 flavorValue = new Flavor

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Stormcloud Wheat
   m_EditorClassIdentifier: 
   weight: 1
-  name: Stormcloud Wheat
+  foodName: Stormcloud Wheat
   price: 10
   category: 5
   flavorValue:
