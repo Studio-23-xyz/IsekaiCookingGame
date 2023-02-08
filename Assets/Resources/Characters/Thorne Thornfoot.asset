@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7081c6dddf5f00547851ac8ee5c78678, type: 3}
+  m_Name: Thorne Thornfoot
+  m_EditorClassIdentifier: 
+  Name: Thorne Thornfoot
+  Race: Gnome
+  Occupation: Carpenter
+  Backstory: 'Thorne Thornfoot was born and raised in a small gnomish village where
+    carpentry and woodworking were passed down from generations. His love for crafting
+    and building started from a young age, and he showed remarkable talent in carving
+    and constructing intricate wooden items. As he grew up, he honed his skills and
+    became known as the best carpenter in the village.
+
+
+    However, Thorne was
+    never content with staying in one place and wanted to explore the world and meet
+    new people. He left his village to seek out new opportunities and to find a place
+    where he could truly make a difference with his skills.
+
+
+    He traveled far
+    and wide, offering his carpentry services to anyone in need. Thorne''s reputation
+    as a skilled carpenter precedes him, and his work speaks for itself. He''s known
+    for creating beautiful, high-quality pieces, each one unique and with its own
+    story to tell.
+
+
+    Despite the challenges and obstacles he faced along the
+    way, Thorne never lost his passion for his craft. He eventually settled in a
+    bustling city, where he opened up his own carpentry shop, attracting customers
+    from all walks of life. Thorne has become a respected member of the community
+    and continues to produce stunning works of art with his hands.'
+  DishPreferences: []

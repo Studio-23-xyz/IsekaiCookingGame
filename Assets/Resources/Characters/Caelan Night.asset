@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7081c6dddf5f00547851ac8ee5c78678, type: 3}
+  m_Name: Caelan Night
+  m_EditorClassIdentifier: 
+  Name: Caelan Night
+  Race: Orc
+  Occupation: Farmer/Herbalist
+  Backstory: 'Caelan Night was born in a remote orc farming village, surrounded by
+    lush forests and rolling hills. From a young age, he was fascinated by the world
+    of herbs and plants, and took up farming as a way to learn more about them. Caelan
+    was particularly skilled at growing and harvesting rare and exotic plants, which
+    he would then sell to wealthy buyers who sought their therapeutic and magical
+    properties.
+
+
+    However, as he grew older, Caelan became disillusioned with
+    the limitations placed on him as a farmer. He yearned for adventure and excitement,
+    and was not content to spend the rest of his life tending the same fields. Thus,
+    he began to explore the darker side of the herb trade, operating in secret as
+    a black market trader. He would acquire and sell exotic plants that were either
+    banned or highly illegal, and often had to use his cunning and wit to evade the
+    authorities.
+
+
+    Despite the danger, Caelan found that he enjoyed the thrill
+    of his double life. He quickly became one of the most sought-after traders in
+    the black market, and gained a reputation for his discerning eye and unrivaled
+    knowledge of herbs. However, as he grew more successful, Caelan also grew more
+    arrogant. He began to take greater risks, and eventually drew the attention of
+    the local authorities.
+
+
+    Caelan was eventually caught, and was faced with
+    the prospect of a lifetime in prison. However, he was offered a deal: work as
+    a spy for the authorities, using his connections in the black market to gather
+    information about other traders and smugglers. Caelan accepted the offer, and
+    became a double agent, playing both sides against each other and using his knowledge
+    of the herb trade to his advantage.
+
+
+    Now, Caelan continues to work as a
+    farmer by day and a black market trader by night. He is torn between his desire
+    for adventure and his loyalty to his people. Despite his often villainous intentions,
+    Caelan is driven by a fierce sense of justice and a love for the natural world,
+    and will stop at nothing to protect it.'
+  DishPreferences: []

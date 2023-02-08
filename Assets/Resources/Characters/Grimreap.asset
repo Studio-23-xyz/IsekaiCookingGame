@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7081c6dddf5f00547851ac8ee5c78678, type: 3}
+  m_Name: Grimreap
+  m_EditorClassIdentifier: 
+  Name: Grimreap
+  Race: Undead
+  Occupation: Merchant
+  Backstory: Grimreap was once a successful merchant, traveling the lands and trading
+    goods with various races. However, one fateful day, he was ambushed by bandits
+    and murdered for his wealth. He was resurrected as a revenant and now, he uses
+    his newfound powers to exact his revenge on those who wronged him and to continue
+    his merchant trade. Despite his undead state, Grimreap still possesses a human-like
+    demeanor and a love for wealth, but the darkness and anger from his death still
+    linger within him, often making him unpredictable and feared by those who cross
+    his path. He sees himself as a being beyond the laws of life and death, and continues
+    his business dealings with an iron fist, striking fear into the hearts of those
+    who dare cheat him.
+  DishPreferences: []

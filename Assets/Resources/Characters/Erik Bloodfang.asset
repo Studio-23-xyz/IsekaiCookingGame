@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7081c6dddf5f00547851ac8ee5c78678, type: 3}
+  m_Name: Erik Bloodfang
+  m_EditorClassIdentifier: 
+  Name: Erik Bloodfang
+  Race: Nord
+  Occupation: Warrior
+  Backstory: 'Erik Bloodfang was born in a small Nordic village, known for its strong
+    and fierce warriors. Despite his name, Erik had an odd and bubbly personality,
+    always joking around and making light of any situation. However, this happy-go-lucky
+    demeanor belied a deep inner strength and skill in combat.
+
+
+    As a child,
+    Erik showed a remarkable talent for fighting and quickly became known as one
+    of the most promising young warriors in the village. He trained tirelessly every
+    day, honing his skills and developing his strength. Despite his lighthearted
+    nature, he was always the first to jump into battle, eager to prove himself and
+    defend his people.
+
+
+    As Erik grew older, he became known as one of the most
+    powerful warriors in the land. He was feared and respected by all who knew him,
+    and his reputation as a fierce warrior spread far and wide. Despite his fearsome
+    reputation, however, Erik remained the same jovial and carefree individual that
+    he had always been, always making friends and spreading joy wherever he went.
+
+
+    However,
+    Erik''s uneven power often made him the target of jealous rivals and dangerous
+    enemies. He was forced to constantly be on guard, always ready for a fight, but
+    never losing his positive outlook on life. He was a true warrior in every sense
+    of the word, and his bravery and selflessness inspired those around him to be
+    the best that they could be.'
+  DishPreferences: []

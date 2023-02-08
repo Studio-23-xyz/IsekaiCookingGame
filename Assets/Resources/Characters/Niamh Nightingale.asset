@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7081c6dddf5f00547851ac8ee5c78678, type: 3}
+  m_Name: Niamh Nightingale
+  m_EditorClassIdentifier: 
+  Name: Niamh Nightingale
+  Race: Elf
+  Occupation: Singer/Bard
+  Backstory: 'Niamh Nightingale was born into a family of renowned bards and musicians
+    in a small elven village. From a young age, she displayed a natural talent for
+    singing and playing instruments, and her parents encouraged her to pursue a career
+    in music.
+
+
+    Niamh quickly became a sensation in the elven community, performing
+    at various festivals and events. Her beautiful voice and charming personality
+    soon caught the attention of royalty and nobles, who invited her to perform at
+    their courts.
+
+
+    However, Niamh''s rise to fame was not without its challenges.
+    Despite her talent and charm, some members of the elven community were wary of
+    her sudden success and accused her of using magic to enhance her performances.
+
+
+    Undeterred,
+    Niamh set out to prove her doubters wrong by embarking on a dangerous journey
+    to the heart of the elven forests, where she hoped to find a powerful magical
+    artifact that would allow her to perform the greatest bardic performance in elven
+    history.
+
+
+    After many trials and tribulations, Niamh finally found the artifact
+    and used it to give the performance of her lifetime. The entire kingdom was awed
+    by her talent, and she was finally able to prove to her detractors that her success
+    was based solely on her hard work and natural talent.
+
+
+    With her reputation
+    as a legendary bard secure, Niamh continues to travel the land, performing for
+    crowds and spreading joy wherever she goes. Despite her fame and success, however,
+    she remains humble and grateful for the opportunities that have come her way,
+    and is always eager to help those in need.'
+  DishPreferences: []

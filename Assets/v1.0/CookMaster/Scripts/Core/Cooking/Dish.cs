@@ -6,6 +6,13 @@ using UnityEngine;
 [Serializable]
 public class Dish
 {
+    public Dish()
+    {
+        FoodItems = new Dictionary<FoodItem, int>();
+        Flavors = new List<Flavor>();
+        Categories = new List<FoodCategory>();
+    }
+
     public Dictionary<FoodItem, int> FoodItems;
     public float Weight;
     public List<Flavor> Flavors;
@@ -15,6 +22,8 @@ public class Dish
     public string Name;
 
     [ContextMenu("Cook")]
+   
+   
     public void Cook()
     {
         CalculateWeight();
@@ -24,6 +33,7 @@ public class Dish
         Name = GetDishName();
     }
 
+    
     private void CalculateWeight()
     {
         Weight = FoodItems.Sum(item => item.Key.weight * item.Value);
@@ -60,11 +70,13 @@ public class Dish
         BasePrice = FoodItems.Sum(item => item.Key.price * item.Value);
     }
 
+  
+    
     private string GetDishName()
     {
         Flavor primaryFlavor = Flavors.OrderByDescending(flavor => flavor.Value).First();
-        FoodItem mainIngredient = FoodItems.First().Key;
-        string dishName = $"{primaryFlavor.Name} {mainIngredient.foodName}";
+        var foodItemsList = FoodItems.Keys.ToList();
+        string dishName = $"{primaryFlavor.Name} {foodItemsList[0].foodName} with {foodItemsList[1].foodName}";
         return dishName;
     }
 }

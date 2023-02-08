@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7081c6dddf5f00547851ac8ee5c78678, type: 3}
+  m_Name: Aiden VonFlame
+  m_EditorClassIdentifier: 
+  Name: Aiden VonFlame
+  Race: Human
+  Occupation: Knight
+  Backstory: 'Aiden was born into a prestigious knightly family and was groomed from
+    a young age to follow in their footsteps. Growing up, he was fascinated by the
+    stories of Reinhard van Astrea and aspired to be like him. He trained rigorously,
+    honing his swordsmanship and physical abilities to become a formidable warrior.
+
+
+    However,
+    Aiden''s life took a tragic turn when he lost his entire family to a mysterious
+    illness that swept through their kingdom. Devastated and alone, Aiden vowed to
+    honor his family''s legacy by dedicating himself to the protection of his people.
+
+
+    Aiden
+    quickly rose through the ranks and soon became one of the kingdom''s most respected
+    knights. His skill in combat, coupled with his unwavering sense of justice, earned
+    him the title of "Aiden the Brave" among the people.
+
+
+    Despite his success,
+    Aiden remains haunted by the loss of his family and is driven by a deep sense
+    of vengeance against whoever or whatever was responsible for their deaths. He
+    may be a knight, but he is not above using his skills for personal gain if it
+    means getting closer to the truth.
+
+
+    Aiden''s unwavering determination and
+    fierce loyalty make him a formidable ally, but also a dangerous enemy to those
+    who cross him.'
+  DishPreferences: []

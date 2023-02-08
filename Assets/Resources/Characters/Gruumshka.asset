@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7081c6dddf5f00547851ac8ee5c78678, type: 3}
+  m_Name: Gruumshka
+  m_EditorClassIdentifier: 
+  Name: Gruumshka
+  Race: Half-Orc
+  Occupation: Archer/Alchemist
+  Backstory: 'Growing up, Gruumshka was always different from the other Half-Orcs.
+    Unlike most Half-Orcs who were brutish and prone to violence, Niamh was quiet
+    and reserved. Despite her differences, she was still subjected to the same prejudices
+    and bigotry that plagued her people. This led to a life of hardship and poverty,
+    where she was constantly on the receiving end of violence and discrimination.
+
+
+    Despite
+    all of this, Gruumshka was a quick learner and soon discovered her talent for
+    archery and alchemy. She began to hone her skills, using her talents to make
+    a living for herself and her family. However, tragedy struck when Gruumshka''s
+    family was killed by a group of humans who saw them as nothing more than monsters.
+
+
+    This
+    event was the turning point in Gruumshka''s life. She was filled with rage and
+    a thirst for revenge against the humans who had taken everything from her. She
+    threw herself into her studies of alchemy and archery, using her knowledge to
+    create potent poisons and deadly arrows. With these tools, she began to exact
+    her revenge on those who had wronged her and her kin.
+
+
+    Gruumshka''s actions
+    soon attracted the attention of the local authorities, who branded her as a ruthless
+    killer. She was forced to go into hiding, turning to the black market and becoming
+    a mercenary for hire. Gruumshka''s once-gentle nature was now a distant memory,
+    replaced by a cold-hearted determination to get revenge on all who wronged her
+    kind.'
+  DishPreferences: []

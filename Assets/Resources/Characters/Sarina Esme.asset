@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7081c6dddf5f00547851ac8ee5c78678, type: 3}
+  m_Name: Sarina Esme
+  m_EditorClassIdentifier: 
+  Name: Sarina Esme
+  Race: Half-Elf, Half-Vampire
+  Occupation: Nightclub Owner
+  Backstory: 'Sarina Shadowmoon was born to a half-elf, half-vampire mother, giving
+    her unique traits from both her parents'' species. Growing up, Sarina struggled
+    with her identity and feeling like she didn''t fully belong in either world.
+
+
+    As
+    she grew older, Sarina discovered her love for the nightlife and the energy of
+    the city after hours. She saw an opportunity to create a place where people from
+    all walks of life could come together, regardless of their differences.
+
+
+    Sarina
+    used her business acumen and her connection to the vampire community to open
+    up a nightclub, becoming one of the most successful nightclub owners in the city.
+    Her club was known for its inclusive atmosphere and its eclectic mix of music
+    and entertainment, attracting a diverse clientele.
+
+
+    However, her success
+    was not without its challenges. Sarina had to navigate the challenges of being
+    a half-vampire, hiding her true nature from the public and avoiding drawing unwanted
+    attention to herself and her club.
+
+
+    Despite the difficulties, Sarina remained
+    steadfast in her mission to create a safe and inclusive space for all. She used
+    her powers to enhance the atmosphere of her club, creating an otherworldly ambiance
+    that only added to its appeal.
+
+
+    Sarina''s nightclub became a hub for the
+    city''s underground scene, and she was respected and loved by her patrons, who
+    saw her as a beacon of hope in a world that often rejected those who were different.
+    Sarina may have been a half-elf, half-vampire, but she was determined to show
+    the world that love and acceptance knows no bounds.'
+  DishPreferences: []

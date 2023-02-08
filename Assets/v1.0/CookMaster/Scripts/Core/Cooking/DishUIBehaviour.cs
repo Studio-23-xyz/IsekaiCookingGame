@@ -1,6 +1,8 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DishUIBehaviour : MonoBehaviour
 {
@@ -8,12 +10,16 @@ public class DishUIBehaviour : MonoBehaviour
     public DishIngredientUIBehaviour secondaryIngredient;
     public List<DishIngredientUIBehaviour> optionalIngredients;
 
-    private Dish dish;
+    [SerializeField]private Dish dish;
+    [SerializeField] private Button cookButton;
+    private void Awake()
+    {
+        cookButton.onClick.AddListener(Cook);
+    }
 
     public void Cook()
     {
         dish = new Dish();
-
         AddIngredientsToDish();
         dish.Cook();
     }
@@ -33,6 +39,14 @@ public class DishUIBehaviour : MonoBehaviour
     {
        FoodItem foodItem = ingredient.FoodItemWithAmount.Keys.First();
        int  count = ingredient.FoodItemWithAmount[foodItem];
-       dish.FoodItems[foodItem] += count;
+       if (dish.FoodItems.ContainsKey(foodItem))
+       {
+           dish.FoodItems[foodItem] += count;
+       }
+       else
+       {
+           dish.FoodItems.Add(foodItem, 1);
+       }
+       
     }
 }

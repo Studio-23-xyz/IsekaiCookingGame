@@ -1,42 +1,66 @@
-using UnityEngine;
+using System.IO;
 using UnityEditor;
-using Newtonsoft.Json.Linq;
+using UnityEngine;
+using Newtonsoft.Json;
 
 public class CharacterDataImporterEditor : EditorWindow
 {
-    [MenuItem("Tools/Import Character Data")]
-    public static void ImportData()
+    private string _filePath;
+    [MenuItem("Window/Import Character Data")]
+    private static void ShowWindow()
     {
-        string csvString = " ";
-        ImportDataFromString(csvString);
+        GetWindow<CharacterDataImporterEditor>("Import Character Data");
     }
 
-    private static void ImportDataFromString(string csvString)
+    private void OnGUI()
     {
-        string[] lines = csvString.Split('\n');
-        string[] header = lines[0].Split(',');
-        for (int i = 1; i < lines.Length; i++)
+        GUILayout.Label("File Path", EditorStyles.boldLabel);
+        _filePath = EditorGUILayout.TextField("", _filePath);
+
+        if (GUILayout.Button("Import"))
         {
-            string[] fields = lines[i].Split(',');
-            JObject obj = new JObject();
-            for (int j = 0; j < header.Length; j++)
+            ImportCharacterData();
+        }
+    }
+
+    private void ImportCharacterData()
+    {
+        if (string.IsNullOrEmpty(_filePath))
+        {
+            Debug.LogError("File path is empty");
+            return;
+        }
+
+        if (!File.Exists(_filePath))
+        {
+            Debug.LogError("File does not exist");
+            return;
+        }
+
+        string fileContent = File.ReadAllText(_filePath);
+        CharacterData[] characterDataArray = JsonConvert.DeserializeObject<CharacterData[]>(fileContent);
+
+        string resourcePath = "Assets/Resources/Characters/";
+        if (!Directory.Exists(resourcePath))
+        {
+            Directory.CreateDirectory(resourcePath);
+        }
+
+        foreach (CharacterData characterData in characterDataArray)
+        {
+            string assetPath = resourcePath + characterData.Name + ".asset";
+
+            if (AssetDatabase.LoadAssetAtPath<CharacterData>(assetPath) != null)
             {
-                obj[header[j]] = fields[j];
+                Debug.LogWarning("Character Data asset already exists, skipping: " + characterData.Name);
+                continue;
             }
 
-            string name = obj["Name"].ToString();
-            string race = obj["Race"].ToString();
-            string occupation = obj["Occupation"].ToString();
-            string backstory = obj["Backstory"].ToString();
-
-            CharacterData characterData = ScriptableObject.CreateInstance<CharacterData>();
-            characterData.Name = name;
-            characterData.Race = race;
-            characterData.Occupation = occupation;
-            characterData.Backstory = backstory;
-
-            string path = "Assets/Resources/CharacterData/" + name + ".asset";
-            AssetDatabase.CreateAsset(characterData, path);
+            AssetDatabase.CreateAsset(characterData, assetPath);
+            characterData.CreateRandomDishPreferences();
         }
+
+        AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh();
     }
 }

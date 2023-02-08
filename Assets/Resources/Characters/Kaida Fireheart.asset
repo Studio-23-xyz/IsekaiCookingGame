@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7081c6dddf5f00547851ac8ee5c78678, type: 3}
+  m_Name: Kaida Fireheart
+  m_EditorClassIdentifier: 
+  Name: Kaida Fireheart
+  Race: Demon
+  Occupation: Necromancer
+  Backstory: 'Kaida Fireheart was a demon with a unique backstory. Despite being
+    born into the world of demons, he had always felt a pull towards the good and
+    had a deep desire to help those in need. This inner conflict led him to become
+    a Necromancer, using his powers to raise the dead for the purpose of healing
+    and protecting the living.
+
+
+    Growing up, Kaida struggled with his demonic
+    heritage, often feeling like an outsider among his own kind. It was only when
+    he discovered his necromancy abilities that he finally found a sense of purpose
+    and belonging.
+
+
+    Kaida was determined to use his powers for good and to prove
+    that demons were not all evil. He quickly gained a reputation as a benevolent
+    Necromancer, using his abilities to help those in need and protect the innocent.
+    This earned him the title of "The Guardian of the Dead".
+
+
+    Despite his good
+    intentions, Kaida was often met with suspicion and mistrust. People feared his
+    powers and believed that a demon could never truly be good. Despite the challenges
+    he faced, Kaida remained steadfast in his beliefs, determined to show the world
+    that even demons had the capacity for good.
+
+
+    With his newfound sense of
+    purpose, Kaida embraced his last name of Fireheart, symbolizing his burning passion
+    to use his powers for good and to protect those in need. He became known as Kaida
+    Fireheart, the Demon Necromancer who fought for the greater good, defying the
+    expectations of those who believed demons were evil.'
+  DishPreferences: []

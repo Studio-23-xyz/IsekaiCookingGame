@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7081c6dddf5f00547851ac8ee5c78678, type: 3}
+  m_Name: Zara Eros
+  m_EditorClassIdentifier: 
+  Name: Zara Eros
+  Race: Succubus
+  Occupation: Cook/Chef
+  Backstory: 'Zara Stormborn, a succubus, lived a life of temptation and seduction,
+    using her powers to feed on the desires of mortals. However, everything changed
+    when she met Azura Moonstone. Azura''s grace and beauty captured Zara''s heart
+    and she fell deeply in love with her. However, she knew that as a succubus, she
+    was not meant for love. But she could not control her feelings and decided to
+    win Azura''s affection by becoming a cook and chef, hoping to impress her with
+    her culinary skills.
+
+
+    She spent years perfecting her craft and even went
+    as far as to abandon her succubus ways, but she soon realizes that winning Azura''s
+    heart won''t be easy, especially with the player trying to beat her to it. Regardless,
+    Zara remains determined and is willing to do anything to make Azura hers, even
+    if it means going back to her old ways and using her powers of seduction to her
+    advantage.'
+  DishPreferences: []

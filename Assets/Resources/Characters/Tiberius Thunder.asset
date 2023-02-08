@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7081c6dddf5f00547851ac8ee5c78678, type: 3}
+  m_Name: Tiberius Thunder
+  m_EditorClassIdentifier: 
+  Name: Tiberius Thunder
+  Race: Giant
+  Occupation: Stone Mason
+  Backstory: 'Tiberius Thunder, a giant, lived a peaceful life in the mountains,
+    using his immense strength to craft intricate structures from stone. Despite
+    his intimidating appearance, Tiberius was a gentle soul, who used his skills
+    to create beautiful structures for the communities nearby.
+
+
+    Growing up,
+    Tiberius was often bullied for his size, and he turned to stone masonry as a
+    form of escape. He found solace in the creation of something beautiful, and soon
+    his work became renowned for its intricate design and impressive scale. Tiberius
+    was happy with his life as a stone mason, and his kindness and generosity made
+    him well-loved by all those he worked with.
+
+
+    However, his life changed when
+    he was approached by a group of dwarves who were in need of his help. Their kingdom
+    was being threatened by an evil sorcerer who sought to destroy it, and they needed
+    Tiberius'' strength to help protect it. Tiberius was reluctant at first, but
+    he could not turn his back on those in need, and so he agreed to help.
+
+
+    Using
+    his massive size and strength, Tiberius was able to protect the kingdom, and
+    his bravery earned him the respect of all those he had helped. From that day
+    on, Tiberius was no longer seen as a simple stone mason, but as a hero and protector.
+
+
+    Despite
+    his newfound status, Tiberius remained humble, and he continued to work as a
+    stone mason, using his skills to help those in need. He became known as Tiberius
+    Thunder, a giant who used his strength not for destruction, but for creation
+    and protection. His gentle spirit and selflessness earned him a place in the
+    hearts of all those he encountered, and he continued to live a life of peace
+    and purpose, carving beauty from stone and defending those in need.'
+  DishPreferences: []

@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7081c6dddf5f00547851ac8ee5c78678, type: 3}
+  m_Name: Talon Windrider
+  m_EditorClassIdentifier: 
+  Name: Talon Windrider
+  Race: Elf
+  Occupation: Archer/Mercenary
+  Backstory: 'Talon Windrider grew up in a small elven village nestled in the heart
+    of a forest. From a young age, Talon showed a natural talent for archery and
+    a love for adventure. However, life in the village was peaceful and mundane,
+    and Talon longed for excitement and challenge.
+
+
+    One day, a group of mercenary
+    archers came to the village, seeking new members to join their cause. Talon saw
+    this as an opportunity to leave the village and pursue the life of an adventurer.
+    He joined the mercenary group and quickly became one of their top archers, using
+    his skills to defend travelers and protect the weak.
+
+
+    Despite his success,
+    Talon still felt unfulfilled. He yearned for more thrilling adventures and greater
+    challenges. This desire eventually led him to leave the mercenary group and venture
+    out on his own as a freelance archer, taking on the most dangerous and difficult
+    missions.
+
+
+    Over time, Talon became known as one of the greatest archers
+    in the land, feared and respected by all who knew of him. However, he remained
+    a solitary figure, always searching for the next great adventure and never staying
+    in one place for too long.'
+  DishPreferences: []

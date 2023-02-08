@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7081c6dddf5f00547851ac8ee5c78678, type: 3}
+  m_Name: Keira Darkclaw
+  m_EditorClassIdentifier: 
+  Name: Keira Darkclaw
+  Race: Human
+  Occupation: Mage/Royal Advisor
+  Backstory: 'Keira was born into a family of mages and was trained in the arcane
+    arts from a young age. She was always fascinated by the power of magic and was
+    determined to become a powerful mage herself. Despite her humble beginnings,
+    she quickly rose through the ranks of the mage community and was eventually offered
+    a position as a royal advisor.
+
+
+    However, Keira''s thirst for power and her
+    tendency to make decisions that favored her own interests over the kingdom''s
+    led to her being branded as a power-hungry and manipulative individual. She soon
+    found herself on the outs with the royal court, but instead of backing down,
+    Keira doubled down on her ambition.
+
+
+    She began to use her mastery of magic
+    to gather information and manipulate those around her, until she had regained
+    her place as a royal advisor. But Keira''s methods were not always honorable,
+    and she soon found herself with more enemies than friends.
+
+
+    Despite the
+    danger, Keira refused to give up her position of power. She believed that she
+    was meant to rule and would stop at nothing to see her ambitions fulfilled. Whether
+    she is a villain or a hero remains to be seen, but one thing is certain, Keira
+    Darkclaw is not someone to be trifled with.'
+  DishPreferences: []

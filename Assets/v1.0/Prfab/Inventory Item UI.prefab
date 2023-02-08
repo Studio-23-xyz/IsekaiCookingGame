@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 927160377727326865}
   - component: {fileID: 927160377727326864}
   - component: {fileID: 7059220246125569472}
-  - component: {fileID: 6595741499659129946}
   - component: {fileID: 6595741499659129945}
   m_Layer: 5
   m_Name: Inventory Item UI
@@ -95,20 +94,7 @@ MonoBehaviour:
   itemButton: {fileID: 8035427623296639185}
   itemName: {fileID: 8035427625068248029}
   itemCount: {fileID: 8035427624985187231}
-  Item: {fileID: 0}
---- !u!114 &6595741499659129946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 927160377727326877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3179c943a8f301c4680faf87450ecd11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rectTransform: {fileID: 927160377727326878}
+  FoodItem: {fileID: 0}
   canvasGroup: {fileID: 6595741499659129945}
 --- !u!225 &6595741499659129945
 CanvasGroup:
@@ -436,7 +422,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8035427624675424124
 RectTransform:
   m_ObjectHideFlags: 0

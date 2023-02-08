@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7081c6dddf5f00547851ac8ee5c78678, type: 3}
+  m_Name: Anubis Jackal
+  m_EditorClassIdentifier: 
+  Name: Anubis Jackal
+  Race: Human-Animal Hybrid
+  Occupation: Adventurer
+  Backstory: 'Anubis Jackal was born to a human mother and a father who was a jackal-headed
+    deity in ancient Egyptian mythology. Growing up, Anubis struggled with fitting
+    in among both humans and animals, feeling like he didn''t belong to either group.
+    He was constantly teased and bullied by other children for his unique appearance,
+    causing him to become reclusive and reserved.
+
+
+    Despite this, Anubis had
+    a natural curiosity and thirst for adventure that led him to leave his hometown
+    in search of a place where he truly belonged. Along the way, he honed his physical
+    abilities and developed a keen sense of survival, relying on his wit and cunning
+    to overcome challenges.
+
+
+    As he travelled the world, Anubis discovered that
+    he had a talent for solving mysteries and uncovering secrets, which led him to
+    become an adventurer. He quickly gained a reputation as a fearless and tenacious
+    investigator, willing to take on any task no matter how dangerous.
+
+
+    Despite
+    his success, Anubis still felt like an outsider, never quite able to shake the
+    feeling of not belonging. He found solace in his work as an adventurer, knowing
+    that he was helping others and making a difference in the world.
+
+
+    Despite
+    his gruff exterior, Anubis has a kind heart and a strong sense of justice. He
+    is always willing to lend a helping hand to those in need and will stop at nothing
+    to protect the innocent. Despite his tough exterior, he has a soft spot for children
+    and animals, often going out of his way to make them smile.'
+  DishPreferences: []

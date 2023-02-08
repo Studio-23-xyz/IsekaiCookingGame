@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7081c6dddf5f00547851ac8ee5c78678, type: 3}
+  m_Name: Ivan Iceheart
+  m_EditorClassIdentifier: 
+  Name: Ivan Iceheart
+  Race: Human
+  Occupation: Fisherman/Trader
+  Backstory: 'Ivan Iceheart was born in a small coastal village, surrounded by the
+    harsh, unforgiving sea. Despite the tough environment, he was a cheerful and
+    hardworking child, who often helped his parents with their fishing business.
+    However, Ivan''s life took a dramatic turn when his parents were lost at sea
+    during a severe storm. With no one else to turn to, Ivan was forced to fend for
+    himself and take over the family business.
+
+
+    As he grew older, Ivan''s reputation
+    as a skilled fisherman and fair trader began to spread. He became known for his
+    ability to catch the biggest fish in the sea and his unwavering determination
+    to survive. But Ivan''s life was not all sunshine and rainbows. He faced many
+    challenges, including greedy merchants who sought to exploit him and the constant
+    threat of harsh weather and dangerous sea creatures.
+
+
+    Despite the difficulties,
+    Ivan remained optimistic and persevered, using his wits and cunning to overcome
+    any obstacles in his way. He became an expert in negotiating favorable deals,
+    and his business prospered, allowing him to provide for himself and the people
+    he loved.
+
+
+    One day, Ivan was approached by a mysterious figure who offered
+    him a once-in-a-lifetime opportunity to expand his trading empire. The figure
+    promised Ivan wealth beyond his wildest dreams in exchange for his loyalty and
+    services.
+
+
+    Ivan was torn between his desire for wealth and his loyalty to
+    his friends and family. He eventually accepted the offer, not realizing that
+    he was stepping into a dangerous world of politics and manipulation. As he was
+    drawn deeper into the intrigue, Ivan discovered that the figure was a powerful
+    wizard with a hidden agenda.
+
+
+    Now, Ivan is caught in a web of deceit, and
+    he must find a way to free himself and those he loves before it''s too late.
+    He uses his wit and cunning to navigate the dangerous world of politics, all
+    while trying to maintain his moral compass and protect his loved ones from harm.'
+  DishPreferences: []

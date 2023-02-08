@@ -2,32 +2,41 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using TMPro;
+using UnityEngine.EventSystems;
 
-public class InventoryItemUI : MonoBehaviour
+public class InventoryItemUI : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     public Button itemButton;
     public TextMeshProUGUI itemName;
     public TextMeshProUGUI itemCount;
 
-    public FoodItem Item;
+    public FoodItem FoodItem;
 
-
-    private void Start()
-    {
- 
-        itemButton.onClick.AddListener(HandleClick);
-    }
+    [SerializeField] private CanvasGroup canvasGroup;
+   
 
     public void Setup(KeyValuePair<FoodItem, int> item)
     {
-        this.Item = item.Key;
-        itemName.text = Item.foodName;
+        this.FoodItem = item.Key;
+        itemName.text = FoodItem.foodName;
         itemCount.text = item.Value.ToString();
     }
-
-    private void HandleClick()
+    public void OnBeginDrag(PointerEventData eventData)
     {
-        // Fire an event with the food item data
-       
+        canvasGroup.alpha = 0;
+        DragableItem.Instance.Setup(FoodItem, eventData);
+        DragableItem.Instance.OnBeginDrag(eventData);
+    }
+    public void OnDrag(PointerEventData eventData)
+    {
+     //  Debug.Log($"OnDrag!");
+       DragableItem.Instance.OnDrag(eventData);
+    }
+
+    public void OnEndDrag(PointerEventData eventData)
+    {
+        canvasGroup.alpha = 1;
+        DragableItem.Instance.OnEndDrag(eventData);
+       // Debug.Log($"OnEndDrag!");
     }
 }

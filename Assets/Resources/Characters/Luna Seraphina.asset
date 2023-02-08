@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7081c6dddf5f00547851ac8ee5c78678, type: 3}
+  m_Name: Luna Seraphina
+  m_EditorClassIdentifier: 
+  Name: Luna Seraphina
+  Race: Half-Elf
+  Occupation: Poet/Artist
+  Backstory: 'Luna Seraphina was born to an elf mother and a human father in a forest
+    community that prized its connection to nature. Growing up, she was surrounded
+    by the beauty of the forest and learned to appreciate the delicate balance between
+    all living things. Her love of nature manifested in her poetry and art, which
+    often celebrated the majesty of the forest and the creatures that lived there.
+
+
+    However,
+    as Luna grew older, she began to see the destructive impact that humans were
+    having on the natural world. Loggers were destroying entire ecosystems, and people
+    were burning the forests to clear land for agriculture and mining. Luna watched
+    in horror as her beloved home was slowly being destroyed, and she felt helpless
+    to stop it.
+
+
+    One day, Luna came upon a group of humans who were setting
+    fire to a grove of ancient trees. In a fit of rage, she attacked them and used
+    her magic to put out the flames. It was then that she realized that her love
+    of nature and her anger at those who would destroy it could be combined into
+    a powerful force for change.
+
+
+    Luna became a fierce advocate for the protection
+    of the natural world, using her poetry and art as a way to spread her message
+    of environmentalism. But her methods became more and more extreme, and she eventually
+    became known as a terrorist among the human populations. Luna began targeting
+    those she saw as the greatest threats to the natural world, and she became feared
+    and reviled by many.
+
+
+    Despite this, Luna refused to back down from her beliefs.
+    She saw herself as a defender of the natural world and would stop at nothing
+    to protect it, even if it meant becoming a villain in the eyes of those she once
+    loved.'
+  DishPreferences: []

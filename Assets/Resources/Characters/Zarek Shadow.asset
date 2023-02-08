@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7081c6dddf5f00547851ac8ee5c78678, type: 3}
+  m_Name: Zarek Shadow
+  m_EditorClassIdentifier: 
+  Name: Zarek Shadow
+  Race: Werewolf
+  Occupation: Thief
+  Backstory: 'Zarek Shadow lived a life of solitude and hardship, shunned by society
+    due to his werewolf heritage. Born in a small village in the wilderness, Zarek''s
+    parents were killed by a hunter when he was just a child, leaving him to fend
+    for himself. As he grew older, Kalen learned to harness his powers, becoming
+    a skilled hunter and thief, surviving by any means necessary.
+
+
+    However,
+    Zarek''s life took a dark turn when he stumbled upon a group of rogue werewolves
+    who were terrorizing the countryside. Impressed by Zarek''s skills, the leader
+    of the pack offered him a place among their ranks, promising power and wealth
+    in exchange for his loyalty.
+
+
+    Zarek accepted the offer, taking on the new
+    name of Zarek Shadowhunter, and quickly rose through the ranks of the rogue werewolves.
+    However, as he gained more power, Zarek began to question the motives of the
+    leader and the methods used by the pack. Eventually, Zarek realized that he was
+    being used as a pawn in a larger scheme and decided to break away from the pack
+    and strike out on his own.
+
+
+    Using his skills as a rogue and his powers as
+    a werewolf, Zarek became a notorious thief and assassin, using his talents to
+    gather information and eliminate those who posed a threat to him. Despite his
+    reputation, Zarek was still haunted by his past, constantly struggling with his
+    inner demons and the guilt of his actions.
+
+
+    As he roams the land, Zarek
+    remains a mystery, a lone wolf hiding in the shadows, always on the lookout for
+    his next job. But despite his reputation as a ruthless killer, there are those
+    who whisper that Zarek may have a heart of gold hidden beneath his fearsome exterior.'
+  DishPreferences: []

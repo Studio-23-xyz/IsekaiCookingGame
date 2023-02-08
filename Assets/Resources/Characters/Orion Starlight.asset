@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7081c6dddf5f00547851ac8ee5c78678, type: 3}
+  m_Name: Orion Starlight
+  m_EditorClassIdentifier: 
+  Name: Orion Starlight
+  Race: Angel
+  Occupation: Cleric/Healer
+  Backstory: 'Orion Starlight was once a proud and respected angel in the heavenly
+    realms. He was known for his unwavering faith, his healing powers, and his gentle
+    heart. As a cleric and healer, he devoted his life to helping others, using his
+    abilities to ease suffering and bring comfort to those in need.
+
+
+    But one
+    day, tragedy struck. During a battle between the angels and demons, Orion''s
+    powers were put to the test. He tried his best to heal the wounded, but there
+    were too many, and his abilities were not enough. In the end, many of his fellow
+    angels were lost, including some of his closest friends.
+
+
+    The loss weighed
+    heavily on Orion, and he began to question his own worth. He couldn''t understand
+    why he wasn''t strong enough to save everyone. Slowly, he became consumed by
+    grief and self-doubt, and he started to withdraw from the world.
+
+
+    As time
+    passed, Orion''s once pure and virtuous heart became clouded by anger and bitterness.
+    He began to see himself as a failure and felt like he didn''t deserve his place
+    in heaven anymore. Eventually, his negative emotions took over, and he turned
+    to a life of sin, using his powers for personal gain and becoming a rogue cleric.
+
+
+    Now,
+    Orion goes by the name of Gabriel, a common name for angels, but one that he
+    can no longer live up to. He roams the earth, offering his services to those
+    in need, but always with a hidden agenda. Some say he still has the potential
+    for redemption, but only time will tell if he will ever find his way back to
+    the light.'
+  DishPreferences: []

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7081c6dddf5f00547851ac8ee5c78678, type: 3}
+  m_Name: Rhea Thunderbird
+  m_EditorClassIdentifier: 
+  Name: Rhea Thunderbird
+  Race: Phoenix
+  Occupation: Singer/Musician
+  Backstory: 'Rhea Thunderbird was once known as the notorious pirate captain "Rhea
+    the Phoenix." She and her crew roamed the seas, fearlessly plundering ships and
+    hoarding treasure. However, one fateful day, Rhea''s ship was ambushed by a rival
+    pirate crew and her entire crew, including her beloved pet serpent, were killed
+    in the battle.
+
+
+    The loss of her crew and pet weighed heavily on Rhea and
+    she turned to music as a form of solace. Her haunting, beautiful voice soon became
+    renowned throughout the land and she traded in her life as a pirate for one as
+    a singer and musician. Despite her newfound fame and success, Rhea still struggles
+    with the guilt of being unable to save her crew and pet, and the memory of her
+    past life as a pirate haunts her.'
+  DishPreferences: []

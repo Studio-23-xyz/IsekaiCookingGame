@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7081c6dddf5f00547851ac8ee5c78678, type: 3}
+  m_Name: Naiad
+  m_EditorClassIdentifier: 
+  Name: Naiad
+  Race: Water Nymph
+  Occupation: Innkeeper
+  Backstory: 'Naiad was once a free-spirited water nymph who lived in a remote lake
+    surrounded by dense forests. She spent her days swimming, singing, and playing
+    with the creatures of the lake. However, as time passed and civilization started
+    to expand, Naiad found her home being disturbed by humans. Despite her initial
+    skepticism, she soon realized that she was fascinated by their cultures and their
+    music, which led her to venture out into the world.
+
+
+    As she traveled from
+    place to place, she encountered many travelers who were looking for a place to
+    rest and to escape from the trials of their journeys. Inspired by their struggles,
+    Naiad decided to open an inn that would provide shelter, food, and entertainment
+    for these weary souls. With her charm and musical talent, Naiad quickly became
+    a beloved figure among the travelers and her inn became one of the most popular
+    establishments in the land.
+
+
+    Despite her success, Naiad remained humble
+    and kind-hearted. She always went out of her way to help those in need and to
+    spread joy and happiness wherever she went. She was often sought after for her
+    wisdom and her ability to calm even the most troubled souls. To this day, Naiad''s
+    inn remains a haven for travelers who seek respite and comfort on their journeys.'
+  DishPreferences: []

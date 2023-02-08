@@ -8,6 +8,8 @@ using Newtonsoft.Json;
 
 public class InventoryUI : MonoBehaviour
 {
+   
+
     public GameObject inventoryItemPrefab;
     public Transform contentParent;
     public InputField searchInput;
@@ -17,6 +19,13 @@ public class InventoryUI : MonoBehaviour
     private List<GameObject> inventoryItems = new List<GameObject>();
     private InventoryManager inventoryManager => GameManager.Instance.InventoryManager;
 
+
+    private void Awake()
+    {
+        GameManager.Instance.InventoryManager.OnInventoryUpdate += OnInventoryUpdate;
+    }
+
+   
 
     private void Start()
     {
@@ -33,8 +42,8 @@ public class InventoryUI : MonoBehaviour
         flavorDropdown.options.AddRange(Enum.GetNames(typeof(Flavortype)).ToList().Select(x => new Dropdown.OptionData(x.ToString())));
         flavorDropdown.value = 0;
         flavorDropdown.RefreshShownValue();
+
         
-         
         LoadInventoryItems();
         searchInput.onValueChanged.AddListener(delegate {
             FilterItems();
@@ -47,9 +56,17 @@ public class InventoryUI : MonoBehaviour
         });
     }
 
+    
+    private void OnInventoryUpdate()
+    {
+        LoadInventoryItems();
+    }
     private void LoadInventoryItems()
     {
-        Dictionary<FoodItem, int> inventory = inventoryManager.Inventory;
+        contentParent.DestroyAllChildren();
+        inventoryItems = new List<GameObject>();
+        
+        var inventory = GameManager.Instance.InventoryManager.Inventory;
         foreach (KeyValuePair<FoodItem, int> item in inventory)
         {
             GameObject inventoryItem = Instantiate(inventoryItemPrefab, contentParent);
@@ -58,23 +75,39 @@ public class InventoryUI : MonoBehaviour
             inventoryItems.Add(inventoryItem);
         }
     }
+   /* private void ReloadInventoryItem(KeyValuePair<FoodItem, int> _inventory)
+    {
+        foreach (GameObject item in inventoryItems)
+        {
+            InventoryItemUI itemUI = item.GetComponent<InventoryItemUI>();
+            if (itemUI.FoodItem == _inventory.Key)
+            {
+                itemUI.Setup(_inventory);
+            }
+        }
+        
+        
+        
+    }*/
+    
+    
 
     private void FilterItems()
     {
         foreach (GameObject item in inventoryItems)
         {
             InventoryItemUI itemUI = item.GetComponent<InventoryItemUI>();
-            if (categoryDropdown.value > 0 && itemUI.Item.category != (FoodCategory)categoryDropdown.value - 1)
+            if (categoryDropdown.value > 0 && itemUI.FoodItem.category != (FoodCategory)categoryDropdown.value - 1)
             {
                 item.SetActive(false);
                 continue;
             }
-            if (flavorDropdown.value > 0 && itemUI.Item.flavorValue.Name != (Flavortype)flavorDropdown.value - 1)
+            if (flavorDropdown.value > 0 && itemUI.FoodItem.flavorValue.Name != (Flavortype)flavorDropdown.value - 1)
             {
                 item.SetActive(false);
                 continue;
             }
-            if (!itemUI.Item.name.ToLower().Contains(searchInput.text.ToLower()))
+            if (!itemUI.FoodItem.name.ToLower().Contains(searchInput.text.ToLower()))
             {
                 item.SetActive(false);
                 continue;

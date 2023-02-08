@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7081c6dddf5f00547851ac8ee5c78678, type: 3}
+  m_Name: Jasper Stonefist
+  m_EditorClassIdentifier: 
+  Name: Jasper Stonefist
+  Race: Dwarf
+  Occupation: Blacksmith/Armorer
+  Backstory: 'Jasper Stonefist was born and raised in the bustling dwarf city of
+    Ironhollow, known for its skilled blacksmiths and armorers. He was the youngest
+    son of a renowned blacksmith and grew up in the shadow of his older brothers,
+    who were both successful in their own right. Jasper, however, had a passion for
+    blacksmithing and a talent that surpassed even his father''s.
+
+
+    Despite his
+    natural talent, Jasper struggled to make a name for himself in the competitive
+    world of Ironhollow. He often found himself at odds with his brothers, who were
+    jealous of his talent and belittled his ambitions. Determined to prove himself,
+    Jasper left Ironhollow and set out on a journey to hone his skills and make a
+    name for himself.
+
+
+    He traveled the land, taking on any job that would test
+    his abilities and showcase his skills. He quickly became known for his masterful
+    creations, and his reputation as the finest blacksmith in the land soon spread.
+    He eventually settled in a small village and opened his own forge, where he attracted
+    a steady stream of customers and soon became the go-to blacksmith for adventurers
+    and knights.
+
+
+    Despite his success, Jasper never forgot his roots and the
+    lessons he learned growing up in Ironhollow. He remained humble and always put
+    his craft first, never compromising on quality or integrity. He was often compared
+    to the legendary dwarf blacksmith, Brok, from God of War (2018), and like Brok,
+    Jasper''s work was sought after by the rich and powerful.
+
+
+    Jasper''s passion
+    for blacksmithing and his unwavering commitment to his craft have made him a
+    true master of his trade, and his legend will continue to live on for generations
+    to come.'
+  DishPreferences: []

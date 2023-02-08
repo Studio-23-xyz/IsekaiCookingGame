@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7081c6dddf5f00547851ac8ee5c78678, type: 3}
+  m_Name: Raven Nightshade
+  m_EditorClassIdentifier: 
+  Name: Raven Nightshade
+  Race: Vampire
+  Occupation: Spy/Assassin
+  Backstory: 'Raven Nightshade was once a human woman who lived in a kingdom ruled
+    by the powerful dragon king, Dante Firewing. She was known for her exceptional
+    skills in stealth and strategy, and her cunning wit made her a valuable asset
+    to the kingdom. However, her life changed when she was bitten by a powerful vampire
+    and transformed into one of the undead.
+
+
+    Despite her newfound powers and
+    abilities, Raven struggled to adapt to her new life as a vampire. That was until
+    she was approached by Dante Firewing himself, who offered her a place in his
+    court as one of his loyal spies and assassins. Raven, eager to find a place in
+    the world where she felt like she belonged, eagerly accepted the offer.
+
+
+    She
+    quickly rose through the ranks and became one of Dante''s most trusted confidants.
+    With her heightened senses and ability to blend into the shadows, Raven was able
+    to gather information and carry out assassinations with ease. However, despite
+    her loyalty to the king, Raven often found herself at odds with the other members
+    of the court, who were wary of her powers and abilities.
+
+
+    Despite the challenges
+    she faced, Raven remained steadfast in her loyalty to Dante and the kingdom,
+    always putting her duties as an assassin first. She took on the surname "Nightshade"
+    as a symbol of her allegiance to the night and the secrets she kept for the king.
+
+
+    Despite
+    her fearsome reputation, Raven was not without her own vulnerabilities. She was
+    haunted by memories of her past life and the many lives she had taken as an assassin.
+    But she knew that in order to protect the kingdom and maintain her place in the
+    court, she had to push those thoughts aside and continue to serve Dante Firewing
+    to the best of her abilities.'
+  DishPreferences: []

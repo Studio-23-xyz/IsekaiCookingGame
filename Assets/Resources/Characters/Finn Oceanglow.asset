@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7081c6dddf5f00547851ac8ee5c78678, type: 3}
+  m_Name: Finn Oceanglow
+  m_EditorClassIdentifier: 
+  Name: Finn Oceanglow
+  Race: Fish-man
+  Occupation: Wizard
+  Backstory: 'Finn Oceanglow was a Fish-Man, who lived in a small village on the
+    coast of a kingdom. He was known for his exceptional fishing skills and his love
+    for the ocean. He spent most of his life fishing and trading with other villages
+    and towns along the coast.
+
+
+    However, Finn had a unique gift, he could communicate
+    with sea creatures and had a deep connection with the ocean. He often used this
+    ability to help protect the ocean and its creatures from harm. He was loved and
+    respected by his village and the surrounding communities for his kind heart and
+    selfless actions.
+
+
+    Despite his love for the ocean, Finn also had a passion
+    for adventure. He dreamed of exploring new lands and discovering new creatures
+    of the sea. So, he decided to leave his village and set out on a journey to explore
+    the unknown.
+
+
+    Finn traveled far and wide, facing many challenges and dangers
+    along the way. But his bravery and determination never wavered. He encountered
+    many sea creatures, some friendly and some not, but he always found a way to
+    communicate and form a bond with them. He even learned magic from the sea witches,
+    who were impressed by his connection with the ocean and his kind heart.
+
+
+    Eventually,
+    Finn returned to his village as a powerful wizard and a respected adventurer.
+    He used his powers and knowledge to protect the ocean and its creatures, and
+    became known as the Guardian of the Sea. He also used his abilities to help his
+    village thrive, and became a beloved leader among his people.
+
+
+    Finn Oceanglow,
+    the Guardian of the Sea, lived a life of adventure and magic. He used his powers
+    for good and dedicated himself to the protection of the ocean and its creatures.
+    He became a legend among his people and inspired many to follow in his footsteps.'
+  DishPreferences: []

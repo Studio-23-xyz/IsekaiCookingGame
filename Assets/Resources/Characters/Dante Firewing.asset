@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7081c6dddf5f00547851ac8ee5c78678, type: 3}
+  m_Name: Dante Firewing
+  m_EditorClassIdentifier: 
+  Name: Dante Firewing
+  Race: Dragon
+  Occupation: King/Ruler
+  Backstory: 'Dante Firewing was born into a long line of dragons who ruled over
+    their kin with grace and wisdom. As a young dragon, Dante was trained in the
+    ways of leadership and the responsibilities that came with being a ruler. Despite
+    his royal heritage, Dante was a humble and compassionate dragon, always putting
+    the needs of his people first.
+
+
+    However, tragedy struck when Dante''s parents
+    were killed in a surprise attack by a group of dragons from a rival clan. With
+    no other relatives to take the throne, Dante was suddenly thrust into the role
+    of king at a young age. Despite the challenges he faced, Dante rose to the occasion,
+    leading his people with strength and determination.
+
+
+    Over time, Dante''s
+    reputation as a fair and just ruler grew, and he soon became known as the greatest
+    dragon king in the history of their kind. But with great power came great responsibility,
+    and Dante soon found himself facing numerous threats to his rule, both from within
+    and without his kingdom.
+
+
+    Despite the danger, Dante never lost his resolve,
+    using his cunning and combat skills to defend his people and maintain order.
+    But his greatest challenge came when a powerful dragon sorceress appeared, claiming
+    to have the power to destroy Dante''s kingdom. Dante, determined to protect his
+    people, engaged the sorceress in a fierce battle, using all of his skills and
+    knowledge of magic to defeat her.
+
+
+    In the end, Dante emerged victorious,
+    and his people hailed him as a hero. However, the experience left Dante with
+    a deep sense of caution and a newfound appreciation for the fragility of his
+    kingdom. He continued to rule with a firm hand, but always remembered the lessons
+    he learned during his battle with the sorceress. Despite the challenges he faced,
+    Dante Firewing remained one of the greatest and most revered dragon rulers of
+    all time.'
+  DishPreferences: []

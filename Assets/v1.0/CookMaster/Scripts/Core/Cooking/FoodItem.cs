@@ -1,6 +1,9 @@
+using System;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Food Item")]
+ 
 public class FoodItem : ScriptableObject
 {
     public float weight;

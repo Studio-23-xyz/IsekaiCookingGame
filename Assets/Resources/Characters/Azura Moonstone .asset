@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7081c6dddf5f00547851ac8ee5c78678, type: 3}
+  m_Name: 'Azura Moonstone '
+  m_EditorClassIdentifier: 
+  Name: 'Azura Moonstone '
+  Race: Half-Elf
+  Occupation: Chef/Restaurant Owner
+  Backstory: 'Azura Moonstone was born to a human father and an elven mother, making
+    her a Half-Elf. Growing up, she lived a privileged life as her father was a successful
+    merchant and her mother was a talented chef. She inherited her mother''s passion
+    for cooking and her father''s business acumen, which led her to eventually opening
+    her own restaurant.
+
+
+    As she built her restaurant empire, Azura became the
+    talk of the town, with many coming to taste her delicious dishes and bask in
+    the luxurious atmosphere of her establishments. Her popularity, however, made
+    her the main rival of the player, who was also in the food industry.
+
+
+    Despite
+    their initial animosity towards each other, Azura and the player soon found themselves
+    drawn to each other, as they began to appreciate each other''s talents and skills
+    in the kitchen. They eventually started a passionate affair, keeping their relationship
+    a secret from the public.
+
+
+    Their love was tested when the player''s restaurant
+    was burned down, and Azura was the main suspect. The player had to clear their
+    name and find the real culprit, which brought them closer together and solidified
+    their love for each other.
+
+
+    Eventually, Azura and the player combined their
+    restaurants, creating a culinary empire that was unmatched in the land. They
+    ruled the food industry together, as a formidable team and a loving couple.'
+  DishPreferences: []

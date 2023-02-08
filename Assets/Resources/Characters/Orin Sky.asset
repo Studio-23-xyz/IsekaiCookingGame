@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7081c6dddf5f00547851ac8ee5c78678, type: 3}
+  m_Name: Orin Sky
+  m_EditorClassIdentifier: 
+  Name: Orin Sky
+  Race: Goblin
+  Occupation: Shoemaker/Tailor
+  Backstory: 'Orin Sky was a goblin born and raised in a small goblin community near
+    the borders of a great kingdom. Despite being a goblin, Orin was not interested
+    in the usual goblin hobbies such as thievery, pillaging, and causing chaos. Instead,
+    he was fascinated with the art of shoemaking and tailoring. He spent most of
+    his days observing and learning from the human shoemakers and tailors in the
+    nearby towns, eventually becoming a skilled artisan himself.
+
+
+    However, his
+    passion for his craft was not well-received by the goblin community, who saw
+    it as a waste of time and resources. Orin faced constant ridicule and persecution
+    from his own kind, causing him to leave his home and start a life in the human
+    towns.
+
+
+    Despite the initial skepticism and prejudice he faced, Orin quickly
+    gained recognition for his exceptional shoemaking and tailoring skills. He quickly
+    rose to fame as the go-to shoemaker and tailor for the wealthy and influential
+    members of society.
+
+
+    However, as much as Orin loved his craft, he was also
+    driven by a desire for wealth and power. In secret, he began to take on shady
+    clients and deal in the black market, using his knowledge of human society to
+    his advantage. He became a master of disguise, sneaking into the most prestigious
+    events and gatherings to make deals with the most influential people in the kingdom.
+
+
+    Despite
+    the danger and risks, Orin was driven by his ambition and greed, determined to
+    be the wealthiest and most powerful goblin to ever live. His notoriety grew,
+    and soon, he became known throughout the land as the cunning and elusive goblin
+    trader, feared and respected by all who knew him.'
+  DishPreferences: []
