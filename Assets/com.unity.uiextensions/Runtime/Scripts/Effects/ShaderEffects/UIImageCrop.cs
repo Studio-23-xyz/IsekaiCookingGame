@@ -50,7 +50,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// Set the x crop factor, with x being a normalized value 0-1f.  
         /// </summary>
-        /// <param name="xcrop"></param>
+        /// <param Name="xcrop"></param>
         public void SetXCrop(float xcrop)
         {
             XCrop = Mathf.Clamp01(xcrop);
@@ -60,7 +60,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// Set the y crop factor, with y being a normalized value 0-1f.  
         /// </summary>
-        /// <param name="ycrop"></param>
+        /// <param Name="ycrop"></param>
         public void SetYCrop(float ycrop)
         {
             YCrop = Mathf.Clamp01(ycrop);

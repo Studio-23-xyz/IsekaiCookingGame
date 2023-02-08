@@ -13,8 +13,8 @@ namespace UnityEngine.UI.Extensions
     /// <see cref="FancyScrollView{TItemData, TContext}.Context"/> が不要な場合は
     /// 代わりに <see cref="FancyScrollRect{TItemData}"/> を使用します.
     /// </summary>
-    /// <typeparam name="TItemData">アイテムのデータ型.</typeparam>
-    /// <typeparam name="TContext"><see cref="FancyScrollView{TItemData, TContext}.Context"/> の型.</typeparam>
+    /// <typeparam Name="TItemData">アイテムのデータ型.</typeparam>
+    /// <typeparam Name="TContext"><see cref="FancyScrollView{TItemData, TContext}.Context"/> の型.</typeparam>
     [RequireComponent(typeof(Scroller))]
     public abstract class FancyScrollRect<TItemData, TContext> : FancyScrollView<TItemData, TContext>
         where TContext : class, IFancyScrollRectContext, new()
@@ -98,7 +98,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// <see cref="Scroller"/> のスクロール位置が変更された際の処理.
         /// </summary>
-        /// <param name="p"><see cref="Scroller"/> のスクロール位置.</param>
+        /// <param Name="p"><see cref="Scroller"/> のスクロール位置.</param>
         void OnScrollerValueChanged(float p)
         {
             base.UpdatePosition(Scrollable ? ToFancyScrollViewPosition(p) : 0f);
@@ -119,7 +119,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// スクロール範囲を超えてスクロールされた量に基づいて, スクロールバーのサイズを縮小します.
         /// </summary>
-        /// <param name="offset">スクロール範囲を超えてスクロールされた量.</param>
+        /// <param Name="offset">スクロール範囲を超えてスクロールされた量.</param>
         void ShrinkScrollbar(float offset)
         {
             var scale = 1f - ToFancyScrollViewPosition(offset) / (ViewportLength - PaddingHeadLength);
@@ -173,7 +173,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// スクロール位置を更新します.
         /// </summary>
-        /// <param name="position">スクロール位置.</param>
+        /// <param Name="position">スクロール位置.</param>
         protected new void UpdatePosition(float position)
         {
             Scroller.Position = ToScrollerPosition(position, 0.5f);
@@ -182,8 +182,8 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// 指定したアイテムの位置までジャンプします.
         /// </summary>
-        /// <param name="itemIndex">アイテムのインデックス.</param>
-        /// <param name="alignment">ビューポート内におけるセル位置の基準. 0f(先頭) ~ 1f(末尾).</param>
+        /// <param Name="itemIndex">アイテムのインデックス.</param>
+        /// <param Name="alignment">ビューポート内におけるセル位置の基準. 0f(先頭) ~ 1f(末尾).</param>
         protected virtual void JumpTo(int itemIndex, float alignment = 0.5f)
         {
             Scroller.Position = ToScrollerPosition(itemIndex, alignment);
@@ -192,10 +192,10 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// 指定したアイテムの位置まで移動します.
         /// </summary>
-        /// <param name="index">アイテムのインデックス.</param>
-        /// <param name="duration">移動にかける秒数.</param>
-        /// <param name="alignment">ビューポート内におけるセル位置の基準. 0f(先頭) ~ 1f(末尾).</param>
-        /// <param name="onComplete">移動が完了した際に呼び出されるコールバック.</param>
+        /// <param Name="index">アイテムのインデックス.</param>
+        /// <param Name="duration">移動にかける秒数.</param>
+        /// <param Name="alignment">ビューポート内におけるセル位置の基準. 0f(先頭) ~ 1f(末尾).</param>
+        /// <param Name="onComplete">移動が完了した際に呼び出されるコールバック.</param>
         protected virtual void ScrollTo(int index, float duration, float alignment = 0.5f, Action onComplete = null)
         {
             Scroller.ScrollTo(ToScrollerPosition(index, alignment), duration, onComplete);
@@ -204,11 +204,11 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// 指定したアイテムの位置まで移動します.
         /// </summary>
-        /// <param name="index">アイテムのインデックス.</param>
-        /// <param name="duration">移動にかける秒数.</param>
-        /// <param name="easing">移動に使用するイージング.</param>
-        /// <param name="alignment">ビューポート内におけるセル位置の基準. 0f(先頭) ~ 1f(末尾).</param>
-        /// <param name="onComplete">移動が完了した際に呼び出されるコールバック.</param>
+        /// <param Name="index">アイテムのインデックス.</param>
+        /// <param Name="duration">移動にかける秒数.</param>
+        /// <param Name="easing">移動に使用するイージング.</param>
+        /// <param Name="alignment">ビューポート内におけるセル位置の基準. 0f(先頭) ~ 1f(末尾).</param>
+        /// <param Name="onComplete">移動が完了した際に呼び出されるコールバック.</param>
         protected virtual void ScrollTo(int index, float duration, Ease easing, float alignment = 0.5f, Action onComplete = null)
         {
             Scroller.ScrollTo(ToScrollerPosition(index, alignment), duration, easing, onComplete);
@@ -217,7 +217,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// ビューポートとコンテンツの長さに基づいてスクロールバーのサイズを更新します.
         /// </summary>
-        /// <param name="viewportLength">ビューポートのサイズ.</param>
+        /// <param Name="viewportLength">ビューポートのサイズ.</param>
         protected void UpdateScrollbarSize(float viewportLength)
         {
             var contentLength = Mathf.Max(ItemsSource.Count + (paddingHead + paddingTail - spacing) / (CellSize + spacing), 1);
@@ -227,7 +227,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// <see cref="Scroller"/> が扱うスクロール位置を <see cref="FancyScrollRect{TItemData, TContext}"/> が扱うスクロール位置に変換します.
         /// </summary>
-        /// <param name="position"><see cref="Scroller"/> が扱うスクロール位置.</param>
+        /// <param Name="position"><see cref="Scroller"/> が扱うスクロール位置.</param>
         /// <returns><see cref="FancyScrollRect{TItemData, TContext}"/> が扱うスクロール位置.</returns>
         protected float ToFancyScrollViewPosition(float position)
         {
@@ -237,7 +237,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// <see cref="FancyScrollRect{TItemData, TContext}"/> が扱うスクロール位置を <see cref="Scroller"/> が扱うスクロール位置に変換します.
         /// </summary>
-        /// <param name="position"><see cref="FancyScrollRect{TItemData, TContext}"/> が扱うスクロール位置.</param>
+        /// <param Name="position"><see cref="FancyScrollRect{TItemData, TContext}"/> が扱うスクロール位置.</param>
         /// <returns><see cref="Scroller"/> が扱うスクロール位置.</returns>
         protected float ToScrollerPosition(float position)
         {
@@ -247,8 +247,8 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// <see cref="FancyScrollRect{TItemData, TContext}"/> が扱うスクロール位置を <see cref="Scroller"/> が扱うスクロール位置に変換します.
         /// </summary>
-        /// <param name="position"><see cref="FancyScrollRect{TItemData, TContext}"/> が扱うスクロール位置.</param>
-        /// <param name="alignment">ビューポート内におけるセル位置の基準. 0f(先頭) ~ 1f(末尾).</param>
+        /// <param Name="position"><see cref="FancyScrollRect{TItemData, TContext}"/> が扱うスクロール位置.</param>
+        /// <param Name="alignment">ビューポート内におけるセル位置の基準. 0f(先頭) ~ 1f(末尾).</param>
         /// <returns><see cref="Scroller"/> が扱うスクロール位置.</returns>
         protected float ToScrollerPosition(float position, float alignment = 0.5f)
         {
@@ -297,7 +297,7 @@ namespace UnityEngine.UI.Extensions
     /// ScrollRect スタイルのスクロールビューを実装するための抽象基底クラス.
     /// 無限スクロールおよびスナップには対応していません.
     /// </summary>
-    /// <typeparam name="TItemData">アイテムのデータ型.</typeparam>
+    /// <typeparam Name="TItemData">アイテムのデータ型.</typeparam>
     /// <seealso cref="FancyScrollRect{TItemData, TContext}"/>
     public abstract class FancyScrollRect<TItemData> : FancyScrollRect<TItemData, FancyScrollRectContext> { }
 }

@@ -60,7 +60,7 @@ namespace UnityEngine.UI.Extensions.Tweens
 		/// <summary>
 		/// Tweens the float based on percentage.
 		/// </summary>
-		/// <param name="floatPercentage">Float percentage.</param>
+		/// <param Name="floatPercentage">Float percentage.</param>
 		public void TweenValue(float floatPercentage)
 		{
 			if (!ValidTarget())
@@ -72,7 +72,7 @@ namespace UnityEngine.UI.Extensions.Tweens
 		/// <summary>
 		/// Adds a on changed callback.
 		/// </summary>
-		/// <param name="callback">Callback.</param>
+		/// <param Name="callback">Callback.</param>
 		public void AddOnChangedCallback(UnityAction<float> callback)
 		{
 			if (m_Target == null)
@@ -84,7 +84,7 @@ namespace UnityEngine.UI.Extensions.Tweens
 		/// <summary>
 		/// Adds a on finish callback.
 		/// </summary>
-		/// <param name="callback">Callback.</param>
+		/// <param Name="callback">Callback.</param>
 		public void AddOnFinishCallback(UnityAction callback)
 		{
 			if (m_Finish == null)

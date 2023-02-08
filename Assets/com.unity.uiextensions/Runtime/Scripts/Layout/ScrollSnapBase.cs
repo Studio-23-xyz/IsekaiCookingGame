@@ -358,8 +358,8 @@ namespace UnityEngine.UI.Extensions
         /// Function for switching to a specific screen
         /// *Note, this is based on a 0 starting index - 0 to x
         /// </summary>
-        /// <param name="screenIndex">0 starting index of page to jump to</param>
-        /// <param name="pagination">Override the screen movement if driven from a pagination control</param>
+        /// <param Name="screenIndex">0 starting index of page to jump to</param>
+        /// <param Name="pagination">Override the screen movement if driven from a pagination control</param>
         public void GoToScreen(int screenIndex, bool pagination = false)
         {
             if (screenIndex <= _screens - 1 && screenIndex >= 0)
@@ -376,7 +376,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// Gets the closest page for the current Scroll Rect container position
         /// </summary>
-        /// <param name="pos">Position to test, normally the Scroll Rect container Local position</param>
+        /// <param Name="pos">Position to test, normally the Scroll Rect container Local position</param>
         /// <returns>Closest Page number (zero indexed array value)</returns>
         internal int GetPageforPosition(Vector3 pos)
         {
@@ -388,7 +388,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// Validates if the current Scroll Rect container position is within the bounds for a page
         /// </summary>
-        /// <param name="pos">Position to test, normally the Scroll Rect container Local position</param>
+        /// <param Name="pos">Position to test, normally the Scroll Rect container Local position</param>
         /// <returns>True / False, is the position in the bounds of a page</returns>
         internal bool IsRectSettledOnaPage(Vector3 pos)
         {
@@ -400,8 +400,8 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// Returns the local position for a child page based on the required page number
         /// </summary>
-        /// <param name="page">Page that the position is required for (Zero indexed array value)</param>
-        /// <param name="target">Outputs the local position for the selected page</param>
+        /// <param Name="page">Page that the position is required for (Zero indexed array value)</param>
+        /// <param Name="target">Outputs the local position for the selected page</param>
         internal void GetPositionforPage(int page, ref Vector3 target)
         {
             _childPos = -_childSize * page;
@@ -442,7 +442,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// changes the bullets on the bottom of the page - pagination
         /// </summary>
-        /// <param name="targetScreen"></param>
+        /// <param Name="targetScreen"></param>
         private void ChangeBulletsInfo(int targetScreen)
         {
             if (Pagination)
@@ -459,7 +459,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// disables the page navigation buttons when at the first or last screen
         /// </summary>
-        /// <param name="targetScreen"></param>
+        /// <param Name="targetScreen"></param>
         private void ToggleNavigationButtons(int targetScreen)
         {
             //If this is using an Infinite Scroll, then don't disable
@@ -582,7 +582,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// Returns the Transform of the Current page in an out parameter for performance
         /// </summary>
-        /// <param name="returnObject">Currently selected Page Transform</param>
+        /// <param Name="returnObject">Currently selected Page Transform</param>
         public void CurrentPageObject(out Transform returnObject)
         {
             returnObject = _screensContainer.GetChild(CurrentPage);
@@ -592,7 +592,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// Touch screen to start swiping
         /// </summary>
-        /// <param name="eventData"></param>
+        /// <param Name="eventData"></param>
         public void OnBeginDrag(PointerEventData eventData)
         {
             _pointerDown = true;
@@ -604,7 +604,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// While dragging do
         /// </summary>
-        /// <param name="eventData"></param>
+        /// <param Name="eventData"></param>
         public void OnDrag(PointerEventData eventData)
         {
             _lerp = false;

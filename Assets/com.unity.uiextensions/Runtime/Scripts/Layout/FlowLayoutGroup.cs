@@ -107,9 +107,9 @@ namespace UnityEngine.UI.Extensions
 		/// <summary>
 		/// Main layout method
 		/// </summary>
-		/// <param name="width">Width to calculate the layout with</param>
-		/// <param name="axis">0 for horizontal axis, 1 for vertical</param>
-		/// <param name="layoutInput">If true, sets the layout input for the axis. If false, sets child position for axis</param>
+		/// <param Name="width">Width to calculate the layout with</param>
+		/// <param Name="axis">0 for horizontal axis, 1 for vertical</param>
+		/// <param Name="layoutInput">If true, sets the layout input for the axis. If false, sets child position for axis</param>
 		public float SetLayout(int axis, bool layoutInput)
 		{
 			//container height and width

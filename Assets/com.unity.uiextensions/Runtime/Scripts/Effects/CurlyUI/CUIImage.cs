@@ -18,7 +18,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// For sliced and filled image only.
         /// </summary>
-        /// <param name="_type"></param>
+        /// <param Name="_type"></param>
         /// <returns></returns>
         public static int ImageTypeCornerRefVertexIdx(Image.Type _type)
         {

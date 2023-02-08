@@ -68,7 +68,7 @@ namespace UnityEngine.UI.Extensions
         [SerializeField]
         private string _id;
         ///<summary>
-        ///ID exists so that an item can have a caption and a value like in traditional windows forms. IE. an item may be a student's name, and the ID can be the student's ID number
+        ///ID exists so that an item can have a caption and a value like in traditional windows forms. IE. an item may be a student's Name, and the ID can be the student's ID number
         ///</summary>
         public string ID
         {
@@ -83,11 +83,11 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// Constructor for Drop Down List panelItems
         /// </summary>
-        /// <param name="caption">Caption for the item </param>
-        /// <param name="val">ID of the item </param>
-        /// <param name="image"></param>
-        /// <param name="disabled">Should the item start disabled</param>
-        /// <param name="onSelect">Action to be called when this item is selected</param>
+        /// <param Name="caption">Caption for the item </param>
+        /// <param Name="val">ID of the item </param>
+        /// <param Name="image"></param>
+        /// <param Name="disabled">Should the item start disabled</param>
+        /// <param Name="onSelect">Action to be called when this item is selected</param>
         public DropDownListItem(string caption = "", string inId = "", Sprite image = null, bool disabled = false, Action onSelect = null)
         {
             _caption = caption;

@@ -47,7 +47,7 @@ public class DrawLine : MonoBehaviour, IDragHandler, IDropHandler, IPointerDownH
     /// <summary>
     /// EventData/MousePosition updated every frame.  Grab the first drag start point as the beginning as the first point
     /// </summary>
-    /// <param name="eventData"></param>
+    /// <param Name="eventData"></param>
     public void OnDrag(PointerEventData eventData)
     {
         if (SceneDemoMode == DemoMode.DragDraw)
@@ -73,7 +73,7 @@ public class DrawLine : MonoBehaviour, IDragHandler, IDropHandler, IPointerDownH
     /// <summary>
     /// When the user has finished clicking, add the end point and draw the line
     /// </summary>
-    /// <param name="eventData"></param>
+    /// <param Name="eventData"></param>
     public void OnDrop(PointerEventData eventData)
     {
         if (SceneDemoMode == DemoMode.DragDraw)
@@ -119,7 +119,7 @@ public class DrawLine : MonoBehaviour, IDragHandler, IDropHandler, IPointerDownH
     /// I have used the Pointer Up and Pointer Down handlers here, as the generic Pointer Handler blocks the OnDragEnd handler.
     /// If you only intend to use click, you can use the IPointerClickHandler instead and drop the mouseDown properties.
     /// </remarks>
-    /// <param name="eventData"></param>
+    /// <param Name="eventData"></param>
     public void OnPointerDown(PointerEventData eventData)
     {
         if (!drawing)

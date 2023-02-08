@@ -3,16 +3,18 @@ using UnityEngine.EventSystems;
 
 public class DragAndDrop : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
+    
     private Vector3 startPosition;
     public RectTransform rectTransform;
-    public Canvas canvas;
+    
 
     public CanvasGroup canvasGroup;
     
     public void OnDrag(PointerEventData eventData)
     {
-        rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
-       // transform.position = Input.mousePosition;
+        rectTransform.anchoredPosition += eventData.delta;
+        
+        // transform.position = Input.mousePosition;
     }
     
     private void Start()

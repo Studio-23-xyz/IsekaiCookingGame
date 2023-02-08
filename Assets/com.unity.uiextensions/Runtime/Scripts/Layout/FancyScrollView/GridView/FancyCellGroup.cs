@@ -8,8 +8,8 @@ namespace UnityEngine.UI.Extensions
     /// <summary>
     /// 複数の <see cref="FancyCell{TItemData, TContext}"/> を持つセルグループ実装するための抽象基底クラス.
     /// </summary>
-    /// <typeparam name="TItemData">アイテムのデータ型.</typeparam>
-    /// <typeparam name="TContext"><see cref="FancyCell{TItemData, TContext}.Context"/> の型.</typeparam>
+    /// <typeparam Name="TItemData">アイテムのデータ型.</typeparam>
+    /// <typeparam Name="TContext"><see cref="FancyCell{TItemData, TContext}.Context"/> の型.</typeparam>
     public abstract class FancyCellGroup<TItemData, TContext> : FancyCell<TItemData[], TContext>
         where TContext : class, IFancyCellGroupContext, new()
     {

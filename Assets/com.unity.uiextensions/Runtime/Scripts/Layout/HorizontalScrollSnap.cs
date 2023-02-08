@@ -101,7 +101,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// Add a new child to this Scroll Snap and recalculate it's children
         /// </summary>
-        /// <param name="GO">GameObject to add to the ScrollSnap</param>
+        /// <param Name="GO">GameObject to add to the ScrollSnap</param>
         public void AddChild(GameObject GO)
         {
             AddChild(GO, false);
@@ -110,8 +110,8 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// Add a new child to this Scroll Snap and recalculate it's children
         /// </summary>
-        /// <param name="GO">GameObject to add to the ScrollSnap</param>
-        /// <param name="WorldPositionStays">Should the world position be updated to it's parent transform?</param>
+        /// <param Name="GO">GameObject to add to the ScrollSnap</param>
+        /// <param Name="WorldPositionStays">Should the world position be updated to it's parent transform?</param>
         public void AddChild(GameObject GO, bool WorldPositionStays)
         {
             _scroll_rect.horizontalNormalizedPosition = 0;
@@ -128,8 +128,8 @@ namespace UnityEngine.UI.Extensions
         /// Remove a new child to this Scroll Snap and recalculate it's children 
         /// *Note, this is an index address (0-x)
         /// </summary>
-        /// <param name="index">Index element of child to remove</param>
-        /// <param name="ChildRemoved">Resulting removed GO</param>
+        /// <param Name="index">Index element of child to remove</param>
+        /// <param Name="ChildRemoved">Resulting removed GO</param>
         public void RemoveChild(int index, out GameObject ChildRemoved)
         {
             RemoveChild(index, false, out ChildRemoved);
@@ -139,9 +139,9 @@ namespace UnityEngine.UI.Extensions
         /// Remove a new child to this Scroll Snap and recalculate it's children 
         /// *Note, this is an index address (0-x)
         /// </summary>
-        /// <param name="index">Index element of child to remove</param>
-        /// <param name="WorldPositionStays">If true, the parent-relative position, scale and rotation are modified such that the object keeps the same world space position, rotation and scale as before</param>
-        /// <param name="ChildRemoved">Resulting removed GO</param>
+        /// <param Name="index">Index element of child to remove</param>
+        /// <param Name="WorldPositionStays">If true, the parent-relative position, scale and rotation are modified such that the object keeps the same world space position, rotation and scale as before</param>
+        /// <param Name="ChildRemoved">Resulting removed GO</param>
         public void RemoveChild(int index, bool WorldPositionStays, out GameObject ChildRemoved)
         {
             ChildRemoved = null;
@@ -170,7 +170,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// Remove all children from this ScrollSnap
         /// </summary>
-        /// <param name="ChildrenRemoved">Array of child GO's removed</param>
+        /// <param Name="ChildrenRemoved">Array of child GO's removed</param>
         public void RemoveAllChildren(out GameObject[] ChildrenRemoved)
         {
             RemoveAllChildren(false, out ChildrenRemoved);
@@ -179,8 +179,8 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// Remove all children from this ScrollSnap
         /// </summary>
-        /// <param name="WorldPositionStays">If true, the parent-relative position, scale and rotation are modified such that the object keeps the same world space position, rotation and scale as before</param>
-        /// <param name="ChildrenRemoved">Array of child GO's removed</param>
+        /// <param Name="WorldPositionStays">If true, the parent-relative position, scale and rotation are modified such that the object keeps the same world space position, rotation and scale as before</param>
+        /// <param Name="ChildrenRemoved">Array of child GO's removed</param>
         public void RemoveAllChildren(bool WorldPositionStays, out GameObject[] ChildrenRemoved)
         {
             var _screenCount = _screensContainer.childCount;
@@ -244,7 +244,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// Release screen to swipe
         /// </summary>
-        /// <param name="eventData"></param>
+        /// <param Name="eventData"></param>
         public override void OnEndDrag(PointerEventData eventData)
         {
             if (updated)

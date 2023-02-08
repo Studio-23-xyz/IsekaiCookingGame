@@ -368,7 +368,7 @@ namespace UnityEngine.UI.Extensions
         /// Function for going to a specific screen.
         /// *Note the index is based on a zero-starting index.
         /// </summary>
-        /// <param name="info">All of the info about how you want it to move</param>
+        /// <param Name="info">All of the info about how you want it to move</param>
         public void GoTo(MoveInfo info)
         {
             if (!Moving && info.index != ClosestItemIndex)
@@ -502,7 +502,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// Recalculates the size of the content & snap positions, and moves to a new item afterwards.
         /// </summary>
-        /// <param name="info">All of the info about how you want it to move</param>
+        /// <param Name="info">All of the info about how you want it to move</param>
         public void UpdateLayoutAndMoveTo(MoveInfo info)
         {
             SetupDrivenTransforms();
@@ -647,8 +647,8 @@ namespace UnityEngine.UI.Extensions
             /// <summary>
             /// Creates a MoveInfo that jumps to the index
             /// </summary>
-            /// <param name="_indexType">Whether you want to get the child at the index or the snap position at the index</param>
-            /// <param name="_index">Where you want it to jump</param>
+            /// <param Name="_indexType">Whether you want to get the child at the index or the snap position at the index</param>
+            /// <param Name="_index">Where you want it to jump</param>
             public MoveInfo(IndexType _indexType, int _index)
             {
                 indexType = _indexType;
@@ -660,10 +660,10 @@ namespace UnityEngine.UI.Extensions
             /// <summary>
             /// Creates a MoveInfo
             /// </summary>
-            /// <param name="_indexType">Whether you want to get the child at the index or the snap position at the index</param>
-            /// <param name="_index">Where you want it to jump</param>
-            /// <param name="_jump">Whether you want it to jump or lerp to the index</param>
-            /// <param name="_duration">How long it takes to lerp to the index</param>
+            /// <param Name="_indexType">Whether you want to get the child at the index or the snap position at the index</param>
+            /// <param Name="_index">Where you want it to jump</param>
+            /// <param Name="_jump">Whether you want it to jump or lerp to the index</param>
+            /// <param Name="_duration">How long it takes to lerp to the index</param>
             public MoveInfo(IndexType _indexType, int _index, bool _jump, float _duration)
             {
                 indexType = _indexType;

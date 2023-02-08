@@ -11,8 +11,8 @@ namespace UnityEngine.UI.Extensions
     /// <see cref="FancyScrollView{TItemData, TContext}.Context"/> が不要な場合は
     /// 代わりに <see cref="FancyScrollView{TItemData}"/> を使用します.
     /// </summary>
-    /// <typeparam name="TItemData">アイテムのデータ型.</typeparam>
-    /// <typeparam name="TContext"><see cref="Context"/> の型.</typeparam>
+    /// <typeparam Name="TItemData">アイテムのデータ型.</typeparam>
+    /// <typeparam Name="TContext"><see cref="Context"/> の型.</typeparam>
     public abstract class FancyScrollView<TItemData, TContext> : MonoBehaviour where TContext : class, new()
     {
         /// <summary>
@@ -65,7 +65,7 @@ namespace UnityEngine.UI.Extensions
         protected IList<TItemData> ItemsSource { get; set; } = new List<TItemData>();
 
         /// <summary>
-        /// <typeparamref name="TContext"/> のインスタンス.
+        /// <typeparamref Name="TContext"/> のインスタンス.
         /// セルとスクロールビュー間で同じインスタンスが共有されます. 情報の受け渡しや状態の保持に使用します.
         /// </summary>
         protected TContext Context { get; } = new TContext();
@@ -81,7 +81,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// 渡されたアイテム一覧に基づいて表示内容を更新します.
         /// </summary>
-        /// <param name="itemsSource">アイテム一覧.</param>
+        /// <param Name="itemsSource">アイテム一覧.</param>
         protected virtual void UpdateContents(IList<TItemData> itemsSource)
         {
             ItemsSource = itemsSource;
@@ -101,7 +101,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// スクロール位置を更新します.
         /// </summary>
-        /// <param name="position">スクロール位置.</param>
+        /// <param Name="position">スクロール位置.</param>
         protected virtual void UpdatePosition(float position) => UpdatePosition(position, false);
 
         void UpdatePosition(float position, bool forceRefresh)
@@ -210,7 +210,7 @@ namespace UnityEngine.UI.Extensions
     /// スクロールビューを実装するための抽象基底クラス.
     /// 無限スクロールおよびスナップに対応しています.
     /// </summary>
-    /// <typeparam name="TItemData"></typeparam>
+    /// <typeparam Name="TItemData"></typeparam>
     /// <seealso cref="FancyScrollView{TItemData, TContext}"/>
     public abstract class FancyScrollView<TItemData> : FancyScrollView<TItemData, NullContext> { }
 }

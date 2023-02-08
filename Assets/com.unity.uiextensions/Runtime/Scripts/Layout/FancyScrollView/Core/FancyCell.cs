@@ -9,8 +9,8 @@ namespace UnityEngine.UI.Extensions
     /// <see cref="FancyCell{TItemData, TContext}.Context"/> が不要な場合は
     /// 代わりに <see cref="FancyCell{TItemData}"/> を使用します.
     /// </summary>
-    /// <typeparam name="TItemData">アイテムのデータ型.</typeparam>
-    /// <typeparam name="TContext"><see cref="Context"/> の型.</typeparam>
+    /// <typeparam Name="TItemData">アイテムのデータ型.</typeparam>
+    /// <typeparam Name="TContext"><see cref="Context"/> の型.</typeparam>
     public abstract class FancyCell<TItemData, TContext> : MonoBehaviour where TContext : class, new()
     {
         /// <summary>
@@ -32,7 +32,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// <see cref="Context"/> をセットします.
         /// </summary>
-        /// <param name="context">コンテキスト.</param>
+        /// <param Name="context">コンテキスト.</param>
         public virtual void SetContext(TContext context) => Context = context;
 
         /// <summary>
@@ -43,26 +43,26 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// このセルの可視状態を設定します.
         /// </summary>
-        /// <param name="visible">可視状態なら <c>true</c>, 非可視状態なら <c>false</c>.</param>
+        /// <param Name="visible">可視状態なら <c>true</c>, 非可視状態なら <c>false</c>.</param>
         public virtual void SetVisible(bool visible) => gameObject.SetActive(visible);
 
         /// <summary>
         /// アイテムデータに基づいてこのセルの表示内容を更新します.
         /// </summary>
-        /// <param name="itemData">アイテムデータ.</param>
+        /// <param Name="itemData">アイテムデータ.</param>
         public abstract void UpdateContent(TItemData itemData);
 
         /// <summary>
         /// <c>0.0f</c> ~ <c>1.0f</c> の値に基づいてこのセルのスクロール位置を更新します.
         /// </summary>
-        /// <param name="position">ビューポート範囲の正規化されたスクロール位置.</param>
+        /// <param Name="position">ビューポート範囲の正規化されたスクロール位置.</param>
         public abstract void UpdatePosition(float position);
     }
 
     /// <summary>
     /// <see cref="FancyScrollView{TItemData}"/> のセルを実装するための抽象基底クラス.
     /// </summary>
-    /// <typeparam name="TItemData">アイテムのデータ型.</typeparam>
+    /// <typeparam Name="TItemData">アイテムのデータ型.</typeparam>
     /// <seealso cref="FancyCell{TItemData, TContext}"/>
     public abstract class FancyCell<TItemData> : FancyCell<TItemData, NullContext>
     {

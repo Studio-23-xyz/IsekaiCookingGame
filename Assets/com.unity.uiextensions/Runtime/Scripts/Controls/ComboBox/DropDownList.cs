@@ -143,7 +143,7 @@ namespace UnityEngine.UI.Extensions
 		/// <remarks>
 		/// NOTE, this will clear all existing items
 		/// </remarks>
-		/// <param name="list"></param>
+		/// <param Name="list"></param>
 		public void RefreshItems(params object[] list)
 		{
 			Items.Clear();
@@ -174,7 +174,7 @@ namespace UnityEngine.UI.Extensions
 		/// <summary>
 		/// Adds an additional item to the drop down list (recommended)
 		/// </summary>
-		/// <param name="item">Item of type DropDownListItem</param>
+		/// <param Name="item">Item of type DropDownListItem</param>
 		public void AddItem(DropDownListItem item)
         {
 			Items.Add(item);
@@ -182,9 +182,9 @@ namespace UnityEngine.UI.Extensions
 		}
 
 		/// <summary>
-		/// Adds an additional drop down list item using a string name 
+		/// Adds an additional drop down list item using a string Name 
 		/// </summary>
-		/// <param name="item">Item of type String</param>
+		/// <param Name="item">Item of type String</param>
 		public void AddItem(string item)
 		{
 			Items.Add(new DropDownListItem(caption: (string)item));
@@ -194,7 +194,7 @@ namespace UnityEngine.UI.Extensions
 		/// <summary>
 		/// Adds an additional drop down list item using a sprite image 
 		/// </summary>
-		/// <param name="item">Item of type UI Sprite</param>
+		/// <param Name="item">Item of type UI Sprite</param>
 		public void AddItem(Sprite item)
 		{
 			Items.Add(new DropDownListItem(image: (Sprite)item));
@@ -204,7 +204,7 @@ namespace UnityEngine.UI.Extensions
 		/// <summary>
 		/// Removes an item from the drop down list (recommended)
 		/// </summary>
-		/// <param name="item">Item of type DropDownListItem</param>
+		/// <param Name="item">Item of type DropDownListItem</param>
 		public void RemoveItem(DropDownListItem item)
 		{
 			Items.Remove(item);
@@ -212,9 +212,9 @@ namespace UnityEngine.UI.Extensions
 		}
 
 		/// <summary>
-		/// Removes an item from the drop down list item using a string name 
+		/// Removes an item from the drop down list item using a string Name 
 		/// </summary>
-		/// <param name="item">Item of type String</param>
+		/// <param Name="item">Item of type String</param>
 		public void RemoveItem(string item)
 		{
 			Items.Remove(new DropDownListItem(caption: (string)item));
@@ -224,7 +224,7 @@ namespace UnityEngine.UI.Extensions
 		/// <summary>
 		/// Removes an item from the drop down list item using a sprite image 
 		/// </summary>
-		/// <param name="item">Item of type UI Sprite</param>
+		/// <param Name="item">Item of type UI Sprite</param>
 		public void RemoveItem(Sprite item)
 		{
 			Items.Remove(new DropDownListItem(image: (Sprite)item));
@@ -369,7 +369,7 @@ namespace UnityEngine.UI.Extensions
 		/// <summary>
 		/// Toggle the drop down list
 		/// </summary>
-		/// <param name="directClick"> whether an item was directly clicked on</param>
+		/// <param Name="directClick"> whether an item was directly clicked on</param>
 		public void ToggleDropdownPanel(bool directClick)
 		{
 			_overlayRT.transform.localScale = new Vector3(1, 1, 1);

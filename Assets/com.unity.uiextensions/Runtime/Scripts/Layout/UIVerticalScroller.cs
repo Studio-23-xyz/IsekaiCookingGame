@@ -99,8 +99,8 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// Recognises and resizes the children.
         /// </summary>
-        /// <param name="startingIndex">Starting index.</param>
-        /// <param name="arrayOfElements">Array of elements.</param>
+        /// <param Name="startingIndex">Starting index.</param>
+        /// <param Name="arrayOfElements">Array of elements.</param>
         public void updateChildren(int startingIndex = -1, GameObject[] arrayOfElements = null)
         {
             // Set _arrayOfElements to arrayOfElements if given, otherwise to child objects of the scrolling panel.

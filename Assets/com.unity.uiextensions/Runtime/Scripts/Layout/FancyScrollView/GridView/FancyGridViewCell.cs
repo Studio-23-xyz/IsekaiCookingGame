@@ -8,8 +8,8 @@ namespace UnityEngine.UI.Extensions
     /// <see cref="FancyCell{TItemData, TContext}.Context"/> が不要な場合は
     /// 代わりに <see cref="FancyGridViewCell{TItemData}"/> を使用します.
     /// </summary>
-    /// <typeparam name="TItemData">アイテムのデータ型.</typeparam>
-    /// <typeparam name="TContext"><see cref="FancyCell{TItemData, TContext}.Context"/> の型.</typeparam>
+    /// <typeparam Name="TItemData">アイテムのデータ型.</typeparam>
+    /// <typeparam Name="TContext"><see cref="FancyCell{TItemData, TContext}.Context"/> の型.</typeparam>
     public abstract class FancyGridViewCell<TItemData, TContext> : FancyScrollRectCell<TItemData, TContext>
         where TContext : class, IFancyGridViewContext, new()
     {
@@ -32,7 +32,7 @@ namespace UnityEngine.UI.Extensions
     /// <summary>
     /// <see cref="FancyGridView{TItemData}"/> のセルを実装するための抽象基底クラス.
     /// </summary>
-    /// <typeparam name="TItemData">アイテムのデータ型.</typeparam>
+    /// <typeparam Name="TItemData">アイテムのデータ型.</typeparam>
     /// <seealso cref="FancyGridViewCell{TItemData, TContext}"/>
     public abstract class FancyGridViewCell<TItemData> : FancyGridViewCell<TItemData, FancyGridViewContext>
     {

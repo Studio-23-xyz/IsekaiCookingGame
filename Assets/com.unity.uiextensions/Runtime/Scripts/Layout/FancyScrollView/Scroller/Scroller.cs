@@ -207,48 +207,48 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// スクロール位置が変化したときのコールバックを設定します.
         /// </summary>
-        /// <param name="callback">スクロール位置が変化したときのコールバック.</param>
+        /// <param Name="callback">スクロール位置が変化したときのコールバック.</param>
         public void OnValueChanged(Action<float> callback) => onValueChanged = callback;
 
         /// <summary>
         /// 選択位置が変化したときのコールバックを設定します.
         /// </summary>
-        /// <param name="callback">選択位置が変化したときのコールバック.</param>
+        /// <param Name="callback">選択位置が変化したときのコールバック.</param>
         public void OnSelectionChanged(Action<int> callback) => onSelectionChanged = callback;
 
         /// <summary>
         /// アイテムの総数を設定します.
         /// </summary>
         /// <remarks>
-        /// <paramref name="totalCount"/> を元に最大スクロール位置を計算します.
+        /// <paramref Name="totalCount"/> を元に最大スクロール位置を計算します.
         /// </remarks>
-        /// <param name="totalCount">アイテムの総数.</param>
+        /// <param Name="totalCount">アイテムの総数.</param>
         public void SetTotalCount(int totalCount) => this.totalCount = totalCount;
 
         /// <summary>
         /// 指定した位置まで移動します.
         /// </summary>
-        /// <param name="position">スクロール位置. <c>0f</c> ~ <c>totalCount - 1f</c> の範囲.</param>
-        /// <param name="duration">移動にかける秒数.</param>
-        /// <param name="onComplete">移動が完了した際に呼び出されるコールバック.</param>
+        /// <param Name="position">スクロール位置. <c>0f</c> ~ <c>totalCount - 1f</c> の範囲.</param>
+        /// <param Name="duration">移動にかける秒数.</param>
+        /// <param Name="onComplete">移動が完了した際に呼び出されるコールバック.</param>
         public void ScrollTo(float position, float duration, Action onComplete = null) => ScrollTo(position, duration, Ease.OutCubic, onComplete);
 
         /// <summary>
         /// 指定した位置まで移動します.
         /// </summary>
-        /// <param name="position">スクロール位置. <c>0f</c> ~ <c>totalCount - 1f</c> の範囲.</param>
-        /// <param name="duration">移動にかける秒数.</param>
-        /// <param name="easing">移動に使用するイージング.</param>
-        /// <param name="onComplete">移動が完了した際に呼び出されるコールバック.</param>
+        /// <param Name="position">スクロール位置. <c>0f</c> ~ <c>totalCount - 1f</c> の範囲.</param>
+        /// <param Name="duration">移動にかける秒数.</param>
+        /// <param Name="easing">移動に使用するイージング.</param>
+        /// <param Name="onComplete">移動が完了した際に呼び出されるコールバック.</param>
         public void ScrollTo(float position, float duration, Ease easing, Action onComplete = null) => ScrollTo(position, duration, Easing.Get(easing), onComplete);
 
         /// <summary>
         /// 指定した位置まで移動します.
         /// </summary>
-        /// <param name="position">スクロール位置. <c>0f</c> ~ <c>totalCount - 1f</c> の範囲.</param>
-        /// <param name="duration">移動にかける秒数.</param>
-        /// <param name="easingFunction">移動に使用するイージング関数.</param>
-        /// <param name="onComplete">移動が完了した際に呼び出されるコールバック.</param>
+        /// <param Name="position">スクロール位置. <c>0f</c> ~ <c>totalCount - 1f</c> の範囲.</param>
+        /// <param Name="duration">移動にかける秒数.</param>
+        /// <param Name="easingFunction">移動に使用するイージング関数.</param>
+        /// <param Name="onComplete">移動が完了した際に呼び出されるコールバック.</param>
         public void ScrollTo(float position, float duration, EasingFunction easingFunction, Action onComplete = null)
         {
             if (duration <= 0f)
@@ -275,7 +275,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// 指定したインデックスの位置までジャンプします.
         /// </summary>
-        /// <param name="index">アイテムのインデックス.</param>
+        /// <param Name="index">アイテムのインデックス.</param>
         public void JumpTo(int index)
         {
             if (index < 0 || index > totalCount - 1)
@@ -288,11 +288,11 @@ namespace UnityEngine.UI.Extensions
         }
 
         /// <summary>
-        /// <paramref name="sourceIndex"/> から <paramref name="destIndex"/> に移動する際の移動方向を返します.
+        /// <paramref Name="sourceIndex"/> から <paramref Name="destIndex"/> に移動する際の移動方向を返します.
         /// スクロール範囲が無制限に設定されている場合は, 最短距離の移動方向を返します.
         /// </summary>
-        /// <param name="sourceIndex">移動元のインデックス.</param>
-        /// <param name="destIndex">移動先のインデックス.</param>
+        /// <param Name="sourceIndex">移動元のインデックス.</param>
+        /// <param Name="destIndex">移動先のインデックス.</param>
         /// <returns></returns>
         public MovementDirection GetMovementDirection(int sourceIndex, int destIndex)
         {

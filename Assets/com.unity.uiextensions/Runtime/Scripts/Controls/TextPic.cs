@@ -9,9 +9,9 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
 namespace UnityEngine.UI.Extensions {
-    // Image according to the label inside the name attribute to load, read from the Resources directory. The size of the image is controlled by the size property.
+    // Image according to the label inside the Name attribute to load, read from the Resources directory. The size of the image is controlled by the size property.
 
-    // Use: Add Icon name and sprite to the icons list
+    // Use: Add Icon Name and sprite to the icons list
 
     [AddComponentMenu("UI/Extensions/TextPic")]
        
@@ -32,7 +32,7 @@ namespace UnityEngine.UI.Extensions {
 		[Tooltip("Global scaling factor for all images")]
         public float ImageScalingFactor = 1;
 
-        // Write the name or hex value of the hyperlink color
+        // Write the Name or hex value of the hyperlink color
         public string hyperlinkColor = "blue";
 
         // Offset image by x, y
@@ -74,7 +74,7 @@ namespace UnityEngine.UI.Extensions {
         /// Regular expression to replace 
         /// </summary>
         private static readonly Regex s_Regex =
-            new Regex(@"<quad name=(.+?) size=(\d*\.?\d+%?) width=(\d*\.?\d+%?) />", RegexOptions.Singleline);
+            new Regex(@"<quad Name=(.+?) size=(\d*\.?\d+%?) width=(\d*\.?\d+%?) />", RegexOptions.Singleline);
 
         /// <summary>
         /// Hyperlink Regular Expression
@@ -107,7 +107,7 @@ namespace UnityEngine.UI.Extensions {
         // Positions of images for icon placement
         private List<Vector2> positions = new List<Vector2>();
         
-        // Little hack to support multiple hrefs with same name
+        // Little hack to support multiple hrefs with same Name
         private string previousText = "";
 
         /// <summary>
@@ -161,7 +161,7 @@ namespace UnityEngine.UI.Extensions {
         /// Regular expression to remove non rendered characters
         /// </summary>
         private static readonly Regex remove_Regex =
-            new Regex(@"<b>|</b>|<i>|</i>|<size=.*?>|</size>|<color=.*?>|</color>|<material=.*?>|</material>|<quad name=(.+?) size=(\d*\.?\d+%?) width=(\d*\.?\d+%?) />|<a href=([^>\n\s]+)>|</a>|\s", RegexOptions.Singleline);
+            new Regex(@"<b>|</b>|<i>|</i>|<size=.*?>|</size>|<color=.*?>|</color>|<material=.*?>|</material>|<quad Name=(.+?) size=(\d*\.?\d+%?) width=(\d*\.?\d+%?) />|<a href=([^>\n\s]+)>|</a>|\s", RegexOptions.Singleline);
 
 		// List of indexes that are compared against matches to remove quad tags
 		List<int> indexes = new List<int>();
@@ -318,7 +318,7 @@ namespace UnityEngine.UI.Extensions {
                 for (int i = 0; i < inspectorIconList.Length; i++) {
                     if (!string.IsNullOrEmpty(inspectorIconList[i].name)) {
                         fixedString = fixedString.Replace(inspectorIconList[i].name, 
-														"<quad name=" + inspectorIconList[i].name + " size=" + fontSize + " width=1 />");
+														"<quad Name=" + inspectorIconList[i].name + " size=" + fontSize + " width=1 />");
                     }
                 }
             }
@@ -545,7 +545,7 @@ namespace UnityEngine.UI.Extensions {
         /// <summary>
         /// Click event is detected whether to click a hyperlink text
         /// </summary>
-        /// <param name="eventData"></param>
+        /// <param Name="eventData"></param>
         public void OnPointerClick(PointerEventData eventData) { 
             RectTransformUtility.ScreenPointToLocalPointInRectangle(
                 rectTransform, eventData.position, eventData.pressEventCamera, out lp);

@@ -202,11 +202,11 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// Auto UV handler within the assigned area
         /// </summary>
-        /// <param name="x"></param>
-        /// <param name="y"></param>
-        /// <param name="area"></param>
-        /// <param name="color32"></param>
-        /// <param name="vh"></param>
+        /// <param Name="x"></param>
+        /// <param Name="y"></param>
+        /// <param Name="area"></param>
+        /// <param Name="color32"></param>
+        /// <param Name="vh"></param>
         private static int AddVert(float x, float y, Rect area, Color32 color32, VertexHelper vh) {
             var uv = new Vector2(
                 Mathf.InverseLerp(area.xMin, area.xMax, x),

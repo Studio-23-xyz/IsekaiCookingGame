@@ -14,8 +14,8 @@ namespace UnityEngine.UI.Extensions
     /// <see cref="FancyScrollView{TItemData, TContext}.Context"/> が不要な場合は
     /// 代わりに <see cref="FancyGridView{TItemData}"/> を使用します.
     /// </summary>
-    /// <typeparam name="TItemData">アイテムのデータ型.</typeparam>
-    /// <typeparam name="TContext"><see cref="FancyScrollView{TItemData, TContext}.Context"/> の型.</typeparam>
+    /// <typeparam Name="TItemData">アイテムのデータ型.</typeparam>
+    /// <typeparam Name="TContext"><see cref="FancyScrollView{TItemData, TContext}.Context"/> の型.</typeparam>
     public abstract class FancyGridView<TItemData, TContext> : FancyScrollRect<TItemData[], TContext>
         where TContext : class, IFancyGridViewContext, new()
     {
@@ -101,8 +101,8 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// セルテンプレートのセットアップを行います.
         /// </summary>
-        /// <param name="cellTemplate">セルのテンプレート.</param>
-        /// <typeparam name="TGroup">セルグループの型.</typeparam>
+        /// <param Name="cellTemplate">セルのテンプレート.</param>
+        /// <typeparam Name="TGroup">セルグループの型.</typeparam>
         protected virtual void Setup<TGroup>(FancyCell<TItemData, TContext> cellTemplate)
             where TGroup : FancyCell<TItemData[], TContext>
         {
@@ -116,7 +116,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// 渡されたアイテム一覧に基づいて表示内容を更新します.
         /// </summary>
-        /// <param name="items">アイテム一覧.</param>
+        /// <param Name="items">アイテム一覧.</param>
         public virtual void UpdateContents(IList<TItemData> items)
         {
             DataCount = items.Count;
@@ -135,8 +135,8 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// 指定したアイテムの位置までジャンプします.
         /// </summary>
-        /// <param name="itemIndex">アイテムのインデックス.</param>
-        /// <param name="alignment">ビューポート内におけるセル位置の基準. 0f(先頭) ~ 1f(末尾).</param>
+        /// <param Name="itemIndex">アイテムのインデックス.</param>
+        /// <param Name="alignment">ビューポート内におけるセル位置の基準. 0f(先頭) ~ 1f(末尾).</param>
         protected override void JumpTo(int itemIndex, float alignment = 0.5f)
         {
             var groupIndex = itemIndex / startAxisCellCount;
@@ -146,10 +146,10 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// 指定したアイテムの位置まで移動します.
         /// </summary>
-        /// <param name="itemIndex">アイテムのインデックス.</param>
-        /// <param name="duration">移動にかける秒数.</param>
-        /// <param name="alignment">ビューポート内におけるセル位置の基準. 0f(先頭) ~ 1f(末尾).</param>
-        /// <param name="onComplete">移動が完了した際に呼び出されるコールバック.</param>
+        /// <param Name="itemIndex">アイテムのインデックス.</param>
+        /// <param Name="duration">移動にかける秒数.</param>
+        /// <param Name="alignment">ビューポート内におけるセル位置の基準. 0f(先頭) ~ 1f(末尾).</param>
+        /// <param Name="onComplete">移動が完了した際に呼び出されるコールバック.</param>
         protected override void ScrollTo(int itemIndex, float duration, float alignment = 0.5f, Action onComplete = null)
         {
             var groupIndex = itemIndex / startAxisCellCount;
@@ -159,11 +159,11 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// 指定したアイテムの位置まで移動します.
         /// </summary>
-        /// <param name="itemIndex">アイテムのインデックス.</param>
-        /// <param name="duration">移動にかける秒数.</param>
-        /// <param name="easing">移動に使用するイージング.</param>
-        /// <param name="alignment">ビューポート内におけるセル位置の基準. 0f(先頭) ~ 1f(末尾).</param>
-        /// <param name="onComplete">移動が完了した際に呼び出されるコールバック.</param>
+        /// <param Name="itemIndex">アイテムのインデックス.</param>
+        /// <param Name="duration">移動にかける秒数.</param>
+        /// <param Name="easing">移動に使用するイージング.</param>
+        /// <param Name="alignment">ビューポート内におけるセル位置の基準. 0f(先頭) ~ 1f(末尾).</param>
+        /// <param Name="onComplete">移動が完了した際に呼び出されるコールバック.</param>
         protected override void ScrollTo(int itemIndex, float duration, Ease easing, float alignment = 0.5f, Action onComplete = null)
         {
             var groupIndex = itemIndex / startAxisCellCount;
@@ -175,7 +175,7 @@ namespace UnityEngine.UI.Extensions
     /// グリッドレイアウトのスクロールビューを実装するための抽象基底クラス.
     /// 無限スクロールおよびスナップには対応していません.
     /// </summary>
-    /// <typeparam name="TItemData">アイテムのデータ型.</typeparam>
+    /// <typeparam Name="TItemData">アイテムのデータ型.</typeparam>
     /// <seealso cref="FancyGridView{TItemData, TContext}"/>
     public abstract class FancyGridView<TItemData> : FancyGridView<TItemData, FancyGridViewContext> { }
 }

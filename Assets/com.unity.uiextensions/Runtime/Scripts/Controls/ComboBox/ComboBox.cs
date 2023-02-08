@@ -228,7 +228,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// what happens when an item in the list is selected
         /// </summary>
-        /// <param name="item"></param>
+        /// <param Name="item"></param>
         private void OnItemClicked(string item)
         {
             //Debug.Log("item " + item + " clicked");
@@ -329,7 +329,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// Toggle the drop down list
         /// </summary>
-        /// <param name="directClick"> whether an item was directly clicked on</param>
+        /// <param Name="directClick"> whether an item was directly clicked on</param>
         public void ToggleDropdownPanel(bool directClick)
         {
             _isPanelActive = !_isPanelActive;

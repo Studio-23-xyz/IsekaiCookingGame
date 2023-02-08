@@ -48,7 +48,7 @@ namespace UnityEngine.UI.Extensions.EasingCore
         /// <summary>
         /// Gets the easing function
         /// </summary>
-        /// <param name="type">Ease type</param>
+        /// <param Name="type">Ease type</param>
         /// <returns>Easing function</returns>
         public static EasingFunction Get(Ease type)
         {

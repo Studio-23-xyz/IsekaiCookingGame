@@ -198,7 +198,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// Adds the item to <see cref="this.AvailableOptions"/> if it is not a duplicate and rebuilds the panel.
         /// </summary>
-        /// <param name="item">Item to add.</param>
+        /// <param Name="item">Item to add.</param>
         public void AddItem(string item)
         {
             if (!this.AvailableOptions.Contains(item))
@@ -215,7 +215,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// Removes the item from <see cref="this.AvailableOptions"/> and rebuilds the panel.
         /// </summary>
-        /// <param name="item">Item to remove.</param>
+        /// <param Name="item">Item to remove.</param>
         public void RemoveItem(string item)
         {
             if (this.AvailableOptions.Contains(item))
@@ -228,7 +228,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// Sets the given items as new content for the comboBox. Previous entries will be cleared.
         /// </summary>
-        /// <param name="newOptions">New entries.</param>
+        /// <param Name="newOptions">New entries.</param>
         public void SetAvailableOptions(List<string> newOptions)
         {
             var uniqueOptions = newOptions.Distinct().ToList();
@@ -245,7 +245,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// Sets the given items as new content for the comboBox. Previous entries will be cleared.
         /// </summary>
-        /// <param name="newOptions">New entries.</param>
+        /// <param Name="newOptions">New entries.</param>
         public void SetAvailableOptions(string[] newOptions)
         {
             var uniqueOptions = newOptions.Distinct().ToList();
@@ -328,7 +328,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// what happens when an item in the list is selected
         /// </summary>
-        /// <param name="item"></param>
+        /// <param Name="item"></param>
         private void OnItemClicked(string item)
         {
             //Debug.Log("item " + item + " clicked");
@@ -453,7 +453,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// Toggle the drop down list
         /// </summary>
-        /// <param name="directClick"> whether an item was directly clicked on</param>
+        /// <param Name="directClick"> whether an item was directly clicked on</param>
         public void ToggleDropdownPanel(bool directClick = false)
         {
             _isPanelActive = !_isPanelActive;

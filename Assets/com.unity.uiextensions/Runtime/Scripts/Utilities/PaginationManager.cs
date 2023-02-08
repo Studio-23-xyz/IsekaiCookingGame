@@ -73,7 +73,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// Calling from other scripts if you need to change screens programmatically
         /// </summary>
-        /// <param name="pageNo"></param>
+        /// <param Name="pageNo"></param>
         public void GoToScreen(int pageNo)
         {
             scrollSnap.GoToScreen(pageNo, true);
@@ -83,7 +83,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// Calls GoToScreen() based on the index of toggle that was pressed
         /// </summary>
-        /// <param name="target"></param>
+        /// <param Name="target"></param>
         private void ToggleClick(Toggle target)
         {
             if (!target.isOn)
@@ -112,7 +112,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// Calls GoToScreen() based on the index of toggle that was pressed
         /// </summary>
-        /// <param name="target"></param>
+        /// <param Name="target"></param>
         private void ToggleClick(int target)
         {
             isAClick = true;

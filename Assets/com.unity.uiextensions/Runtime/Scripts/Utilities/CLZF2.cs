@@ -22,7 +22,7 @@
  *       notice, this list of conditions and the following disclaimer in the
  *       documentation and/or other materials provided with the distribution.
  *
- *   3.  The name of the author may not be used to endorse or promote products
+ *   3.  The Name of the author may not be used to endorse or promote products
  *       derived from this software without specific prior written permission.
  *
  * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
@@ -147,8 +147,8 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// Compresses the data using LibLZF algorithm
         /// </summary>
-        /// <param name="input">Reference to the data to compress</param>
-        /// <param name="output">Reference to a buffer which will contain the compressed data</param>
+        /// <param Name="input">Reference to the data to compress</param>
+        /// <param Name="output">Reference to a buffer which will contain the compressed data</param>
         /// <returns>The size of the compressed archive in the output buffer</returns>
         public static int lzf_compress(byte[] input, ref byte[] output)
         {
@@ -272,8 +272,8 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// Decompresses the data using LibLZF algorithm
         /// </summary>
-        /// <param name="input">Reference to the data to decompress</param>
-        /// <param name="output">Reference to a buffer which will contain the decompressed data</param>
+        /// <param Name="input">Reference to the data to decompress</param>
+        /// <param Name="output">Reference to a buffer which will contain the decompressed data</param>
         /// <returns>Returns decompressed size</returns>
         public static int lzf_decompress(byte[] input, ref byte[] output)
         {

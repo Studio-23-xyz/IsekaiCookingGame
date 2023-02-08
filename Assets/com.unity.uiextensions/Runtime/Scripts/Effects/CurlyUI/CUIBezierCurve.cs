@@ -61,7 +61,7 @@ namespace UnityEngine.UI.Extensions
         /// <summary>
         /// call this to get a sample
         /// </summary>
-        /// <param name="_time"></param>
+        /// <param Name="_time"></param>
         /// <returns>sample returned by said time</returns>
         public Vector3 GetPoint(float _time)
         {

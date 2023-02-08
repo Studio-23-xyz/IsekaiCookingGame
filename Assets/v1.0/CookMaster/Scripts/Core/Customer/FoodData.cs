@@ -29,7 +29,7 @@ public class FoodData
 
     public bool EvaluateDish(Dish dish)
     {
-        return dish.categories.Contains(SelectedDishPreference.Category) && dish.flavors.Exists(f => f.Name == SelectedDishPreference.Flavor);
+        return dish.Categories.Contains(SelectedDishPreference.Category) && dish.Flavors.Exists(f => f.Name == SelectedDishPreference.Flavor);
     }
 
 
