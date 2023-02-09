@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2024823896}
     m_Modifications:
+    - target: {fileID: 927160377727326864, guid: 39f6636deb4b2cf4b83f9ccada8e2fb4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 215d9dff07115427c805c2bc477a4e81, type: 3}
     - target: {fileID: 927160377727326877, guid: 39f6636deb4b2cf4b83f9ccada8e2fb4, type: 3}
       propertyPath: m_Name
       value: Inventory Item UI (4)
@@ -371,6 +375,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 917610776}
     m_Modifications:
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b61d54ada442843bb81c0b4ae4c744fa, type: 3}
     - target: {fileID: 5556937610874699686, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
       propertyPath: m_Name
       value: DishIngredientItemUI (4)
@@ -650,6 +662,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2024823896}
     m_Modifications:
+    - target: {fileID: 927160377727326864, guid: 39f6636deb4b2cf4b83f9ccada8e2fb4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 215d9dff07115427c805c2bc477a4e81, type: 3}
     - target: {fileID: 927160377727326877, guid: 39f6636deb4b2cf4b83f9ccada8e2fb4, type: 3}
       propertyPath: m_Name
       value: Inventory Item UI (7)
@@ -1134,6 +1150,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 917610776}
     m_Modifications:
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b61d54ada442843bb81c0b4ae4c744fa, type: 3}
     - target: {fileID: 5556937610874699686, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
       propertyPath: m_Name
       value: DishIngredientItemUI (13)
@@ -1247,6 +1271,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 210420455}
     m_Modifications:
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b61d54ada442843bb81c0b4ae4c744fa, type: 3}
     - target: {fileID: 5556937610874699686, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
       propertyPath: m_Name
       value: S DishIngredientItemUI
@@ -1578,7 +1606,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ee60487db1c4403439b170d5d8f5288d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 356c0b18fbd3e4e94a7e05ae60d72575, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2701,6 +2729,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 917610776}
     m_Modifications:
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b61d54ada442843bb81c0b4ae4c744fa, type: 3}
     - target: {fileID: 5556937610874699686, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
       propertyPath: m_Name
       value: DishIngredientItemUI (0)
@@ -3150,7 +3186,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 14dbe6377943e2147b682b54e5c42404, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3533,6 +3569,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2024823896}
     m_Modifications:
+    - target: {fileID: 927160377727326864, guid: 39f6636deb4b2cf4b83f9ccada8e2fb4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 215d9dff07115427c805c2bc477a4e81, type: 3}
     - target: {fileID: 927160377727326877, guid: 39f6636deb4b2cf4b83f9ccada8e2fb4, type: 3}
       propertyPath: m_Name
       value: Inventory Item UI (1)
@@ -3813,6 +3853,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 917610776}
     m_Modifications:
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b61d54ada442843bb81c0b4ae4c744fa, type: 3}
     - target: {fileID: 5556937610874699686, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
       propertyPath: m_Name
       value: DishIngredientItemUI (15)
@@ -4061,6 +4109,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2024823896}
     m_Modifications:
+    - target: {fileID: 927160377727326864, guid: 39f6636deb4b2cf4b83f9ccada8e2fb4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 215d9dff07115427c805c2bc477a4e81, type: 3}
     - target: {fileID: 927160377727326877, guid: 39f6636deb4b2cf4b83f9ccada8e2fb4, type: 3}
       propertyPath: m_Name
       value: Inventory Item UI (6)
@@ -4338,6 +4390,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 917610776}
     m_Modifications:
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b61d54ada442843bb81c0b4ae4c744fa, type: 3}
     - target: {fileID: 5556937610874699686, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
       propertyPath: m_Name
       value: DishIngredientItemUI (1)
@@ -4618,6 +4678,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 917610776}
     m_Modifications:
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b61d54ada442843bb81c0b4ae4c744fa, type: 3}
     - target: {fileID: 5556937610874699686, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
       propertyPath: m_Name
       value: DishIngredientItemUI (3)
@@ -5028,6 +5096,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 917610776}
     m_Modifications:
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b61d54ada442843bb81c0b4ae4c744fa, type: 3}
     - target: {fileID: 5556937610874699686, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
       propertyPath: m_Name
       value: DishIngredientItemUI (2)
@@ -5141,6 +5217,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 917610776}
     m_Modifications:
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b61d54ada442843bb81c0b4ae4c744fa, type: 3}
     - target: {fileID: 5556937610874699686, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
       propertyPath: m_Name
       value: DishIngredientItemUI (6)
@@ -5604,6 +5688,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 917610776}
     m_Modifications:
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b61d54ada442843bb81c0b4ae4c744fa, type: 3}
     - target: {fileID: 5556937610874699686, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
       propertyPath: m_Name
       value: DishIngredientItemUI (17)
@@ -5717,6 +5809,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2024823896}
     m_Modifications:
+    - target: {fileID: 927160377727326864, guid: 39f6636deb4b2cf4b83f9ccada8e2fb4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 215d9dff07115427c805c2bc477a4e81, type: 3}
     - target: {fileID: 927160377727326877, guid: 39f6636deb4b2cf4b83f9ccada8e2fb4, type: 3}
       propertyPath: m_Name
       value: Inventory Item UI (5)
@@ -5823,6 +5919,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 917610776}
     m_Modifications:
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b61d54ada442843bb81c0b4ae4c744fa, type: 3}
     - target: {fileID: 5556937610874699686, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
       propertyPath: m_Name
       value: DishIngredientItemUI (16)
@@ -5936,6 +6040,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 917610776}
     m_Modifications:
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b61d54ada442843bb81c0b4ae4c744fa, type: 3}
     - target: {fileID: 5556937610874699686, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
       propertyPath: m_Name
       value: DishIngredientItemUI (7)
@@ -6113,14 +6225,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.60784316, g: 0.28627452, b: 0.011764707, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 9d3b67463bf7f4935a3aa15d2fe8453c, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6145,6 +6257,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2024823896}
     m_Modifications:
+    - target: {fileID: 927160377727326864, guid: 39f6636deb4b2cf4b83f9ccada8e2fb4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 215d9dff07115427c805c2bc477a4e81, type: 3}
     - target: {fileID: 927160377727326877, guid: 39f6636deb4b2cf4b83f9ccada8e2fb4, type: 3}
       propertyPath: m_Name
       value: Inventory Item UI (8)
@@ -6888,6 +7004,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2024823896}
     m_Modifications:
+    - target: {fileID: 927160377727326864, guid: 39f6636deb4b2cf4b83f9ccada8e2fb4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 215d9dff07115427c805c2bc477a4e81, type: 3}
     - target: {fileID: 927160377727326877, guid: 39f6636deb4b2cf4b83f9ccada8e2fb4, type: 3}
       propertyPath: m_Name
       value: Inventory Item UI (3)
@@ -7352,6 +7472,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 917610776}
     m_Modifications:
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b61d54ada442843bb81c0b4ae4c744fa, type: 3}
     - target: {fileID: 5556937610874699686, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
       propertyPath: m_Name
       value: DishIngredientItemUI (14)
@@ -7668,6 +7796,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 917610776}
     m_Modifications:
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b61d54ada442843bb81c0b4ae4c744fa, type: 3}
     - target: {fileID: 5556937610874699686, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
       propertyPath: m_Name
       value: DishIngredientItemUI (8)
@@ -7884,7 +8020,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -49.999996}
+  m_AnchoredPosition: {x: 0, y: -50}
   m_SizeDelta: {x: 0, y: -100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1536189701
@@ -8105,7 +8241,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ee60487db1c4403439b170d5d8f5288d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ae9f8677ca3c24a7c80d7217a941f886, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8130,6 +8266,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 917610776}
     m_Modifications:
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b61d54ada442843bb81c0b4ae4c744fa, type: 3}
     - target: {fileID: 5556937610874699686, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
       propertyPath: m_Name
       value: DishIngredientItemUI (10)
@@ -8243,6 +8387,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2024823896}
     m_Modifications:
+    - target: {fileID: 927160377727326864, guid: 39f6636deb4b2cf4b83f9ccada8e2fb4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 215d9dff07115427c805c2bc477a4e81, type: 3}
     - target: {fileID: 927160377727326877, guid: 39f6636deb4b2cf4b83f9ccada8e2fb4, type: 3}
       propertyPath: m_Name
       value: Inventory Item UI (2)
@@ -8643,6 +8791,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 917610776}
     m_Modifications:
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b61d54ada442843bb81c0b4ae4c744fa, type: 3}
     - target: {fileID: 5556937610874699686, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
       propertyPath: m_Name
       value: DishIngredientItemUI (5)
@@ -8832,6 +8988,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 917610776}
     m_Modifications:
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b61d54ada442843bb81c0b4ae4c744fa, type: 3}
     - target: {fileID: 5556937610874699686, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
       propertyPath: m_Name
       value: DishIngredientItemUI (11)
@@ -9188,6 +9352,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 917610776}
     m_Modifications:
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b61d54ada442843bb81c0b4ae4c744fa, type: 3}
     - target: {fileID: 5556937610874699686, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
       propertyPath: m_Name
       value: DishIngredientItemUI (12)
@@ -9384,6 +9556,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 917610776}
     m_Modifications:
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b61d54ada442843bb81c0b4ae4c744fa, type: 3}
     - target: {fileID: 5556937610874699686, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
       propertyPath: m_Name
       value: DishIngredientItemUI (9)
@@ -10741,6 +10921,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 19623815}
     m_Modifications:
+    - target: {fileID: 5556937610874699684, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b61d54ada442843bb81c0b4ae4c744fa, type: 3}
     - target: {fileID: 5556937610874699686, guid: 3655a8a04d6f42b479109a4215b2c7c4, type: 3}
       propertyPath: m_Name
       value: P DishIngredientItemUI
@@ -10838,6 +11022,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2024823896}
     m_Modifications:
+    - target: {fileID: 927160377727326864, guid: 39f6636deb4b2cf4b83f9ccada8e2fb4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 215d9dff07115427c805c2bc477a4e81, type: 3}
     - target: {fileID: 927160377727326877, guid: 39f6636deb4b2cf4b83f9ccada8e2fb4, type: 3}
       propertyPath: m_Name
       value: Inventory Item UI
