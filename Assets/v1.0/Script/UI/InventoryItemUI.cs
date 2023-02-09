@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
@@ -13,7 +14,14 @@ public class InventoryItemUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     public FoodItem FoodItem;
 
     [SerializeField] private CanvasGroup canvasGroup;
-   
+
+    private void Awake()
+    {
+        itemButton.onClick.AddListener(delegate
+        {
+            CookingManager.Instance.DishUIBehaviour.ShowItemInfo(new KeyValuePair<FoodItem, int>(FoodItem, 0)); 
+        });
+    }
 
     public void Setup(KeyValuePair<FoodItem, int> item)
     {
@@ -26,6 +34,7 @@ public class InventoryItemUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         canvasGroup.alpha = 0;
         DragableItem.Instance.Setup(FoodItem, eventData);
         DragableItem.Instance.OnBeginDrag(eventData);
+        CookingManager.Instance.DishUIBehaviour.ShowItemInfo(new KeyValuePair<FoodItem, int>(FoodItem, 0));  
     }
     public void OnDrag(PointerEventData eventData)
     {

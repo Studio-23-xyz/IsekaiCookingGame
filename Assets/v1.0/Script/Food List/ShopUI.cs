@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 
 public class ShopUI : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class ShopUI : MonoBehaviour
     private List<ShopItemUI> foodDisplays = new List<ShopItemUI>();
 
     [SerializeField] private CartUIBehaviour _cartUIBehaviour;
-
+    [SerializeField] private TextMeshProUGUI coinCount;
     private void Start()
     {
         // Load food items from the resource folder

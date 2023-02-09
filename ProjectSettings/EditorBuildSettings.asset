@@ -13,9 +13,12 @@ EditorBuildSettings:
     guid: c180cc18211eb63428fe4979959d08bc
   - enabled: 1
     path: Assets/v1.0/Scene/Start_Scene.unity
-    guid: 8d8005f66410fa9428c68cd6c4cb042b
+    guid: 524c3efff43e2624cb138a718cf0086e
   - enabled: 1
     path: Assets/v1.0/Scene/Shop.unity
     guid: c90cc99324542814e863a080cdde6bc3
+  - enabled: 1
+    path: Assets/v1.0/Scene/Kitchen.unity
+    guid: 17fae0e86930ce8419a28c6c6798dfe2
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 1c86e8fe15f4b6a458a03fc69bb38232, type: 2}

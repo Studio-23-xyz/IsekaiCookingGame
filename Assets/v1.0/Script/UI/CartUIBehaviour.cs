@@ -15,7 +15,8 @@ public class CartUIBehaviour : MonoBehaviour
     public Transform container;
     private InventoryManager _inventoryManager => GameManager.Instance.InventoryManager;
     private List<CartItemUI> _itemUIList = new List<CartItemUI>();
-
+    [SerializeField] private TextMeshProUGUI coinTxt;
+    
     private void Awake()
     {
         cart = new Cart();
@@ -30,7 +31,7 @@ public class CartUIBehaviour : MonoBehaviour
     {
         UpdateUI();
         purchaseButton.interactable = _walletManager.Wallet.Gold >= cart.Price;
-        
+        coinTxt.text = $"{_walletManager.Wallet.Gold}";
         purchaseButton.onClick.AddListener(OnPurchaseClicked);
     }
 
@@ -68,6 +69,8 @@ public class CartUIBehaviour : MonoBehaviour
                 _inventoryManager.AddFoodItem(item.Key, item.Value);
             }
             UpdateUI();
+            purchaseButton.GetComponentInChildren<TextMeshProUGUI>().text = $"SUCCESSFUL!";
+            coinTxt.text = $"{_walletManager.Wallet.Gold}";
         }
     }
 }

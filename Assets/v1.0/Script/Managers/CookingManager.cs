@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class CookingManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static CookingManager Instance;
+    
+    public InventoryUI InventoryUI;
+    public DishUIBehaviour DishUIBehaviour;
+    private void Awake()
     {
-        
-    }
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        DishUIBehaviour ??= GetComponentInChildren<DishUIBehaviour>();
+        InventoryUI ??= GetComponentInChildren<InventoryUI>();
     }
+    
 }
+
