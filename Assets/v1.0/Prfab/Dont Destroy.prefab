@@ -44,6 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dafdbfc6228b0940b7e5ea08734e97d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InventoryUI: {fileID: 0}
+  DishUIBehaviour: {fileID: 0}
 --- !u!1 &623321708882404279
 GameObject:
   m_ObjectHideFlags: 0
@@ -219,6 +221,7 @@ Transform:
   - {fileID: 623321709610681572}
   - {fileID: 623321709565676160}
   - {fileID: 6686402212012594118}
+  - {fileID: 2416506923730505916}
   m_Father: {fileID: 623321708882404277}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -242,6 +245,7 @@ MonoBehaviour:
   WalletManager: {fileID: 4168316699652684150}
   InventoryManager: {fileID: 623321709412057269}
   uIManager: {fileID: 623321709130279355}
+  DishInventoryManager: {fileID: 1970726226448971564}
 --- !u!114 &623321709385329702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -550,3 +554,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad1d3aaa20c83eb43955fd1510f53cd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Wallet:
+    Gold: 0
+    Sapphire: 0
+--- !u!1 &6414834020784570191
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2416506923730505916}
+  - component: {fileID: 1970726226448971564}
+  m_Layer: 0
+  m_Name: DishInverntoryManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2416506923730505916
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6414834020784570191}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 623321709385329704}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1970726226448971564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6414834020784570191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9025b11d2141ce4fa997db9a845b920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dishInventory: []

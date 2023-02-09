@@ -18,8 +18,7 @@ public class IngredientItemDetailsUI : MonoBehaviour
   private FoodItem FoodItem;
 
     
-
-   
+  
 
     public void Setup(KeyValuePair<FoodItem, int> item)
     {

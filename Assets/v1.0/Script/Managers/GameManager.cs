@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
     public WalletManager WalletManager;
     public InventoryManager InventoryManager;
      public UIManager uIManager;
+     public DishInventoryManager DishInventoryManager;
      
     private void Awake()
     {
@@ -46,6 +47,7 @@ public class GameManager : MonoBehaviour
 
         WalletManager ??= GetComponentInChildren<WalletManager>();
         InventoryManager ??= GetComponentInChildren<InventoryManager>();
+        DishInventoryManager ??= GetComponentInChildren<DishInventoryManager>();
     }
 
     void Start()

@@ -19,7 +19,7 @@ public class InventoryItemUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
     {
         itemButton.onClick.AddListener(delegate
         {
-            CookingManager.Instance.DishUIBehaviour.ShowItemInfo(new KeyValuePair<FoodItem, int>(FoodItem, 0)); 
+            CookingManager.Instance.IngredientItemDetailsUI.Setup(new KeyValuePair<FoodItem, int>(FoodItem, 0)); 
         });
     }
 
@@ -34,7 +34,7 @@ public class InventoryItemUI : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         canvasGroup.alpha = 0;
         DragableItem.Instance.Setup(FoodItem, eventData);
         DragableItem.Instance.OnBeginDrag(eventData);
-        CookingManager.Instance.DishUIBehaviour.ShowItemInfo(new KeyValuePair<FoodItem, int>(FoodItem, 0));  
+        CookingManager.Instance.IngredientItemDetailsUI.Setup(new KeyValuePair<FoodItem, int>(FoodItem, 0));  
     }
     public void OnDrag(PointerEventData eventData)
     {

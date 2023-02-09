@@ -8,6 +8,10 @@ public class CookingManager : MonoBehaviour
     
     public InventoryUI InventoryUI;
     public DishUIBehaviour DishUIBehaviour;
+  
+    public IngredientItemDetailsUI IngredientItemDetailsUI;
+    public DishInfoUI DishInfoUI;
+    
     private void Awake()
     {
         if (Instance == null)

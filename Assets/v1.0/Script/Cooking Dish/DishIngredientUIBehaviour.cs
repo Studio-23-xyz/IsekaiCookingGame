@@ -52,7 +52,7 @@ public class DishIngredientUIBehaviour : MonoBehaviour, IDropHandler
         IsInitialized = true;
     }
 
-    private void Reset()
+    public void Reset()
     {
         IsInitialized = false;
         FoodItemWithAmount = new Dictionary<FoodItem, int>();
@@ -78,7 +78,7 @@ public class DishIngredientUIBehaviour : MonoBehaviour, IDropHandler
          IncreaseAmount();
      }
 
-     CookingManager.Instance.DishUIBehaviour.Cook(false);
+    // CookingManager.Instance.DishInfoUI.Setup(CookingManager.Instance.DishUIBehaviour.PredictDish(),false);
 
      //  Debug.Log($" Droped!");
     }

@@ -14,7 +14,7 @@ public class DishInfoUI : MonoBehaviour
     public TextMeshProUGUI itemFlavor;
     public TextMeshProUGUI itemPrice;
 
-    public void Setup(Dish item, bool isCooked)
+    public void Setup(Dish item, Color color)
     {
        
         itemName.text = $"Name : {item.Name}";
@@ -25,7 +25,16 @@ public class DishInfoUI : MonoBehaviour
         itemFlavor.text = $"Flavor : {string.Join("<br>", item.Flavors)}";
         itemPrice.text = $"Price : ${item.BasePrice.ToString()}";
 
-        bg.color = isCooked ? Color.green : Color.gray;
+        bg.color = color;
     }
-   
+    public void Reset()
+    {
+        itemName.text =
+            itemCategory.text =
+                itemWeight.text =
+                    itemFlavor.text =
+                        itemPrice.text = "";
+
+            bg.color = Color.gray;
+    }
 }

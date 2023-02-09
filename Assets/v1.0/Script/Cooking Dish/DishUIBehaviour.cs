@@ -13,28 +13,30 @@ public class DishUIBehaviour : MonoBehaviour
     [SerializeField]private Dish dish;
     [SerializeField] private Button cookButton;
 
-    [SerializeField] private IngredientItemDetailsUI _ingredientItemDetailsUI;
-    [SerializeField] private DishInfoUI _dishInfoUI;
+   
     private void Awake()
     {
-        cookButton.onClick.AddListener(delegate { Cook(true); });
-        if (_ingredientItemDetailsUI == null) _ingredientItemDetailsUI = transform.GetComponentInChildren<IngredientItemDetailsUI>();
-        if (_dishInfoUI == null) _dishInfoUI = transform.GetComponentInChildren<DishInfoUI>();
+        cookButton.onClick.AddListener(delegate
+        {
+
+            if (Cook())
+            {
+                ClearIngredients();
+                GameManager.Instance.DishInventoryManager.AddDish(dish);
+                CookingManager.Instance.DishInfoUI.Setup(dish,Color.green);
+            }
+            else
+            {
+                CookingManager.Instance.DishInfoUI.Reset();
+            }
+            
+            
+        });
+       
     }
 
-   /// <summary>
-   /// 
-   /// </summary>
-   /// <param name="IsRealCook"> is true when try to cook else false, its use to show data on ui</param>
-    public void Cook(bool IsRealCook)
-    {
-        if (ProcessCooking())
-        {
-            if(_dishInfoUI) _dishInfoUI.Setup(dish, IsRealCook);
-        }
-    }
-    
-    public bool ProcessCooking()
+  
+    private bool Cook()
     {
         dish = new Dish();
         if (AddIngredientsToDish())
@@ -44,6 +46,11 @@ public class DishUIBehaviour : MonoBehaviour
         }
         else return false;
     }
+
+   /* public Dish PredictDish()
+    {
+        return dish.PredictCook();
+    }*/
 
     private bool AddIngredientsToDish()
     {
@@ -60,6 +67,15 @@ public class DishUIBehaviour : MonoBehaviour
         }else  return false;
     }
 
+    public void ClearIngredients()
+    {
+        if (primaryIngredient.IsInitialized) primaryIngredient.Reset();
+        if (secondaryIngredient.IsInitialized) secondaryIngredient.Reset();
+        foreach (var ingredient in optionalIngredients)
+        {
+            if (ingredient.IsInitialized) ingredient.Reset();
+        }
+    }
     private void AddIngredientToDish(DishIngredientUIBehaviour ingredient)
     {
         if(!ingredient.IsInitialized) return;
@@ -77,9 +93,6 @@ public class DishUIBehaviour : MonoBehaviour
        
     }
 
-    public void ShowItemInfo(KeyValuePair<FoodItem, int> item)
-    {
-        if(_ingredientItemDetailsUI) _ingredientItemDetailsUI.Setup(new KeyValuePair<FoodItem, int>(item.Key, item.Value));
-    }
+    
    
 }

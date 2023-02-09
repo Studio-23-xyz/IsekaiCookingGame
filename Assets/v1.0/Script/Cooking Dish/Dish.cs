@@ -1,18 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Newtonsoft.Json;
 using UnityEngine;
 
 [Serializable]
 public class Dish
 {
-    public Dish()
-    {
-        FoodItems = new Dictionary<FoodItem, int>();
-        Flavors = new List<Flavor>();
-        Categories = new List<FoodCategory>();
-    }
-
+    
+    [JsonIgnore]
     public Dictionary<FoodItem, int> FoodItems;
     public float Weight;
     public List<Flavor> Flavors;
@@ -20,7 +16,12 @@ public class Dish
     public float BasePrice;
     [TextArea]
     public string Name;
-
+    public Dish()
+    {
+        FoodItems = new Dictionary<FoodItem, int>();
+        Flavors = new List<Flavor>();
+        Categories = new List<FoodCategory>();
+    }
     [ContextMenu("ProcessCooking")]
    
    
@@ -33,7 +34,6 @@ public class Dish
         Name = GetDishName();
     }
 
-    
     private void CalculateWeight()
     {
         Weight = FoodItems.Sum(item => item.Key.weight * item.Value);
