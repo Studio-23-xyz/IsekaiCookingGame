@@ -17,14 +17,17 @@ public class CartUIBehaviour : MonoBehaviour
     private List<CartItemUI> _itemUIList = new List<CartItemUI>();
     [SerializeField] private TextMeshProUGUI coinTxt;
     
-    private void Awake()
+    private void OnEnable()
     {
         cart = new Cart();
          cart.OnCartChanged += UpdateUI;
         
     }
 
-    
+    private void OnDisable()
+    {
+        cart.OnCartChanged -= UpdateUI;
+    }
 
 
     private void Start()
@@ -38,16 +41,18 @@ public class CartUIBehaviour : MonoBehaviour
     public void UpdateUI( )
     {
         // Clear previous items
-        foreach (CartItemUI itemUI in _itemUIList)
+       /* foreach (CartItemUI itemUI in _itemUIList)
         {
             Destroy(itemUI.gameObject);
-        }
-        _itemUIList.Clear();
+        }*/
+       _itemUIList.Clear();
+       container.DestroyAllChildren();
+       
 
         // Add new items
         foreach (KeyValuePair<FoodItem, int> item in cart._cart)
         {
-            GameObject itemGo = Instantiate(itemPrefab, container.transform);
+            GameObject itemGo = Instantiate(itemPrefab, container);
             CartItemUI itemUI = itemGo.GetComponent<CartItemUI>();
             itemUI.Setup(new KeyValuePair<FoodItem, int>(item.Key, item.Value));
             _itemUIList.Add(itemUI);

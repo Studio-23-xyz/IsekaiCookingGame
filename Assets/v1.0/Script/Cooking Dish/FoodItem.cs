@@ -47,6 +47,10 @@ public class Flavor
 {
     public Flavortype Name;
     public int Value;
+    public override string ToString()
+    {
+        return $"{Name.ToString()}-{Value}";
+    }
 }
 
 public enum Flavortype

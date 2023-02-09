@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/v1.0/Scene/CutScenePlayer.unity
     guid: c180cc18211eb63428fe4979959d08bc
   - enabled: 1
-    path: Assets/v1.0/Scene/Start_Scene.unity
+    path: Assets/v1.0/Scene/Dialogue_Scene.unity
     guid: 524c3efff43e2624cb138a718cf0086e
   - enabled: 1
     path: Assets/v1.0/Scene/Shop.unity

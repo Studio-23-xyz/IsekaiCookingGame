@@ -9,7 +9,9 @@ public class CartItemUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI foodCountText;
     [SerializeField] private TextMeshProUGUI foodPriceText;
 
-
+    
+    [SerializeField] private Button increaseAmountBtn;
+    [SerializeField] private Button decreaseAmountBtn;
     
     public void Setup(KeyValuePair<FoodItem, int> item)
     {
