@@ -72,6 +72,7 @@ public class ShopUI : MonoBehaviour
         // Create new food displays
         foreach (FoodItem foodItem in filteredFoodItems)
         {
+           // contentParent.DestroyAllChildren();
             ShopItemUI shopItemUI = Instantiate(prefabShopItemUI, contentParent);
             shopItemUI.LoadFoodDisplay(foodItem);
             

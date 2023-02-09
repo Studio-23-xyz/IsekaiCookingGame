@@ -19,10 +19,10 @@ public class DishInfoUI : MonoBehaviour
        
         itemName.text = $"Name : {item.Name}";
         
-        itemCategory.text = $"Category : {item.Categories.ToArray()}";
+        itemCategory.text = $"Category : {string.Join(", ", item.Categories)}";
       
         itemWeight.text = $"Weight : gm{item.Weight.ToString()}";
-        itemFlavor.text = $"Flavor : {item.Flavors.ToArray()}";
+        itemFlavor.text = $"Flavor : {string.Join("<br>", item.Flavors)}";
         itemPrice.text = $"Price : ${item.BasePrice.ToString()}";
 
         bg.color = isCooked ? Color.green : Color.gray;

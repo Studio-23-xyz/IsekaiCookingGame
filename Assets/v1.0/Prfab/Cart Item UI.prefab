@@ -1130,3 +1130,5 @@ MonoBehaviour:
   foodNameText: {fileID: 1517437624}
   foodCountText: {fileID: 1432726266}
   foodPriceText: {fileID: 1217688845}
+  increaseAmountBtn: {fileID: 1595335805}
+  decreaseAmountBtn: {fileID: 806017460}
