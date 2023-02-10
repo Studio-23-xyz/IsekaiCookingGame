@@ -41,8 +41,6 @@ public class NavigationController : MonoBehaviour
    }
    private void Start()
    {
-       
-     
        dishes.onClick.AddListener(delegate {GameManager.Instance.  DishInventoryManager.ToggleDishUI(); });;
    }
 }

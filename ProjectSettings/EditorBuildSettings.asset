@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/v1.0/Scene/Shop.unity
     guid: c90cc99324542814e863a080cdde6bc3
   - enabled: 1
+    path: Assets/v1.0/Scene/CentralMap.unity
+    guid: 3872effe4ecfcc444a7292e833fd1f5e
+  - enabled: 1
     path: Assets/v1.0/Scene/Kitchen.unity
     guid: 17fae0e86930ce8419a28c6c6798dfe2
   m_configObjects:
