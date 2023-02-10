@@ -54,6 +54,8 @@ public class WalletManager : MonoBehaviour
         else
         {
             Wallet = new Wallet();
+            Wallet.Gold = 10000;
+            Save();
         }
     }
 }

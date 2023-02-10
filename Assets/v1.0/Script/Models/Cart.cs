@@ -33,8 +33,12 @@ public class Cart
 
     public void RemoveItem(FoodItem item, int count = 1 )
     {
-        if (_cart.ContainsKey(item) && _cart[item] >= count)
+        if (_cart.ContainsKey(item) && _cart[item] > count)
             _cart[item] -= count;
+        else
+        {
+            _cart.Remove(item);
+        }
         OnCartChanged?.Invoke();
     }
 

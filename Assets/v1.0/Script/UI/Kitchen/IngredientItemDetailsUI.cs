@@ -15,7 +15,7 @@ public class IngredientItemDetailsUI : MonoBehaviour
     public TextMeshProUGUI itemFlavor;
     public TextMeshProUGUI itemPrice;
 
-  private FoodItem FoodItem;
+    private FoodItem FoodItem;
 
     
   
@@ -23,10 +23,8 @@ public class IngredientItemDetailsUI : MonoBehaviour
     public void Setup(KeyValuePair<FoodItem, int> item)
     {
         this.FoodItem = item.Key;
-        itemName.text = $"Name : {FoodItem.foodName} Quantity : {item.Value.ToString()}";
-        
+        itemName.text = $"Name : {FoodItem.foodName}<br>Quantity : {item.Value.ToString()}";
         itemCategory.text = $"Category : {FoodItem.category.ToString()}";
-      
         itemWeight.text = $"Weight : gm{FoodItem.weight.ToString()}";
         itemFlavor.text = $"Flavor : {FoodItem.flavorValue.ToString()}";
         itemPrice.text = $"Price : ${FoodItem.price.ToString()}";

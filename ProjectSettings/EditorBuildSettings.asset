@@ -21,4 +21,6 @@ EditorBuildSettings:
     path: Assets/v1.0/Scene/Kitchen.unity
     guid: 17fae0e86930ce8419a28c6c6798dfe2
   m_configObjects:
-    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 1c86e8fe15f4b6a458a03fc69bb38232, type: 2}
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 9844afeeaef40a1438151c55e2505b6d, type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: ecd57a48a0ae4b048bf1a0cc06b5828a, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: d9684bc381f5f22459d4fab0e9ce66af, type: 2}
