@@ -63,7 +63,10 @@ public class InventoryUI : MonoBehaviour
     }
     private void LoadInventoryItems()
     {
-        contentParent.DestroyAllChildren();
+        contentParent.transform.DestroyAllChildren();
+       //foreach (Transform item in contentParent)  Destroy(item.gameObject);
+       
+       
         inventoryItems = new List<GameObject>();
         
         var inventory = GameManager.Instance.InventoryManager.Inventory;

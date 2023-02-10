@@ -38,7 +38,9 @@ public class DishInventoryUI : MonoBehaviour
 
     public void LoadInventory()
     {
-        content.DestroyAllChildren();
+       content.transform.DestroyAllChildren();
+      //foreach (Transform item in content)  Destroy(item.gameObject);
+      
         foreach (Dish dish in GameManager.Instance.DishInventoryManager.dishInventory)
         {
             GameObject dishObject = Instantiate(dishPrefab, content);

@@ -13,6 +13,7 @@ public class DialogueUIBehaviour : MonoBehaviour
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private Button interactionWithDialogue;
+    [SerializeField] private TextMeshProUGUI coinText;
 
     private void Awake()
     {
@@ -53,4 +54,16 @@ public class DialogueUIBehaviour : MonoBehaviour
         audioSource.loop = true;
         audioSource.Play();
     }
+
+    public void ShowCoinText(float amount)
+    {
+        StartCoroutine(StartShowCoinText(amount));
+    }
+    IEnumerator StartShowCoinText(float amount)
+    {
+        coinText.text = $"YOU EARN ${amount}";
+        yield return new WaitForSeconds(10f);
+        coinText.text = "";
+    }
+    
 }

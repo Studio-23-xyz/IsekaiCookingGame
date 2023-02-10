@@ -4,10 +4,17 @@ using UnityEngine.SceneManagement;
 
 public class SceneAudio : MonoBehaviour
 {
-    public AudioSource sceneAudio;
+    [SerializeField] private AudioClip _audioClip;
+    
+   
 
-    private void Awake()
+    private void Start()
     {
-        if(sceneAudio)  GameManager.Instance.SoundManager.Play(sceneAudio);
+        if(_audioClip)
+          GameManager.Instance.SoundManager.Play(_audioClip);
+        else
+        {
+            GameManager.Instance.SoundManager.Stop();
+        }
     }
 }

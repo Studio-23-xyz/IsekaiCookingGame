@@ -46,8 +46,9 @@ public class CartUIBehaviour : MonoBehaviour
             Destroy(itemUI.gameObject);
         }*/
        _itemUIList.Clear();
-       container.DestroyAllChildren();
-       
+      
+       container.transform.DestroyAllChildren();
+      // foreach (Transform item in container)  Destroy(item.gameObject);
 
         // Add new items
         foreach (KeyValuePair<FoodItem, int> item in cart._cart)
