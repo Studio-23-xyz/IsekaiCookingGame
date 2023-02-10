@@ -1,18 +1,88 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum DialogueState
+{
+    InitiatingConversation,
+    OrderingDish,
+    LikingFood,
+    DislikingFood
+}
+
 public class DialogueManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
+
+    public static DialogueManager Instance;
+    
+    public DialogueUIBehaviour DialogueUIBehaviour;
+    [SerializeField]  private Sprite defaultPhoto;
+
+    //public List<CharacterDialogueOptions> CharacterDialogueOptions;
+    public CharacterDialogueOptions CharacterDialogueOptions;
+
+    public DialogueState currentDialogueState;
+    
+    private void Awake()
+    {       
+        currentDialogueState = (DialogueState) PlayerPrefs.GetInt("currentDialogueState", 0);
+            
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
         
+        DialogueUIBehaviour ??= GetComponentInChildren<DialogueUIBehaviour>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        DialogueUIBehaviour.gameObject.SetActive(true);
+        DialogueUIBehaviour.ShowCharacter(defaultPhoto);
+        ShowDialogue();
     }
+    
+    public void SetState(DialogueState dialogueState)
+    {
+        currentDialogueState = dialogueState;
+        PlayerPrefs.SetInt("currentDialogueState", (int)currentDialogueState);
+        ShowDialogue();
+    }
+
+    public void MoveToNextState()
+    {
+        int nextState = (int)currentDialogueState + 1;
+        if (nextState > (int)DialogueState.LikingFood)
+        {
+            nextState = (int)DialogueState.InitiatingConversation;
+            
+        }
+        
+        SetState((DialogueState) nextState);
+        ShowDialogue();
+    }
+   
+   
+    private void ShowDialogue()
+    {
+        switch (currentDialogueState)
+        {
+            case DialogueState.InitiatingConversation:
+                DialogueUIBehaviour.ShowDialogue(CharacterDialogueOptions.GetRandomInitiatingConversationOption());
+                break;
+
+            case DialogueState.OrderingDish:
+                DialogueUIBehaviour.ShowDialogue(CharacterDialogueOptions.GetRandomOrderingDishOption() + GameManager.Instance.CustomerManager.CurrentCustomer.DishPreferences[0].ToString(), "Serve a Dish",false);
+                break;
+
+            case DialogueState.LikingFood:
+                DialogueUIBehaviour.ShowDialogue(CharacterDialogueOptions.GetRandomLikingFoodOption());
+                break;
+
+            case DialogueState.DislikingFood:
+                DialogueUIBehaviour.ShowDialogue(CharacterDialogueOptions.GetRandomDislikingFoodOption());
+                break;
+        }
+    }
+    
+    
 }

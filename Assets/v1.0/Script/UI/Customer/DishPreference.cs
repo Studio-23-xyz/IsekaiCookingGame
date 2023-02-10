@@ -26,13 +26,6 @@ public class DishPreference
         
     }
     
-    public bool CheckFlavorMatchX(Dish dish)
-    {
-        Flavor primaryFlavor = dish.Flavors.OrderByDescending(flavor => flavor.Value).First();
-        Flavortype primaryFlavorType = (Flavortype)Enum.Parse(typeof(Flavortype), primaryFlavor.Name.ToString());
-        return primaryFlavorType == Flavor;
-    }
-    
     public bool CheckFlavorMatch(Dish dish)
     {
         Flavor primaryFlavor = dish.Flavors.OrderByDescending(flavor => flavor.Value).First();

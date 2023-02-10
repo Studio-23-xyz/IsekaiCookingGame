@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7081c6dddf5f00547851ac8ee5c78678, type: 3}
-  m_Name: 'Azura Moonstone '
+  m_Name: Azura Moonstone
   m_EditorClassIdentifier: 
   Name: 'Azura Moonstone '
   Race: Half-Elf
@@ -44,4 +44,6 @@ MonoBehaviour:
     Eventually, Azura and the player combined their
     restaurants, creating a culinary empire that was unmatched in the land. They
     ruled the food industry together, as a formidable team and a loving couple.'
-  DishPreferences: []
+  DishPreferences:
+  - Category: 0
+    Flavor: 0

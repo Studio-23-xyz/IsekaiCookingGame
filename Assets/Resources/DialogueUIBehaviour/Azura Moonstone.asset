@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f509ca9bfc7fc44a2a6e3aadd2f8c8, type: 3}
+  m_Name: Azura Moonstone
+  m_EditorClassIdentifier: 
+  initiatingConversationOptions:
+  - Oh, I heard about your little restaurant. I had to come see what all the fuss
+    was about. I hope it lives up to my expectations.
+  - I have to admit, I'm curious to see if your food can match the quality of my
+    own restaurant. It's always good to have some competition, isn't it?
+  - I'm feeling generous today. I'll give you a chance to impress me. I hope you
+    don't disappoint.
+  - I have high standards when it comes to food. I hope you have what it takes to
+    exceed them.
+  - So, what's your specialty dish? Let's see if it can compare to my own creations.
+  - I don't know about you, but I take pride in serving only the finest and most
+    delicious dishes. Let's see if you can keep up.
+  - I hope you're ready to put your cooking skills to the test. I'm expecting nothing
+    but the best, of course.
+  orderingDishOptions:
+  - 'I''m Hungry. I want to eat '
+  likingFoodOptions:
+  - You know, this dish is quite... interesting. It's not exactly like anything I've
+    had before.
+  - I have to admit, I was skeptical when I first heard about this place, but this
+    food... it's certainly got a unique flavor to it.
+  - I wouldn't say it's the best dish I've ever had, but it definitely has potential.
+    Keep up the good work.
+  - I may have to reconsider my stance on your restaurant. This dish is certainly
+    growing on me.
+  - I'll have to come back again and try something else. I'm curious to see what
+    other surprises you have in store.
+  - You have my sincerest compliments, Chef. Your food is nothing short of remarkable
+    and I'm grateful to have had the chance to taste it. Keep up the fantastic work.
+  - I'm truly impressed with the skill you possess in the kitchen. Your attention
+    to detail and flair for presentation is something to be admired.
+  - You know, I've had my fair share of meals, but I must say, that dish was truly
+    exceptional. The flavors were so well-balanced, it was almost a work of art.
+  - If I may be so bold, I would go as far as to say that was one of the best meals
+    I've had in a long time. The quality of your ingredients and the care put into
+    each dish is evident.
+  - I would be honored to feature one of your dishes in my own restaurant. Your culinary
+    talent is truly something to behold and I would love to share it with my customers.
+  dislikingFoodOptions:
+  - I'm afraid this dish is not up to my standards. I have high expectations for
+    my meals, and this just doesn't meet them.
+  - I understand that everyone has room for improvement, but this dish just falls
+    short.
+  - I've tasted better food from a street vendor. I expected more from your establishment.
+  - The presentation was lacking, and the flavor was forgettable. I wouldn't recommend
+    this to anyone.
+  - '"I''m not sure what you were going for with this dish, but it missed the mark
+    by a long shot.'
+  - Perhaps if you took some culinary classes or sought advice from more experienced
+    chefs, your dishes could reach the level of excellence I desire.
+  - Don't take this too harshly, I just want to help you improve and reach your full
+    potential.
+  - I hope you take my constructive criticism to heart and strive to make better
+    dishes in the future.

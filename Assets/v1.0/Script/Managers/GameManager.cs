@@ -31,8 +31,11 @@ public class GameManager : MonoBehaviour
     [Header("Managers Reference")]
     public WalletManager WalletManager;
     public InventoryManager InventoryManager;
-     public UIManager uIManager;
+      
      public DishInventoryManager DishInventoryManager;
+     public CustomerManager CustomerManager;
+
+    
      
     private void Awake()
     {
@@ -47,7 +50,10 @@ public class GameManager : MonoBehaviour
 
         WalletManager ??= GetComponentInChildren<WalletManager>();
         InventoryManager ??= GetComponentInChildren<InventoryManager>();
+        
+        
         DishInventoryManager ??= GetComponentInChildren<DishInventoryManager>();
+        CustomerManager ??= GetComponentInChildren<CustomerManager>();
     }
 
     void Start()
@@ -58,7 +64,7 @@ public class GameManager : MonoBehaviour
        
        CutsceneEndAction=()=>
         {
-            sceneLoader.LoadScene("Start_Scene");
+            sceneLoader.LoadScene("Kitchen");
           // AudioManager.Instance.FadeOutChannel(AudioManager.AudioChannel.Bgm);
         };
     }
@@ -67,5 +73,25 @@ public class GameManager : MonoBehaviour
     {
         sceneLoader.LoadCutScene();
     }
-    
+    public void ToggleSettings()
+    {
+        sceneLoader.LoadCutScene();
+    }
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void ProcessDish(Dish dish)
+    {
+        
+            if (CustomerManager.CurrentCustomer.DishPreferences[0].CheckFlavorMatch(dish))
+            {
+                DialogueManager.Instance.SetState(DialogueState.LikingFood);
+                WalletManager.AddGold(dish.BasePrice);
+            }
+        
+            else DialogueManager.Instance.SetState(DialogueState.DislikingFood);
+        
+    }
 }

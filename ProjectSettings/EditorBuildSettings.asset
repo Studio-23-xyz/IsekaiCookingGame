@@ -6,13 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/v1.0/Scene/Welcome.unity
+    path: Assets/v1.0/Scene/Home.unity
     guid: 3fc8acdd13e6c734bafef6554d6fdbcd
   - enabled: 1
     path: Assets/v1.0/Scene/CutScenePlayer.unity
     guid: c180cc18211eb63428fe4979959d08bc
   - enabled: 1
-    path: Assets/v1.0/Scene/Dialogue_Scene.unity
+    path: Assets/v1.0/Scene/Restaurant.unity
     guid: 524c3efff43e2624cb138a718cf0086e
   - enabled: 1
     path: Assets/v1.0/Scene/Shop.unity

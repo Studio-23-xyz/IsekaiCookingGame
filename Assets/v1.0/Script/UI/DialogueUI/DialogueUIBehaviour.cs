@@ -3,23 +3,37 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using TMPro;
 
 public class DialogueUIBehaviour : MonoBehaviour
 {
+    
+    
     [SerializeField] private Image characterImage;
-    [SerializeField] private Text dialogueText;
+    [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private AudioSource audioSource;
+    [SerializeField] private Button interactionWithDialogue;
+
+    private void Awake()
+    {
+        interactionWithDialogue.onClick.AddListener(delegate { DialogueManager.Instance.MoveToNextState(); });
+    }
 
     public void ShowCharacter(Sprite image)
     {
         characterImage.sprite = image;
         characterImage.color = new Color(1f, 1f, 1f, 0f);
-        characterImage.DOFade(1f, 0.5f);
+        characterImage.DOFade(2, 0.5f);
     }
 
-    public void ShowDialogue(string dialogue)
+    private bool _isInteractable; 
+    public void ShowDialogue(string dialogue, string buttonText = "Continue", bool isInteractable = true)
     {
+        interactionWithDialogue.interactable = false;
+        _isInteractable = isInteractable;
         StartCoroutine(TypeDialogue(dialogue));
+        interactionWithDialogue.GetComponentInChildren<TextMeshProUGUI>().text = buttonText;
+       
     }
 
     private IEnumerator TypeDialogue(string dialogue)
@@ -30,6 +44,7 @@ public class DialogueUIBehaviour : MonoBehaviour
             dialogueText.text += letter;
             yield return new WaitForSeconds(0.05f);
         }
+        interactionWithDialogue.interactable = _isInteractable;
     }
 
     public void PlayBGM(AudioClip audioClip)

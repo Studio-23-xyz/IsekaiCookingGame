@@ -6,13 +6,13 @@ using System.Collections.Generic;
 
 public class DishInventoryUI : MonoBehaviour
 {
-    public DishInventoryManager dishInventoryManager;
+    private DishInventoryManager dishInventoryManager;
     public GameObject dishPrefab;
     public Transform content;
     public Button serveButton;
 
-    public delegate void ServeDishEvent(Dish dish);
-    public ServeDishEvent OnServeDish;
+   // public delegate void ServeDishEvent(Dish dish);
+   //  public ServeDishEvent OnServeDish;
 
     private Dish selectedDish;
 
@@ -21,7 +21,18 @@ public class DishInventoryUI : MonoBehaviour
     {
          
         dishInventoryManager ??= GameManager.Instance.DishInventoryManager;
-        serveButton.onClick.AddListener(delegate { ServeDish(); });
+        if (dishInventoryManager)
+        {
+            dishInventoryManager.DishInventoryUI = this;
+            dishInventoryManager.ToggleDishUI();
+        }
+        
+        
+        serveButton.onClick.AddListener(delegate {
+        {
+            ServeDish();
+            gameObject.SetActive(false);
+        } });
         
     }
 
@@ -48,11 +59,16 @@ public class DishInventoryUI : MonoBehaviour
         selectedDish = dish;
         serveButton.interactable = true;
     }
-
+    public void UnselectDish()
+    {
+        selectedDish = null;
+        serveButton.interactable = false;
+    }
     public void ServeDish()
     {
-        OnServeDish?.Invoke(selectedDish);
-        dishInventoryManager.dishInventory.Remove(selectedDish);
+     //   OnServeDish?.Invoke(selectedDish);
+        GameManager.Instance.ProcessDish(selectedDish);
+        dishInventoryManager.RemoveDish(selectedDish);
         selectedDish = null;
         serveButton.interactable = false;
     }
