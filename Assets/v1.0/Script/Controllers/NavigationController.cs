@@ -23,15 +23,15 @@ public class NavigationController : MonoBehaviour
 
    private void Awake()
    {
-      home.onClick.AddListener(delegate { GameManager.Instance.sceneLoader.LoadScene("Home"); });;
-      kitchen.onClick.AddListener(delegate { GameManager.Instance.sceneLoader.LoadScene("Kitchen"); });;
-      restaurant.onClick.AddListener(delegate { GameManager.Instance.sceneLoader.LoadScene("Restaurant"); });;
-      shop.onClick.AddListener(delegate { GameManager.Instance.sceneLoader.LoadScene("Shop"); });;
+      home.onClick.AddListener(delegate { GameManager.Instance.sceneLoader.LoadScene("Home"); });
+      kitchen.onClick.AddListener(delegate { GameManager.Instance.sceneLoader.LoadScene("Kitchen"); });
+      restaurant.onClick.AddListener(delegate { GameManager.Instance.sceneLoader.LoadScene("Restaurant"); });
+      shop.onClick.AddListener(delegate { GameManager.Instance.sceneLoader.LoadScene("Shop"); });
      
       
-      continueGame.onClick.AddListener(delegate { GameManager.Instance.sceneLoader.LoadScene("Kitchen"); });;
+      continueGame.onClick.AddListener(delegate { GameManager.Instance.sceneLoader.LoadScene("Restaurant"); });
       newGame.onClick.AddListener(delegate { GameManager.Instance.StartGame(); });
-      loadGame.onClick.AddListener(delegate { GameManager.Instance.StartGame(); });
+      //loadGame.onClick.AddListener(delegate { GameManager.Instance.StartGame(); });
       
       settings.onClick.AddListener(delegate { GameManager.Instance.ToggleSettings(); });
       

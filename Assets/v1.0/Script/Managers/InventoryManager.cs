@@ -18,7 +18,7 @@ public class InventoryManager : MonoBehaviour
 
     public InventoryUpdate OnInventoryUpdate;
 
-    private void Awake()
+    private void Start()
     {
         
         Inventory.Clear();

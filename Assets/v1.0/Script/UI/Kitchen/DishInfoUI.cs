@@ -35,6 +35,6 @@ public class DishInfoUI : MonoBehaviour
                     itemFlavor.text =
                         itemPrice.text = "";
 
-            bg.color = Color.gray;
+            bg.color = Color.white;
     }
 }

@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 public class DishInventoryUI : MonoBehaviour
 {
-    private DishInventoryManager dishInventoryManager;
+   // private DishInventoryManager dishInventoryManager;
     public GameObject dishPrefab;
     public Transform content;
     public Button serveButton;
@@ -19,14 +19,8 @@ public class DishInventoryUI : MonoBehaviour
 
     private void Awake()
     {
-         
-        dishInventoryManager ??= GameManager.Instance.DishInventoryManager;
-        if (dishInventoryManager)
-        {
-            dishInventoryManager.DishInventoryUI = this;
-            dishInventoryManager.ToggleDishUI();
-        }
-        
+        GameManager.Instance.DishInventoryManager.DishInventoryUI = this;
+        GameManager.Instance.DishInventoryManager.ToggleDishUI();
         
         serveButton.onClick.AddListener(delegate {
         {
@@ -36,7 +30,7 @@ public class DishInventoryUI : MonoBehaviour
         
     }
 
-    private void Start()
+    private void OnEnable()
     {
         serveButton.interactable = false;
         LoadInventory();
@@ -45,7 +39,7 @@ public class DishInventoryUI : MonoBehaviour
     public void LoadInventory()
     {
         content.DestroyAllChildren();
-        foreach (Dish dish in dishInventoryManager.dishInventory)
+        foreach (Dish dish in GameManager.Instance.DishInventoryManager.dishInventory)
         {
             GameObject dishObject = Instantiate(dishPrefab, content);
             DishItemUI dishItemUI = dishObject.GetComponent<DishItemUI>();
@@ -68,7 +62,7 @@ public class DishInventoryUI : MonoBehaviour
     {
      //   OnServeDish?.Invoke(selectedDish);
         GameManager.Instance.ProcessDish(selectedDish);
-        dishInventoryManager.RemoveDish(selectedDish);
+        GameManager.Instance.DishInventoryManager.RemoveDish(selectedDish);
         selectedDish = null;
         serveButton.interactable = false;
     }

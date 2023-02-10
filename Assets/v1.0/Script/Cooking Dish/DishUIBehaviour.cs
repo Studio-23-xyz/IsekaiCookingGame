@@ -23,7 +23,8 @@ public class DishUIBehaviour : MonoBehaviour
             {
                 ClearIngredients();
                 GameManager.Instance.DishInventoryManager.AddDish(dish);
-                CookingManager.Instance.DishInfoUI.Setup(dish,Color.green);
+               
+                CookingManager.Instance.DishInfoUI.Setup(dish, new Color(.52f, 1, .52f,1));
             }
             else
             {

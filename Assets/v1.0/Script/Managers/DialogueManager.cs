@@ -17,27 +17,54 @@ public class DialogueManager : MonoBehaviour
     public static DialogueManager Instance;
     
     public DialogueUIBehaviour DialogueUIBehaviour;
-    [SerializeField]  private Sprite defaultPhoto;
-
+    [SerializeField]  private List<Sprite> currentCustomerPhotos;
+    
+    public int currentCustomerPhoto;
+    
     //public List<CharacterDialogueOptions> CharacterDialogueOptions;
     public CharacterDialogueOptions CharacterDialogueOptions;
-
+  
     public DialogueState currentDialogueState;
-    
+    private int _maxIteration;
     private void Awake()
-    {       
+    {
+
+        if (!PlayerPrefs.HasKey("currentCustomerPhoto"))   SetCurrentPlayerRandomPhoto();
+        else currentCustomerPhoto =   PlayerPrefs.GetInt("currentCustomerPhoto", 0);
+        
+        
+        
         currentDialogueState = (DialogueState) PlayerPrefs.GetInt("currentDialogueState", 0);
             
+        
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
         
         DialogueUIBehaviour ??= GetComponentInChildren<DialogueUIBehaviour>();
     }
 
+   
+    private void SetCurrentPlayerRandomPhoto()
+    {
+      int random = UnityEngine.Random.Range(0, currentCustomerPhotos.Count);
+
+      if (random == currentCustomerPhoto)
+      {
+          SetCurrentPlayerRandomPhoto();
+          _maxIteration++;
+      }
+      else
+      {
+          currentCustomerPhoto = random;
+          _maxIteration = 0;
+      }
+      
+      PlayerPrefs.SetInt("currentCustomerPhoto", currentCustomerPhoto);
+    }
     private void Start()
     {
         DialogueUIBehaviour.gameObject.SetActive(true);
-        DialogueUIBehaviour.ShowCharacter(defaultPhoto);
+        DialogueUIBehaviour.ShowCharacter(currentCustomerPhotos[currentCustomerPhoto]);
         ShowDialogue();
     }
     
@@ -54,11 +81,12 @@ public class DialogueManager : MonoBehaviour
         if (nextState > (int)DialogueState.LikingFood)
         {
             nextState = (int)DialogueState.InitiatingConversation;
-            
+            SetCurrentPlayerRandomPhoto();
+
         }
         
         SetState((DialogueState) nextState);
-        ShowDialogue();
+       
     }
    
    
@@ -67,6 +95,7 @@ public class DialogueManager : MonoBehaviour
         switch (currentDialogueState)
         {
             case DialogueState.InitiatingConversation:
+                DialogueUIBehaviour.ShowCharacter(currentCustomerPhotos[currentCustomerPhoto]);
                 DialogueUIBehaviour.ShowDialogue(CharacterDialogueOptions.GetRandomInitiatingConversationOption());
                 break;
 

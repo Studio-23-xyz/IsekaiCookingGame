@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
       
      public DishInventoryManager DishInventoryManager;
      public CustomerManager CustomerManager;
+     public SoundManager SoundManager;
 
     
      
@@ -54,6 +55,8 @@ public class GameManager : MonoBehaviour
         
         DishInventoryManager ??= GetComponentInChildren<DishInventoryManager>();
         CustomerManager ??= GetComponentInChildren<CustomerManager>();
+      
+        SoundManager ??= GetComponentInChildren<SoundManager>();
     }
 
     void Start()
@@ -64,7 +67,7 @@ public class GameManager : MonoBehaviour
        
        CutsceneEndAction=()=>
         {
-            sceneLoader.LoadScene("Kitchen");
+            sceneLoader.LoadScene("Restaurant");
           // AudioManager.Instance.FadeOutChannel(AudioManager.AudioChannel.Bgm);
         };
     }
