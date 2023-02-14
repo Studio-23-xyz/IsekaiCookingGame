@@ -69,7 +69,11 @@ public class Dish
     {
         BasePrice = FoodItems.Sum(item => item.Key.price * item.Value);
     }
-
+    public float PriceWithMarkUp()
+    {
+        float markUpPrice = Mathf.Round(BasePrice * 0.20f); 
+       return BasePrice + markUpPrice;
+    }
   
     
     private string GetDishName()

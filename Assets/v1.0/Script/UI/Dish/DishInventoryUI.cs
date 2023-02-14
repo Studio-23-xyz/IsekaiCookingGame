@@ -11,6 +11,9 @@ public class DishInventoryUI : MonoBehaviour
     public Transform content;
     public Button serveButton;
 
+    [SerializeField]
+    private TextMeshProUGUI selectedDishInfoText;
+    
    // public delegate void ServeDishEvent(Dish dish);
    //  public ServeDishEvent OnServeDish;
 
@@ -47,12 +50,21 @@ public class DishInventoryUI : MonoBehaviour
             DishItemUI dishItemUI = dishObject.GetComponent<DishItemUI>();
             dishItemUI.Setup(dish);
             dishItemUI.OnSelectDishEvent += SelectDish;
+           // dishItemUI.OnDeselectDishEvent += DeselectDish;
         }
     }
-
+    public void DeselectDish()
+    {
+        
+        selectedDish = null;
+        serveButton.interactable = false;
+        selectedDishInfoText.text = "NO DISH SELECTED!";
+    }
     public void SelectDish(Dish dish)
     {
+        
         selectedDish = dish;
+        selectedDishInfoText.text = selectedDish.Name;
         serveButton.interactable = true;
     }
     public void UnselectDish()
@@ -66,6 +78,8 @@ public class DishInventoryUI : MonoBehaviour
         GameManager.Instance.ProcessDish(selectedDish);
         GameManager.Instance.DishInventoryManager.RemoveDish(selectedDish);
         selectedDish = null;
+        DeselectDish();
         serveButton.interactable = false;
+      
     }
 }

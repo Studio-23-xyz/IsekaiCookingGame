@@ -91,10 +91,14 @@ public class GameManager : MonoBehaviour
             if (CustomerManager.CurrentCustomer.DishPreferences[0].CheckFlavorMatch(dish))
             {
                 DialogueManager.Instance.SetState(DialogueState.LikingFood);
-                WalletManager.AddGold(dish.BasePrice);
+                WalletManager.AddGold(dish.PriceWithMarkUp());
+                DialogueManager.Instance.ShowCoinText( dish.PriceWithMarkUp());
             }
-        
-            else DialogueManager.Instance.SetState(DialogueState.DislikingFood);
+            else
+            {
+                DialogueManager.Instance.ShowCoinText( 0);
+                DialogueManager.Instance.SetState(DialogueState.DislikingFood);
+            }
         
     }
 }

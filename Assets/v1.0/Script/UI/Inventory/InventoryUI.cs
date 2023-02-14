@@ -20,12 +20,15 @@ public class InventoryUI : MonoBehaviour
     private InventoryManager inventoryManager => GameManager.Instance.InventoryManager;
 
 
-    private void Awake()
+    private void OnEnable()
     {
         GameManager.Instance.InventoryManager.OnInventoryUpdate += OnInventoryUpdate;
     }
 
-   
+    private void OnDisable()
+    {
+        GameManager.Instance.InventoryManager.OnInventoryUpdate -= OnInventoryUpdate;
+    }
 
     private void Start()
     {

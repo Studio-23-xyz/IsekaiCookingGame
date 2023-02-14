@@ -28,7 +28,7 @@ public class DialogueUIBehaviour : MonoBehaviour
     }
 
     private bool _isInteractable; 
-    public void ShowDialogue(string dialogue, string buttonText = "Continue", bool isInteractable = true)
+    public void ShowDialogue(string dialogue, string buttonText = "CONTINUE", bool isInteractable = true)
     {
         interactionWithDialogue.interactable = false;
         _isInteractable = isInteractable;
@@ -55,14 +55,33 @@ public class DialogueUIBehaviour : MonoBehaviour
         audioSource.Play();
     }
 
+   
+    private bool _tartShowCoinTextRunning;
+    private float _count = 0;
+    private float _duration = 10f;
     public void ShowCoinText(float amount)
     {
-        StartCoroutine(StartShowCoinText(amount));
+      
+       
+        if (_tartShowCoinTextRunning)
+        {
+            _count = _duration;
+        }
+        
+        StartCoroutine( StartShowCoinText(amount));
     }
     IEnumerator StartShowCoinText(float amount)
     {
         coinText.text = $"YOU EARN ${amount}";
-        yield return new WaitForSeconds(10f);
+        _tartShowCoinTextRunning = true;
+        while (_count < _duration)
+        {
+            _count += Time.deltaTime;
+            yield return null;
+        }
+
+        _count = 0;
+        _tartShowCoinTextRunning = false;
         coinText.text = "";
     }
     

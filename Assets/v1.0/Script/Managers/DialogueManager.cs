@@ -18,7 +18,6 @@ public class DialogueManager : MonoBehaviour
     
     public DialogueUIBehaviour DialogueUIBehaviour;
     [SerializeField]  private List<Sprite> currentCustomerPhotos;
-    
     public int currentCustomerPhoto;
     
     //public List<CharacterDialogueOptions> CharacterDialogueOptions;
@@ -30,7 +29,7 @@ public class DialogueManager : MonoBehaviour
     {
 
         if (!PlayerPrefs.HasKey("currentCustomerPhoto"))   SetCurrentPlayerRandomPhoto();
-        else currentCustomerPhoto =   PlayerPrefs.GetInt("currentCustomerPhoto", 0);
+        else currentCustomerPhoto =   PlayerPrefs.GetInt("currentCustomerPhotoId", 0);
         
         
         
@@ -48,7 +47,7 @@ public class DialogueManager : MonoBehaviour
     {
       int random = UnityEngine.Random.Range(0, currentCustomerPhotos.Count);
 
-      if (random == currentCustomerPhoto)
+      if (random == currentCustomerPhoto &&  _maxIteration < 10)
       {
           SetCurrentPlayerRandomPhoto();
           _maxIteration++;
@@ -59,7 +58,7 @@ public class DialogueManager : MonoBehaviour
           _maxIteration = 0;
       }
       
-      PlayerPrefs.SetInt("currentCustomerPhoto", currentCustomerPhoto);
+      PlayerPrefs.SetInt("currentCustomerPhotoId", currentCustomerPhoto);
     }
     private void Start()
     {
@@ -100,7 +99,7 @@ public class DialogueManager : MonoBehaviour
                 break;
 
             case DialogueState.OrderingDish:
-                DialogueUIBehaviour.ShowDialogue(CharacterDialogueOptions.GetRandomOrderingDishOption() + GameManager.Instance.CustomerManager.CurrentCustomer.DishPreferences[0].ToString(), "Serve a Dish",false);
+                DialogueUIBehaviour.ShowDialogue(CharacterDialogueOptions.GetRandomOrderingDishOption() + GameManager.Instance.CustomerManager.CurrentCustomer.DishPreferences[0].ToString(), "SERVE DISH",false);
                 break;
 
             case DialogueState.LikingFood:
@@ -113,6 +112,10 @@ public class DialogueManager : MonoBehaviour
         }
     }
     
-   
+    public void ShowCoinText(float amount)
+    {
+        DialogueUIBehaviour.ShowCoinText(amount);
+
+    }
     
 }
