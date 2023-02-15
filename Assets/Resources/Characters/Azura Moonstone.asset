@@ -46,4 +46,12 @@ MonoBehaviour:
     ruled the food industry together, as a formidable team and a loving couple.'
   DishPreferences:
   - Category: 0
-    Flavor: 0
+    Flavor: 5
+  - Category: 6
+    Flavor: 3
+  - Category: 1
+    Flavor: 1
+  - Category: 4
+    Flavor: 2
+  - Category: 4
+    Flavor: 3

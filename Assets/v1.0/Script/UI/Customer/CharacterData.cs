@@ -11,6 +11,7 @@ public class CharacterData : ScriptableObject
     public string Backstory;
     public List<DishPreference> DishPreferences = new List<DishPreference>();
 
+[ContextMenu("Create Random Preference")]
     public void CreateRandomDishPreferences()
     {
         DishPreferences.Clear();

@@ -2,6 +2,17 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
+
+/*
+ CentralMap
+ CutScenePlayer
+ Home
+ Kitchen
+ Restaurant
+ Shop
+ */
+
 public class SceneLoader : MonoBehaviour
 {
     public bool HideCommonUI = false;
@@ -45,4 +56,10 @@ public class SceneLoader : MonoBehaviour
         if(CutsceneController.Instance!=null)return;
         SceneManager.LoadScene("CutScenePlayer",LoadSceneMode.Additive);  
     }
+    
+    public void QuitGame()
+    {
+       GameManager.Instance.QuitGame();
+    }
+    
 }

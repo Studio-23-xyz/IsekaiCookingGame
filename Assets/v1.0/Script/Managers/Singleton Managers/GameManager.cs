@@ -14,10 +14,6 @@ public class GameManager : MonoBehaviour
 {
     
     public static GameManager Instance;
-  
-    
-   
-    
     
     public FoodItem[] FoodItems;
     public Customer[] Customers;
@@ -27,14 +23,14 @@ public class GameManager : MonoBehaviour
     public CutsceneData firstCutscene;
     public Action CutsceneEndAction;
     public SceneLoader sceneLoader;
-
+    
+    
     [Header("Managers Reference")]
     public WalletManager WalletManager;
     public InventoryManager InventoryManager;
-      
-     public DishInventoryManager DishInventoryManager;
-     public CustomerManager CustomerManager;
-     public SoundManager SoundManager;
+    public DishInventoryManager DishInventoryManager;
+    public CustomerManager CustomerManager;
+    public SoundManager SoundManager;
 
     
      
@@ -51,11 +47,8 @@ public class GameManager : MonoBehaviour
 
         WalletManager ??= GetComponentInChildren<WalletManager>();
         InventoryManager ??= GetComponentInChildren<InventoryManager>();
-        
-        
         DishInventoryManager ??= GetComponentInChildren<DishInventoryManager>();
         CustomerManager ??= GetComponentInChildren<CustomerManager>();
-      
         SoundManager ??= GetComponentInChildren<SoundManager>();
     }
 
