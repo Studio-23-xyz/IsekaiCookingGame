@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShopManager : MonoBehaviour
+public class ShopUIController : MonoBehaviour
 {
     public ShopUI ShopUI;
     public CartUIBehaviour CartUIBehaviour;

@@ -77,6 +77,7 @@ public class DialogueUIBehaviour : MonoBehaviour
         while (_count < _duration)
         {
             _count += Time.deltaTime;
+            
             yield return null;
         }
 

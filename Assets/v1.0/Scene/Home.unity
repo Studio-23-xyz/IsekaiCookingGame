@@ -248,8 +248,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 175318727}
         m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 5
+        m_MethodName: LoadCutScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2015,10 +2015,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dont Destroy
       objectReference: {fileID: 0}
-    - target: {fileID: 623321709385329705, guid: 3bb1ffcb06c25ae46b6ef434d6d12800, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bb1ffcb06c25ae46b6ef434d6d12800, type: 3}
 --- !u!222 &1570263424
@@ -2446,7 +2442,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2583122776369967538, guid: fad6cc6a405903f4aa79390b2e7d84a3, type: 3}
       propertyPath: m_Name
-      value: Audio Source
+      value: Scene Audio
       objectReference: {fileID: 0}
     - target: {fileID: 5981823236115206942, guid: fad6cc6a405903f4aa79390b2e7d84a3, type: 3}
       propertyPath: _audioClip

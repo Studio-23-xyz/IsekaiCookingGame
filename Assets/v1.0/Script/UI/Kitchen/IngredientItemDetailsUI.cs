@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -7,7 +8,8 @@ using UnityEngine.UI;
 
 public class IngredientItemDetailsUI : MonoBehaviour
 {
-    
+
+    public static IngredientItemDetailsUI Instance;
     
     public TextMeshProUGUI itemName;
     public TextMeshProUGUI itemCategory;
@@ -17,8 +19,15 @@ public class IngredientItemDetailsUI : MonoBehaviour
 
     private FoodItem FoodItem;
 
-    
-  
+
+    private void Awake()
+    {
+        if (Instance == null) Instance = this;
+        else
+        {
+             Destroy(gameObject);
+        }
+    }
 
     public void Setup(KeyValuePair<FoodItem, int> item)
     {

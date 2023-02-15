@@ -13,7 +13,8 @@ public class DishUIBehaviour : MonoBehaviour
     [SerializeField]private Dish dish;
     [SerializeField] private Button cookButton;
 
-   
+
+    public DishInfoUI DishInfoUI;
     private void Awake()
     {
         cookButton.onClick.AddListener(delegate
@@ -24,11 +25,11 @@ public class DishUIBehaviour : MonoBehaviour
                 ClearIngredients();
                 GameManager.Instance.DishInventoryManager.AddDish(dish);
                
-                CookingManager.Instance.DishInfoUI.Setup(dish, new Color(.52f, 1, .52f,1));
+                DishInfoUI.Setup(dish, new Color(.52f, 1, .52f,1));
             }
             else
             {
-                CookingManager.Instance.DishInfoUI.Reset();
+               DishInfoUI.Reset();
             }
             
             

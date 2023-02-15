@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
 
-public class DishInventoryUI : MonoBehaviour
+public class DishInventoryUIController : MonoBehaviour
 {
    // private DishInventoryManager dishInventoryManager;
     public GameObject dishPrefab;
@@ -22,8 +22,7 @@ public class DishInventoryUI : MonoBehaviour
 
     private void Awake()
     {
-        GameManager.Instance.DishInventoryManager.DishInventoryUI = this;
-        GameManager.Instance.DishInventoryManager.ToggleDishUI();
+       
         
         serveButton.onClick.AddListener(delegate {
         {

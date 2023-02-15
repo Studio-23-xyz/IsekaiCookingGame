@@ -9,16 +9,12 @@ public class DishInventoryManager : MonoBehaviour
     public List<Dish> dishInventory;
     private string filePath;
 
-    [Header("Conditional UI")]
-    public DishInventoryUI DishInventoryUI;
+  
     
     private void Awake()
     {
         filePath = Application.persistentDataPath + "/dishInventory.json";
-
         
-
-
     }
 
     private void Start()
@@ -57,12 +53,5 @@ public class DishInventoryManager : MonoBehaviour
         }
     }
 
-    public void ToggleDishUI()
-    {
-        if (DishInventoryUI)
-        {
-            bool status = DishInventoryUI.gameObject.activeSelf;
-            DishInventoryUI.gameObject.SetActive(!status);
-        }
-    }
+   
 }

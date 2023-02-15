@@ -1,15 +1,8 @@
 using System;
-using System.IO;
 using UnityEngine;
-using UnityEngine.Events;
-using UnityEngine.SceneManagement;
 
 
 
-public enum GameState
-{
-    
-}
 public class GameManager : MonoBehaviour
 {
     
@@ -39,6 +32,7 @@ public class GameManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            
         }
         else
         {
@@ -81,17 +75,25 @@ public class GameManager : MonoBehaviour
     public void ProcessDish(Dish dish)
     {
         
-            if (CustomerManager.CurrentCustomer.DishPreferences[0].CheckFlavorMatch(dish))
+            if (CustomerManager.CurrentCustomerDishPreference.CheckFlavorMatch(dish))
             {
-                DialogueManager.Instance.SetState(DialogueState.LikingFood);
+               CustomerManager.SetState(CustomerInteractionState.LikingFood);
                 WalletManager.AddGold(dish.PriceWithMarkUp());
+                
+                DialogueManager.Instance. ShowDialogue(CustomerManager.currentCustomerInteractionState,
+                    CustomerManager.CharacterDialogueOptions, CustomerManager.CurrentCustomerPhoto());
+                
                 DialogueManager.Instance.ShowCoinText( dish.PriceWithMarkUp());
             }
             else
             {
                 DialogueManager.Instance.ShowCoinText( 0);
-                DialogueManager.Instance.SetState(DialogueState.DislikingFood);
+                CustomerManager.SetState(CustomerInteractionState.DislikingFood);
+                
+                DialogueManager.Instance. ShowDialogue(CustomerManager.currentCustomerInteractionState,
+                    CustomerManager.CharacterDialogueOptions, CustomerManager.CurrentCustomerPhoto());
             }
+           
         
     }
 }

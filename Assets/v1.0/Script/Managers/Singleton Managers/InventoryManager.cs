@@ -6,23 +6,13 @@ using System.IO;
 public class InventoryManager : MonoBehaviour
 {
     
-  
-   
-
     public Dictionary<FoodItem, int> Inventory = new Dictionary<FoodItem, int>();
-
     private string _filePath;
-
-
     public delegate void InventoryUpdate();
-
     public InventoryUpdate OnInventoryUpdate;
-
     private void Start()
     {
-        
         Inventory.Clear();
-        
         _filePath = Application.persistentDataPath + "/inventory.json";
         LoadInventory();
     }

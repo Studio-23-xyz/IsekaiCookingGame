@@ -16,7 +16,19 @@ public class AvailableDishButtonController : MonoBehaviour
 
       private void Start()
         {
-            _button.onClick.AddListener(delegate {GameManager.Instance.  DishInventoryManager.ToggleDishUI(); });;
+            _button.onClick.AddListener(ToggleDishUI);;
         }
+      
+      public GameObject DishInventoryUI;
+    
+      public void ToggleDishUI()
+      {
+          if (DishInventoryUI != null)
+          {
+              bool status = DishInventoryUI.gameObject.activeSelf;
+              DishInventoryUI.gameObject.SetActive(!status);
+          }
+      }
+      
     
 }
