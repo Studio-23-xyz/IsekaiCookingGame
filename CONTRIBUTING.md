@@ -37,7 +37,7 @@ If you'd like to contribute code changes, please follow these steps:
 3. Make your changes in your branch.
 4. Submit a pull request with your changes.
 
-Be sure to follow our [Coding Standards](CODING_STANDARDS.md) when making your changes.
+Be sure to follow our [Coding Standards](https://github.com/Studio-23-xyz/IsekaiCookingGame/wiki/Code-Convention) when making your changes.
 
 ## Code Reviews
 
