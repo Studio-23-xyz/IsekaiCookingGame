@@ -37,9 +37,6 @@ public class FoodItem : ScriptableObject
         return foodItems;
     }
 
-
-
-
 }
 
 [System.Serializable]
