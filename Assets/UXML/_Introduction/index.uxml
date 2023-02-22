@@ -1,7 +1,9 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns="UnityEngine.UIElements" editor-extension-mode="False">
   
-    <Style src="project://database/Assets/UXML/UXML%20FIle/styleRef.uss?fileID=7433441132597879392&amp;guid=142f8c8b093f91c49b3a4515d4976854&amp;type=3#styleRef" />
+    <Style src="styleRef.uss" />
+   
     <ui:Button text="UXML Button" name="the-uxml-button" class="some-styled-button" />
+    
     <ui:Scroller name="the-uxml-scroller" direction="Horizontal" low-value="0" high-value="100" class="some-styled-scroller" />
 
     <Toggle label="UXML Field" name="the-uxml-field" />

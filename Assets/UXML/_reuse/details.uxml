@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement class="details">
+        <ui:Label name="address" text="Address : 4 Mohakhali, Dhaka" />
+        <ui:Label name="tel" text="Tel : +88 0255545" />
+     
+    </ui:VisualElement>
+
+   
+    
+</ui:UXML>

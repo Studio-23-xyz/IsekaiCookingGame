@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+  
+    <ui:Template name="details" src="details.uxml" />
+    <Style src="style.uss" />
+    <ui:VisualElement class="portrait" name="container" >
+        <ui:Label name="name" text="Brain Station" />
+        <ui:Label name="reg" text="Reg # RA451284" />
+        <ui:Image name="logo" style="background-image: url(&apos;logo.png&apos;);" />
+        <ui:Instance template="details" name="details1" />
+        <ui:Instance template="details" name="details2">
+            <AttributeOverrides element-name="address" text="Branch Office : Mirpur DOHS, Dhaka" />
+            <AttributeOverrides element-name="telephone" text="Tel : +88 - 02985154862" />
+            <ui:Label  style=" -unity-font-style: italic;" text=" ---------------------------------- " />
+        </ui:Instance>
+     
+    </ui:VisualElement>
+    <ui:Label  style=" -unity-font-style: italic;" text="for any query please visit us" />
+    <ui:Label text="www.brainstation-23.com" style=" -unity-font-style: bold;" />
+</ui:UXML>

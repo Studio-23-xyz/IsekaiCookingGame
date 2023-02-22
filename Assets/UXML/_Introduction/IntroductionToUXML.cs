@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using Object = System.Object;
 
-public class IndexController : MonoBehaviour
+public class IntroductionToUXML : MonoBehaviour
 {
    public UIDocument document;
    public VisualElement container;
