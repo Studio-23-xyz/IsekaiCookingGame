@@ -134,8 +134,9 @@ GameObject:
   - component: {fileID: 419373005}
   - component: {fileID: 419373004}
   - component: {fileID: 419373006}
+  - component: {fileID: 419373007}
   m_Layer: 5
-  m_Name: IntroductionToUXML
+  m_Name: UI Documents
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -155,7 +156,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PanelSettings: {fileID: 11400000, guid: 32f57d72df311684789a8d1a14dab56e, type: 2}
   m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 9197481963319205126, guid: 8403e3598877c4c45a82febc9d3a5e74, type: 3}
+  sourceAsset: {fileID: 9197481963319205126, guid: 04f673441c5344c429819722d3936add, type: 3}
   m_SortingOrder: 0
 --- !u!4 &419373005
 Transform:
@@ -179,12 +180,24 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 419373003}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3362b51e4fe8ef249b0ad82e681f66bf, type: 3}
+  m_Script: {fileID: 11500000, guid: 50be0ba62f626c54b9f2c53b4bb33fd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  document: {fileID: 419373004}
+--- !u!114 &419373007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419373003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87a4e9da0f5d4594eaba0c4103cf5558, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _csharpToUxml: {fileID: 419373006}
 --- !u!1 &2092043138
 GameObject:
   m_ObjectHideFlags: 0

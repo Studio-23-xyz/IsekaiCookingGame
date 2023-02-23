@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UXML/_Q_Query/style.uss?fileID=7433441132597879392&amp;guid=64653277ce8e0b34498f58f1fcdc26dd&amp;type=3#style" />
+    <ui:VisualElement name="container1" >
+        <ui:Button name="OK" text="OK" />
+        <ui:Button name="Cancel" text="Cancel" />
+    </ui:VisualElement>
+    <ui:VisualElement name="container2">
+        <ui:Button name="OK" text="OK" class="yellow" />
+        <ui:Button name="Cancel" text="Cancel" />
+    </ui:VisualElement>
+    <ui:VisualElement name="container3">
+        <ui:Button name="OK" text="OK" class="yellow" />
+        <ui:Button name="Cancel" text="Cancel" class="yellow" />
+    </ui:VisualElement>
+</ui:UXML>

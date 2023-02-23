@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns="UnityEngine.UIElements" editor-extension-mode="False">
+  
+    <Style src="styleRef.uss" />
+   
+    <ui:Button text="UXML Button" name="the-uxml-button" class="some-styled-button" />
+    
+    <ui:Scroller name="the-uxml-scroller" direction="Horizontal" low-value="0" high-value="100" class="some-styled-scroller" />
+
+    <Toggle label="UXML Field" name="the-uxml-field" />
+
+    <GroupBox>
+        <RadioButton label="UXML Field 1" name="the-uxml-field1" />
+        <RadioButton label="UXML Field 2" name="the-uxml-field2" />
+    </GroupBox>
+
+    <Label text="UXML Label" name="the-uxml-label" />
+
+    <TextField label="UXML Field" name="the-uxml-field" value="It's snowing outside." />
+
+    <HelpBox text="UXML Help Box" message-type="Info" name="the-uxml-help-box" />
+    <uie:ObjectField label="UXML Field" name="the-uxml-field" />
+
+    <ListView class="the-uxml-listview" />
+    
+</ui:UXML>

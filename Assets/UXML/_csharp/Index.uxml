@@ -1,4 +1,8 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="style.uss" />
-    <ui:VisualElement name="root" />
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UXML/_csharp/style.uss" />
+   
+    <ui:VisualElement name="container1" >
+       <ui:Label text=" Button will be added using c# script" style="font-size:20px"/>
+    </ui:VisualElement>
+ 
 </ui:UXML>
