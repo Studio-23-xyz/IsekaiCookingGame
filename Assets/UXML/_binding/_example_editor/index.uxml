@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="top-element">
+        <ui:Label name="top-label" text="UXML-Defined Simple Binding" />
+        <ui:TextField name="GameObjectName" label="Name" binding-path="m_Name" />
+    </ui:VisualElement>
+</ui:UXML>

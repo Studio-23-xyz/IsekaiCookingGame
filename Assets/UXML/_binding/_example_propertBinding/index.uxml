@@ -1,0 +1,8 @@
+<UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement name="top-element">
+        <ui:Label name="top-label" text="UXML-Defined Simple Binding"/>
+        <ui:TextField name="m_Count" label="M Count" text="" binding-path="m_Count"/>
+       
+        
+    </ui:VisualElement>
+</UXML>

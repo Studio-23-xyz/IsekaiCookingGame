@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xmlns="UnityEngine.UIElements" ue="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UXML/_binding/_example_nested%20properties/style.uss?fileID=7433441132597879392&amp;guid=0faf469d5ab6fb847bdecc064709254a&amp;type=3#style" />
+    <ui:VisualElement name="row" class="container">
+        <ui:Label text="Tank Script - Custom Inspector" />
+        <uie:PropertyField binding-path="tankName" name="tank-name-field" />
+        <uie:PropertyField binding-path="tankSize" name="tank-size-field" />
+        <ui:BindableElement binding-path="health">
+            <uie:PropertyField binding-path="armor" />
+            <uie:PropertyField binding-path="life" />
+        </ui:BindableElement>
+    </ui:VisualElement>
+</ui:UXML>
